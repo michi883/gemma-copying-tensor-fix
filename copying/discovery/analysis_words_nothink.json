@@ -1,0 +1,203 @@
+{
+ "anchor_fail": {
+  "n": 11,
+  "orig_fail": 10,
+  "patched_fail": 0
+ },
+ "anchor_pass": {
+  "n": 4,
+  "orig_fail": 0,
+  "patched_fail": 0
+ },
+ "sample": {
+  "n": 7688,
+  "orig_fail": 268,
+  "patched_fail": 1
+ },
+ "groups": {
+  "ident/ONE/False": {
+   "n": 150,
+   "orig_fail": 1,
+   "patched_fail": 1,
+   "fixed": 0,
+   "regressed": 0,
+   "both": 1
+  },
+  "ident/ONE/True": {
+   "n": 6,
+   "orig_fail": 0,
+   "patched_fail": 0,
+   "fixed": 0,
+   "regressed": 0,
+   "both": 0
+  },
+  "ident/OTHER/False": {
+   "n": 400,
+   "orig_fail": 0,
+   "patched_fail": 0,
+   "fixed": 0,
+   "regressed": 0,
+   "both": 0
+  },
+  "ident/OTHER/True": {
+   "n": 400,
+   "orig_fail": 1,
+   "patched_fail": 0,
+   "fixed": 1,
+   "regressed": 0,
+   "both": 0
+  },
+  "ident/S/True": {
+   "n": 276,
+   "orig_fail": 176,
+   "patched_fail": 0,
+   "fixed": 176,
+   "regressed": 0,
+   "both": 0
+  },
+  "ident/SFX/False": {
+   "n": 400,
+   "orig_fail": 0,
+   "patched_fail": 0,
+   "fixed": 0,
+   "regressed": 0,
+   "both": 0
+  },
+  "ident/SFX/True": {
+   "n": 400,
+   "orig_fail": 1,
+   "patched_fail": 0,
+   "fixed": 1,
+   "regressed": 0,
+   "both": 0
+  },
+  "jargon/ONE/False": {
+   "n": 200,
+   "orig_fail": 0,
+   "patched_fail": 0,
+   "fixed": 0,
+   "regressed": 0,
+   "both": 0
+  },
+  "jargon/ONE/True": {
+   "n": 141,
+   "orig_fail": 0,
+   "patched_fail": 0,
+   "fixed": 0,
+   "regressed": 0,
+   "both": 0
+  },
+  "jargon/OTHER/False": {
+   "n": 300,
+   "orig_fail": 0,
+   "patched_fail": 0,
+   "fixed": 0,
+   "regressed": 0,
+   "both": 0
+  },
+  "jargon/OTHER/True": {
+   "n": 300,
+   "orig_fail": 0,
+   "patched_fail": 0,
+   "fixed": 0,
+   "regressed": 0,
+   "both": 0
+  },
+  "jargon/S/True": {
+   "n": 82,
+   "orig_fail": 27,
+   "patched_fail": 0,
+   "fixed": 27,
+   "regressed": 0,
+   "both": 0
+  },
+  "jargon/SFX/False": {
+   "n": 300,
+   "orig_fail": 0,
+   "patched_fail": 0,
+   "fixed": 0,
+   "regressed": 0,
+   "both": 0
+  },
+  "jargon/SFX/True": {
+   "n": 300,
+   "orig_fail": 0,
+   "patched_fail": 0,
+   "fixed": 0,
+   "regressed": 0,
+   "both": 0
+  },
+  "word/ONE/False": {
+   "n": 400,
+   "orig_fail": 0,
+   "patched_fail": 0,
+   "fixed": 0,
+   "regressed": 0,
+   "both": 0
+  },
+  "word/ONE/True": {
+   "n": 400,
+   "orig_fail": 0,
+   "patched_fail": 0,
+   "fixed": 0,
+   "regressed": 0,
+   "both": 0
+  },
+  "word/OTHER/False": {
+   "n": 600,
+   "orig_fail": 0,
+   "patched_fail": 0,
+   "fixed": 0,
+   "regressed": 0,
+   "both": 0
+  },
+  "word/OTHER/True": {
+   "n": 600,
+   "orig_fail": 0,
+   "patched_fail": 0,
+   "fixed": 0,
+   "regressed": 0,
+   "both": 0
+  },
+  "word/S/True": {
+   "n": 106,
+   "orig_fail": 57,
+   "patched_fail": 0,
+   "fixed": 57,
+   "regressed": 0,
+   "both": 0
+  },
+  "word/SFX/False": {
+   "n": 1548,
+   "orig_fail": 5,
+   "patched_fail": 0,
+   "fixed": 5,
+   "regressed": 0,
+   "both": 0
+  },
+  "word/SFX/True": {
+   "n": 379,
+   "orig_fail": 0,
+   "patched_fail": 0,
+   "fixed": 0,
+   "regressed": 0,
+   "both": 0
+  }
+ },
+ "categories": {
+  "orig": {
+   "chars_substituted": 42,
+   "separator_changed": 69,
+   "dropped_final_s": 138,
+   "case_changed": 8,
+   "suffix_altered": 1,
+   "truncated_early_stop": 3,
+   "chars_inserted": 3,
+   "text_appended": 1,
+   "chars_dropped_inside": 3
+  },
+  "patched": {
+   "chars_dropped_inside": 1
+  }
+ }
+}

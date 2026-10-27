@@ -1,0 +1,19 @@
+gemma-copying-tensor-fix
+Copyright 2026 Michi Yamamoto
+Research affiliation: UserLab
+Research contact: michi@userlab.org
+GitHub: michi883
+
+Original code, documentation, measurement data and figures in this repository are licensed under the Apache License, Version 2.0 (see LICENSE).
+Third-party material is NOT relicensed by that statement; see THIRD_PARTY_NOTICES.md.
+
+adapter/adapter_model.safetensors is a derivative work of one tensor of Gemma 4 (a model family from Google DeepMind):
+  source tensor : model.language_model.per_layer_model_projection (weight_packed / weight_scale) of
+                  google/gemma-4-E4B-it-qat-w4a16-ct, revision 6cd26aaa2357fb2bad8c51699a7558a4d1a965bb
+  licence       : Apache License 2.0, according to that model card (license_link https://ai.google.dev/gemma/docs/gemma_4_license)
+  changes       : the int4 tensor was dequantised and replaced by its best rank-128 approximation (truncated singular value decomposition, bfloat16 factors),
+                  which, added to the base weight, approximates multiplying the tensor by 2. No training data and no gradient updates were used.
+                  See adapter/build_adapter.py and adapter/lowrank.py.
+adapter/adapter_config.json is a PEFT-format configuration written by adapter/build_adapter.py.
+The original Gemma 4 checkpoints, and GGUF files derived from them, are not part of this repository.
+This repository is not affiliated with or endorsed by Google.

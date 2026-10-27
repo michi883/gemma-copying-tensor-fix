@@ -1,0 +1,16 @@
+diff --git a/validator.py b/validator.py
+index b5740da..84e76c3 100644
+--- a/validator.py
++++ b/validator.py
+@@ -1,8 +1,5 @@
+-SUPPORTED_FIELDS = {"accepts", "timeout"}
+-
++SUPPORTED_FIELDS = {"accept", "timeout"}
+ 
+ def validate_field(name):
+     """Reject unknown configuration fields."""
+-    if name == "accept":
+-        return True
+-    return name in SUPPORTED_FIELDS - {"accepts"}
++    return name in SUPPORTED_FIELDS
+\ No newline at end of file

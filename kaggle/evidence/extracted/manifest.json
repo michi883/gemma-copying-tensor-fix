@@ -1,0 +1,75 @@
+{
+  "created_utc": "2026-10-27T12:16:38.408198+00:00",
+  "experiment": "Kaggle E4B W4A16 base vs rank-128 LoRA exact-copy test",
+  "model_name": "gemma-4-e4b-it-qat-w4a16-ct",
+  "model_path": "/kaggle/input/models/google/gemma-4/other/gemma-4-e4b-it-qat-w4a16-ct/2",
+  "model_config_sha256": "7f0cd2d17bdb0d5adc6db8e7168bb9a9aa68a6c4ad879d80ecf83e6819c893d3",
+  "adapter_alias": "ple",
+  "adapter_path": "/kaggle/input/datasets/michi883/ple-proj-svd-r128",
+  "adapter_weights_sha256": "9ce83a7cad3d8523c14750696dca06ee1ca89f50813047ae390ee00c7f17c888",
+  "adapter_weights_bytes": 3408208,
+  "adapter_config_sha256": "3786855f2b3ea33e66d32d5ce5aacef61afc2882f92358dd36164c5f104dfbe1",
+  "adapter_rank": 128,
+  "vllm_version": "0.19.1",
+  "python_version": "3.12.13 (main, Mar  4 2026, 09:23:07) [GCC 11.4.0]",
+  "tensor_parallel_size": 4,
+  "server_command": [
+    "/usr/bin/python3",
+    "-m",
+    "vllm.entrypoints.openai.api_server",
+    "--model",
+    "/kaggle/input/models/google/gemma-4/other/gemma-4-e4b-it-qat-w4a16-ct/2",
+    "--served-model-name",
+    "gemma-4-e4b-it-qat-w4a16-ct",
+    "--host",
+    "127.0.0.1",
+    "--port",
+    "8000",
+    "--tensor-parallel-size",
+    "4",
+    "--max-model-len",
+    "32768",
+    "--gpu-memory-utilization",
+    "0.90",
+    "--dtype",
+    "bfloat16",
+    "--tool-call-parser",
+    "gemma4",
+    "--reasoning-parser",
+    "gemma4",
+    "--enable-auto-tool-choice",
+    "--enable-lora",
+    "--max-loras",
+    "1",
+    "--max-lora-rank",
+    "128",
+    "--lora-modules",
+    "ple=/kaggle/input/datasets/michi883/ple-proj-svd-r128"
+  ],
+  "served_model_ids": [
+    "gemma-4-e4b-it-qat-w4a16-ct",
+    "ple"
+  ],
+  "prompt_template": "Copy the following text exactly. Output only the copied text:\n{input}",
+  "request_settings": {
+    "chat_template_kwargs": {
+      "enable_thinking": false
+    },
+    "temperature": 0,
+    "seed": 1,
+    "max_tokens": 128
+  },
+  "summary": {
+    "total": 18,
+    "base_failures": 15,
+    "lora_failures": 1,
+    "fixed": 14,
+    "regressions": 0,
+    "any_reasoning_field": false
+  },
+  "limitations": [
+    "Targeted examples, not a random evaluation sample.",
+    "A successful adapter load and changed outputs do not alone prove broad coding-agent gains.",
+    "Full base checkpoint hash not calculated because the checkpoint is large."
+  ]
+}

@@ -1,0 +1,22 @@
+{
+ "arm": "original",
+ "task": "01_directs",
+ "target_identifier": "directs",
+ "end_reason": "text_only_reply",
+ "submit_patch_called": true,
+ "turns": 20,
+ "tool_calls_used": 18,
+ "seconds": 136.9,
+ "tests": {
+  "passed": false,
+  "exit_code": 1,
+  "summary": "1 failed, 1 passed in 0.01s",
+  "output": "F.                                                                       [100%]\n=================================== FAILURES ===================================\n______________________________ test_direct_route _______________________________\n\n    def test_direct_route():\n>       assert resolve_route(\"directs\") == \"/home\"\nE       AssertionError: assert '/404' == '/home'\nE         \nE         - /home\nE         + /404\n\ntest_bug.py:5: AssertionError\n=========================== short test summary info ============================\nFAILED test_bug.py::test_direct_route - AssertionError: assert '/404' == '/home'\n1 failed, 1 passed in 0.01s\n",
+  "test_files_modified_by_agent": []
+ },
+ "final_patch": "diff --git a/routing.py b/routing.py\nindex 4a0f0d3..42194da 100644\n--- a/routing.py\n+++ b/routing.py\n@@ -1,8 +1,7 @@\n-ROUTE_RULES = {\"directs\": \"/home\", \"fallback\": \"/404\"}\n-\n+ROUTE_RULES = {\"direct\": \"/home\", \"fallback\": \"/404\"}\n \n def resolve_route(rule):\n     \"\"\"Return the route associated with a rule.\"\"\"\n-    if rule == \"directs\":\n-        return ROUTE_RULES[\"fallback\"]\n-    return ROUTE_RULES.get(rule, ROUTE_RULES[\"fallback\"])\n+    if rule == \"direct\":\n+        return ROUTE_RULES[\"direct\"]\n+    return ROUTE_RULES.get(rule, ROUTE_RULES[\"fallback\"])\n\\ No newline at end of file\n",
+ "final_files": {
+  "routing.py": "ROUTE_RULES = {\"direct\": \"/home\", \"fallback\": \"/404\"}\n\ndef resolve_route(rule):\n    \"\"\"Return the route associated with a rule.\"\"\"\n    if rule == \"direct\":\n        return ROUTE_RULES[\"direct\"]\n    return ROUTE_RULES.get(rule, ROUTE_RULES[\"fallback\"])",
+  "test_bug.py": "from routing import resolve_route\n\n\ndef test_direct_route():\n    assert resolve_route(\"directs\") == \"/home\"\n\n\ndef test_fallback():\n    assert resolve_route(\"unknown\") == \"/404\"\n"
+ }
+}

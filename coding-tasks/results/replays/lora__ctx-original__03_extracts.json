@@ -1,0 +1,29 @@
+{
+ "task": "03_extracts",
+ "server": "lora",
+ "context_arm": "original",
+ "decisive_turn": 4,
+ "temperature": 0.0,
+ "request_matches_recorded": true,
+ "samples": [
+  {
+   "sample": 0,
+   "produced_edit_call": true,
+   "other_tools": [
+    "edit_file"
+   ],
+   "text_head": "The analysis confirms that `FieldParser` defines a method named `extract`s`, but `parse_row` calls `parser.extract`. This mismatch causes the `AttributeError`.\n\nThe fix is to change `parser.extract(ro",
+   "tool": "edit_file",
+   "args": {
+    "filepath": "parser.py",
+    "new_string": "    return parser.extract_s(row)",
+    "old_string": "    return parser.extract(row)"
+   },
+   "applied": true,
+   "tool_error": null,
+   "tests_pass_after_this_call": false,
+   "tests": "2 failed in 0.01s",
+   "same_call_as_recorded_context_arm": false
+  }
+ ]
+}

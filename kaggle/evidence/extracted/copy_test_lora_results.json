@@ -1,0 +1,287 @@
+{
+  "model": "gemma-4-e4b-it-qat-w4a16-ct",
+  "adapter": "/kaggle/input/datasets/michi883/ple-proj-svd-r128",
+  "thinking_disabled": true,
+  "temperature": 0,
+  "seed": 1,
+  "summary": {
+    "total": 18,
+    "base_failures": 15,
+    "lora_failures": 1,
+    "fixed": 14,
+    "regressions": 0,
+    "any_reasoning_field": false
+  },
+  "results": [
+    {
+      "input": "redirects",
+      "base": {
+        "output": "redirect",
+        "finish_reason": "stop",
+        "reasoning_present": false
+      },
+      "lora": {
+        "output": "redirects",
+        "finish_reason": "stop",
+        "reasoning_present": false
+      },
+      "base_match": false,
+      "lora_match": true
+    },
+    {
+      "input": "directs",
+      "base": {
+        "output": "direct",
+        "finish_reason": "stop",
+        "reasoning_present": false
+      },
+      "lora": {
+        "output": "directs",
+        "finish_reason": "stop",
+        "reasoning_present": false
+      },
+      "base_match": false,
+      "lora_match": true
+    },
+    {
+      "input": "allow_redirects",
+      "base": {
+        "output": "allow_redirect",
+        "finish_reason": "stop",
+        "reasoning_present": false
+      },
+      "lora": {
+        "output": "allow_redirects",
+        "finish_reason": "stop",
+        "reasoning_present": false
+      },
+      "base_match": false,
+      "lora_match": true
+    },
+    {
+      "input": "resolve_redirects",
+      "base": {
+        "output": "resolve_redirect",
+        "finish_reason": "stop",
+        "reasoning_present": false
+      },
+      "lora": {
+        "output": "resolve_redirects",
+        "finish_reason": "stop",
+        "reasoning_present": false
+      },
+      "base_match": false,
+      "lora_match": true
+    },
+    {
+      "input": "aligns",
+      "base": {
+        "output": "align",
+        "finish_reason": "stop",
+        "reasoning_present": false
+      },
+      "lora": {
+        "output": "aligns",
+        "finish_reason": "stop",
+        "reasoning_present": false
+      },
+      "base_match": false,
+      "lora_match": true
+    },
+    {
+      "input": "extracts",
+      "base": {
+        "output": "extract",
+        "finish_reason": "stop",
+        "reasoning_present": false
+      },
+      "lora": {
+        "output": "extracts",
+        "finish_reason": "stop",
+        "reasoning_present": false
+      },
+      "base_match": false,
+      "lora_match": true
+    },
+    {
+      "input": "treats",
+      "base": {
+        "output": "treat",
+        "finish_reason": "stop",
+        "reasoning_present": false
+      },
+      "lora": {
+        "output": "treats",
+        "finish_reason": "stop",
+        "reasoning_present": false
+      },
+      "base_match": false,
+      "lora_match": true
+    },
+    {
+      "input": "diagrams",
+      "base": {
+        "output": "diagrams",
+        "finish_reason": "stop",
+        "reasoning_present": false
+      },
+      "lora": {
+        "output": "diagrams",
+        "finish_reason": "stop",
+        "reasoning_present": false
+      },
+      "base_match": true,
+      "lora_match": true
+    },
+    {
+      "input": "payloads",
+      "base": {
+        "output": "payload",
+        "finish_reason": "stop",
+        "reasoning_present": false
+      },
+      "lora": {
+        "output": "payloads",
+        "finish_reason": "stop",
+        "reasoning_present": false
+      },
+      "base_match": false,
+      "lora_match": true
+    },
+    {
+      "input": "accepts",
+      "base": {
+        "output": "accept",
+        "finish_reason": "stop",
+        "reasoning_present": false
+      },
+      "lora": {
+        "output": "accepts",
+        "finish_reason": "stop",
+        "reasoning_present": false
+      },
+      "base_match": false,
+      "lora_match": true
+    },
+    {
+      "input": "indenting",
+      "base": {
+        "output": "indent",
+        "finish_reason": "stop",
+        "reasoning_present": false
+      },
+      "lora": {
+        "output": "indenting",
+        "finish_reason": "stop",
+        "reasoning_present": false
+      },
+      "base_match": false,
+      "lora_match": true
+    },
+    {
+      "input": "detecting",
+      "base": {
+        "output": "detectng",
+        "finish_reason": "stop",
+        "reasoning_present": false
+      },
+      "lora": {
+        "output": "detecting",
+        "finish_reason": "stop",
+        "reasoning_present": false
+      },
+      "base_match": false,
+      "lora_match": true
+    },
+    {
+      "input": "subtracting",
+      "base": {
+        "output": "subtract",
+        "finish_reason": "stop",
+        "reasoning_present": false
+      },
+      "lora": {
+        "output": "subtracting",
+        "finish_reason": "stop",
+        "reasoning_present": false
+      },
+      "base_match": false,
+      "lora_match": true
+    },
+    {
+      "input": "dumping",
+      "base": {
+        "output": "dumping",
+        "finish_reason": "stop",
+        "reasoning_present": false
+      },
+      "lora": {
+        "output": "dumping",
+        "finish_reason": "stop",
+        "reasoning_present": false
+      },
+      "base_match": true,
+      "lora_match": true
+    },
+    {
+      "input": "interpoling",
+      "base": {
+        "output": "interpolating",
+        "finish_reason": "stop",
+        "reasoning_present": false
+      },
+      "lora": {
+        "output": "interpoling",
+        "finish_reason": "stop",
+        "reasoning_present": false
+      },
+      "base_match": false,
+      "lora_match": true
+    },
+    {
+      "input": "Constructs a",
+      "base": {
+        "output": "Construct a",
+        "finish_reason": "stop",
+        "reasoning_present": false
+      },
+      "lora": {
+        "output": "Constructs a",
+        "finish_reason": "stop",
+        "reasoning_present": false
+      },
+      "base_match": false,
+      "lora_match": true
+    },
+    {
+      "input": "nPlease",
+      "base": {
+        "output": "Please",
+        "finish_reason": "stop",
+        "reasoning_present": false
+      },
+      "lora": {
+        "output": "Please",
+        "finish_reason": "stop",
+        "reasoning_present": false
+      },
+      "base_match": false,
+      "lora_match": false
+    },
+    {
+      "input": "forks",
+      "base": {
+        "output": "forks",
+        "finish_reason": "stop",
+        "reasoning_present": false
+      },
+      "lora": {
+        "output": "forks",
+        "finish_reason": "stop",
+        "reasoning_present": false
+      },
+      "base_match": true,
+      "lora_match": true
+    }
+  ]
+}

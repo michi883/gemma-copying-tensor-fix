@@ -1,0 +1,13 @@
+diff --git a/batch.py b/batch.py
+index 9247e36..4431164 100644
+--- a/batch.py
++++ b/batch.py
+@@ -4,4 +4,7 @@ def validate(item):
+ 
+ def process_batch(batch):
+     payloads = batch["payloads"]
+-    return [validate(item) for item in payload]
++    results = []
++    for item in payload:
++        results.append(validate(item))
++    return results

@@ -1,0 +1,10 @@
+results_plurals_orig_nothink.jsonl: 2000 planned, 0 already done
+250 run, 39 failures, 120s, ~842s left
+500 run, 70 failures, 241s, ~722s left
+750 run, 103 failures, 358s, ~597s left
+1000 run, 141 failures, 473s, ~473s left
+1250 run, 173 failures, 588s, ~353s left
+1500 run, 207 failures, 704s, ~235s left
+1750 run, 240 failures, 821s, ~117s left
+2000 run, 274 failures, 943s, ~0s left
+done: 2000 run, 274 failures, 943s

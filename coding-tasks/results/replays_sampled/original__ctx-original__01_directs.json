@@ -1,0 +1,200 @@
+{
+ "task": "01_directs",
+ "server": "original",
+ "context_arm": "original",
+ "decisive_turn": 3,
+ "temperature": 0.2,
+ "request_matches_recorded": null,
+ "samples": [
+  {
+   "sample": 0,
+   "produced_edit_call": true,
+   "other_tools": [
+    "edit_file"
+   ],
+   "text_head": "The current implementation of `resolve_route` in `routing.py` is:\n\n```python\nROUTE_RULES = {\"direct\": \"/home\", \"fallback\": \"/404\"}\n\ndef resolve_route(rule):\n    \"\"\"Return the route associated with a r",
+   "tool": "edit_file",
+   "args": {
+    "filepath": "routing.py",
+    "new_string": "    if rule == \"direct\":\n        return ROUTE_RULES[\"direct\"]",
+    "old_string": "    if rule == \"direct\":\n        return ROUTE_RULES[\"fallback\"]"
+   },
+   "applied": false,
+   "tool_error": "Failed to replace: old_string not found. Ensure you're not escaping content incorrectly and check whitespace, indentation, and context.",
+   "tests_pass_after_this_call": false,
+   "tests": "1 failed, 1 passed in 0.01s",
+   "same_call_as_recorded_context_arm": true
+  },
+  {
+   "sample": 1,
+   "produced_edit_call": true,
+   "other_tools": [
+    "edit_file"
+   ],
+   "text_head": "The current implementation in `routing.py` is:\n```python\nROUTE_RULES = {\"direct\": \"/home\", \"fallback\": \"/404\"}\n\ndef resolve_route(rule):\n    \"\"\"Return the route associated with a rule.\"\"\"\n    if rule ",
+   "tool": "edit_file",
+   "args": {
+    "filepath": "routing.py",
+    "new_string": "    pass",
+    "old_string": "    if rule == \"direct\":\n        return ROUTE_RULES[\"fallback\"]"
+   },
+   "applied": false,
+   "tool_error": "Failed to replace: old_string not found. Ensure you're not escaping content incorrectly and check whitespace, indentation, and context.",
+   "tests_pass_after_this_call": false,
+   "tests": "1 failed, 1 passed in 0.01s",
+   "same_call_as_recorded_context_arm": false
+  },
+  {
+   "sample": 2,
+   "produced_edit_call": true,
+   "other_tools": [
+    "edit_file"
+   ],
+   "text_head": "The current implementation in `routing.py` is:\n\n```python\nROUTE_RULES = {\"direct\": \"/home\", \"fallback\": \"/404\"}\n\ndef resolve_route(rule):\n    \"\"\"Return the route associated with a rule.\"\"\"\n    if rule",
+   "tool": "edit_file",
+   "args": {
+    "filepath": "routing.py",
+    "new_string": "def resolve_route(rule):\n    \"\"\"Return the route associated with a rule.\"\"\"\n    return ROUTE_RULES.get(rule, ROUTE_RULES[\"fallback\"])",
+    "old_string": "def resolve_route(rule):\n    \"\"\"Return the route associated with a rule.\"\"\"\n    if rule == \"direct\":\n        return ROUTE_RULES[\"fallback\"]\n    return ROUTE_RULES.get(rule, ROUTE_RULES[\"fallback\"])"
+   },
+   "applied": false,
+   "tool_error": "Failed to replace: old_string not found. Ensure you're not escaping content incorrectly and check whitespace, indentation, and context.",
+   "tests_pass_after_this_call": false,
+   "tests": "1 failed, 1 passed in 0.01s",
+   "same_call_as_recorded_context_arm": false
+  },
+  {
+   "sample": 3,
+   "produced_edit_call": true,
+   "other_tools": [
+    "edit_file"
+   ],
+   "text_head": "The current implementation of `resolve_route` in `routing.py` is:\n\n```python\nROUTE_RULES = {\"direct\": \"/home\", \"fallback\": \"/404\"}\n\ndef resolve_route(rule):\n    \"\"\"Return the route associated with a r",
+   "tool": "edit_file",
+   "args": {
+    "filepath": "routing.py",
+    "new_string": "def resolve_route(rule):\n    \"\"\"Return the route associated with a rule.\"\"\"\n    return ROUTE_RULES.get(rule, ROUTE_RULES[\"fallback\"])",
+    "old_string": "def resolve_route(rule):\n    \"\"\"Return the route associated with a rule.\"\"\"\n    if rule == \"direct\":\n        return ROUTE_RULES[\"fallback\"]\n    return ROUTE_RULES.get(rule, ROUTE_RULES[\"fallback\"])"
+   },
+   "applied": false,
+   "tool_error": "Failed to replace: old_string not found. Ensure you're not escaping content incorrectly and check whitespace, indentation, and context.",
+   "tests_pass_after_this_call": false,
+   "tests": "1 failed, 1 passed in 0.01s",
+   "same_call_as_recorded_context_arm": false
+  },
+  {
+   "sample": 4,
+   "produced_edit_call": true,
+   "other_tools": [
+    "edit_file"
+   ],
+   "text_head": "The current implementation of `resolve_route` in `routing.py` is:\n\n```python\nROUTE_RULES = {\"direct\": \"/home\", \"fallback\": \"/404\"}\n\ndef resolve_route(rule):\n    \"\"\"Return the route associated with a r",
+   "tool": "edit_file",
+   "args": {
+    "filepath": "routing.py",
+    "new_string": "def resolve_route(rule):\n    \"\"\"Return the route associated with a rule.\"\"\"\n    return ROUTE_RULES.get(rule, ROUTE_RULES[\"fallback\"])",
+    "old_string": "def resolve_route(rule):\n    \"\"\"Return the route associated with a rule.\"\"\"\n    if rule == \"direct\":\n        return ROUTE_RULES[\"fallback\"]\n    return ROUTE_RULES.get(rule, ROUTE_RULES[\"fallback\"])"
+   },
+   "applied": false,
+   "tool_error": "Failed to replace: old_string not found. Ensure you're not escaping content incorrectly and check whitespace, indentation, and context.",
+   "tests_pass_after_this_call": false,
+   "tests": "1 failed, 1 passed in 0.01s",
+   "same_call_as_recorded_context_arm": false
+  },
+  {
+   "sample": 5,
+   "produced_edit_call": true,
+   "other_tools": [
+    "edit_file"
+   ],
+   "text_head": "The current implementation in `routing.py` is:\n\n```python\nROUTE_RULES = {\"direct\": \"/home\", \"fallback\": \"/404\"}\n\ndef resolve_route(rule):\n    \"\"\"Return the route associated with a rule.\"\"\"\n    if rule",
+   "tool": "edit_file",
+   "args": {
+    "filepath": "routing.py",
+    "new_string": "def resolve_route(rule):\n    \"\"\"Return the route associated with a rule.\"\"\"\n    return ROUTE_RULES.get(rule, ROUTE_RULES[\"fallback\"])",
+    "old_string": "def resolve_route(rule):\n    \"\"\"Return the route associated with a rule.\"\"\"\n    if rule == \"direct\":\n        return ROUTE_RULES[\"fallback\"]\n    return ROUTE_RULES.get(rule, ROUTE_RULES[\"fallback\"])"
+   },
+   "applied": false,
+   "tool_error": "Failed to replace: old_string not found. Ensure you're not escaping content incorrectly and check whitespace, indentation, and context.",
+   "tests_pass_after_this_call": false,
+   "tests": "1 failed, 1 passed in 0.01s",
+   "same_call_as_recorded_context_arm": false
+  },
+  {
+   "sample": 6,
+   "produced_edit_call": true,
+   "other_tools": [
+    "edit_file"
+   ],
+   "text_head": "The current implementation in `routing.py` is:\n\n```python\nROUTE_RULES = {\"direct\": \"/home\", \"fallback\": \"/404\"}\n\ndef resolve_route(rule):\n    \"\"\"Return the route associated with a rule.\"\"\"\n    if rule",
+   "tool": "edit_file",
+   "args": {
+    "filepath": "routing.py",
+    "new_string": "    if rule == \"direct\":\n        return ROUTE_RULES[\"direct\"]",
+    "old_string": "    if rule == \"direct\":\n        return ROUTE_RULES[\"fallback\"]"
+   },
+   "applied": false,
+   "tool_error": "Failed to replace: old_string not found. Ensure you're not escaping content incorrectly and check whitespace, indentation, and context.",
+   "tests_pass_after_this_call": false,
+   "tests": "1 failed, 1 passed in 0.01s",
+   "same_call_as_recorded_context_arm": true
+  },
+  {
+   "sample": 7,
+   "produced_edit_call": true,
+   "other_tools": [
+    "edit_file"
+   ],
+   "text_head": "The current implementation of `resolve_route` in `routing.py` is:\n\n```python\nROUTE_RULES = {\"direct\": \"/home\", \"fallback\": \"/404\"}\n\ndef resolve_route(rule):\n    \"\"\"Return the route associated with a r",
+   "tool": "edit_file",
+   "args": {
+    "filepath": "routing.py",
+    "new_string": "    if rule == \"direct\":\n        return ROUTE_RULES[\"direct\"]",
+    "old_string": "    if rule == \"direct\":\n        return ROUTE_RULES[\"fallback\"]"
+   },
+   "applied": false,
+   "tool_error": "Failed to replace: old_string not found. Ensure you're not escaping content incorrectly and check whitespace, indentation, and context.",
+   "tests_pass_after_this_call": false,
+   "tests": "1 failed, 1 passed in 0.01s",
+   "same_call_as_recorded_context_arm": true
+  },
+  {
+   "sample": 8,
+   "produced_edit_call": true,
+   "other_tools": [
+    "edit_file"
+   ],
+   "text_head": "The current implementation in `routing.py` is:\n\n```python\nROUTE_RULES = {\"direct\": \"/home\", \"fallback\": \"/404\"}\n\ndef resolve_route(rule):\n    \"\"\"Return the route associated with a rule.\"\"\"\n    if rule",
+   "tool": "edit_file",
+   "args": {
+    "filepath": "routing.py",
+    "new_string": "def resolve_route(rule):\n    \"\"\"Return the route associated with a rule.\"\"\"\n    return ROUTE_RULES.get(rule, ROUTE_RULES[\"fallback\"])",
+    "old_string": "def resolve_route(rule):\n    \"\"\"Return the route associated with a rule.\"\"\"\n    if rule == \"direct\":\n        return ROUTE_RULES[\"fallback\"]\n    return ROUTE_RULES.get(rule, ROUTE_RULES[\"fallback\"])"
+   },
+   "applied": false,
+   "tool_error": "Failed to replace: old_string not found. Ensure you're not escaping content incorrectly and check whitespace, indentation, and context.",
+   "tests_pass_after_this_call": false,
+   "tests": "1 failed, 1 passed in 0.01s",
+   "same_call_as_recorded_context_arm": false
+  },
+  {
+   "sample": 9,
+   "produced_edit_call": true,
+   "other_tools": [
+    "edit_file"
+   ],
+   "text_head": "The current implementation of `resolve_route` in `routing.py` is:\n\n```python\nROUTE_RULES = {\"direct\": \"/home\", \"fallback\": \"/404\"}\n\ndef resolve_route(rule):\n    \"\"\"Return the route associated with a r",
+   "tool": "edit_file",
+   "args": {
+    "filepath": "routing.py",
+    "new_string": "def resolve_route(rule):\n    \"\"\"Return the route associated with a rule.\"\"\"\n    return ROUTE_RULES.get(rule, ROUTE_RULES[\"fallback\"])",
+    "old_string": "def resolve_route(rule):\n    \"\"\"Return the route associated with a rule.\"\"\"\n    if rule == \"direct\":\n        return ROUTE_RULES[\"fallback\"]\n    return ROUTE_RULES.get(rule, ROUTE_RULES[\"fallback\"])"
+   },
+   "applied": false,
+   "tool_error": "Failed to replace: old_string not found. Ensure you're not escaping content incorrectly and check whitespace, indentation, and context.",
+   "tests_pass_after_this_call": false,
+   "tests": "1 failed, 1 passed in 0.01s",
+   "same_call_as_recorded_context_arm": false
+  }
+ ]
+}

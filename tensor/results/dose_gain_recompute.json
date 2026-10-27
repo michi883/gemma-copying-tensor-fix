@@ -1,0 +1,65 @@
+{
+ "source": "static weights of gemma-4-E4B_q4_0-it.gguf",
+ "n_tokens": 2000,
+ "n_layers": 42,
+ "eps": 1e-06,
+ "frobenius_norm_W": 2.0144503116607666,
+ "rows": [
+  {
+   "factor": 0.25,
+   "ms_median_of_layer_medians": 5.30067012505242e-08,
+   "gain_median": 0.2232677936553955,
+   "gain_p5": 0.11578962206840515,
+   "share_below_eps": 1.0
+  },
+  {
+   "factor": 1.0,
+   "ms_median_of_layer_medians": 8.481072200083872e-07,
+   "gain_median": 0.675537109375,
+   "gain_p5": 0.42260879278182983,
+   "share_below_eps": 0.6135
+  },
+  {
+   "factor": 2.0,
+   "ms_median_of_layer_medians": 3.392428880033549e-06,
+   "gain_median": 0.8777927160263062,
+   "gain_p5": 0.6820275783538818,
+   "share_below_eps": 0.06520238095238096
+  },
+  {
+   "factor": 4.0,
+   "ms_median_of_layer_medians": 1.3569715520134196e-05,
+   "gain_median": 0.9647296667098999,
+   "gain_p5": 0.8813232183456421,
+   "share_below_eps": 0.0
+  },
+  {
+   "factor": 8.0,
+   "ms_median_of_layer_medians": 5.427886208053678e-05,
+   "gain_median": 0.9908209443092346,
+   "gain_p5": 0.965896487236023,
+   "share_below_eps": 0.0
+  },
+  {
+   "factor": 16.0,
+   "ms_median_of_layer_medians": 0.00021711544832214713,
+   "gain_median": 0.9976813793182373,
+   "gain_p5": 0.9911365509033203,
+   "share_below_eps": 0.0
+  },
+  {
+   "factor": 32.0,
+   "ms_median_of_layer_medians": 0.0008684617932885885,
+   "gain_median": 0.9994187951087952,
+   "gain_p5": 0.9977618455886841,
+   "share_below_eps": 0.0
+  },
+  {
+   "factor": 50.59644256269407,
+   "ms_median_of_layer_medians": 0.002171154599636793,
+   "gain_median": 0.9997674226760864,
+   "gain_p5": 0.9991029500961304,
+   "share_below_eps": 0.0
+  }
+ ]
+}

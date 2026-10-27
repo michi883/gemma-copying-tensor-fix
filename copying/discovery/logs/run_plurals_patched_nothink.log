@@ -1,0 +1,10 @@
+results_plurals_patched_nothink.jsonl: 2000 planned, 0 already done
+250 run, 0 failures, 120s, ~841s left
+500 run, 0 failures, 239s, ~717s left
+750 run, 0 failures, 356s, ~594s left
+1000 run, 0 failures, 471s, ~471s left
+1250 run, 1 failures, 586s, ~351s left
+1500 run, 1 failures, 702s, ~234s left
+1750 run, 1 failures, 819s, ~117s left
+2000 run, 1 failures, 939s, ~0s left
+done: 2000 run, 1 failures, 939s

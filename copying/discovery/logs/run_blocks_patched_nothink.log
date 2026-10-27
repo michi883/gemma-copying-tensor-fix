@@ -1,0 +1,7 @@
+results_blocks_patched_nothink.jsonl: 1278 planned, 0 already done
+250 run, 4 failures, 397s, ~1633s left
+500 run, 7 failures, 843s, ~1312s left
+750 run, 8 failures, 1203s, ~847s left
+1000 run, 13 failures, 1645s, ~457s left
+1250 run, 14 failures, 2085s, ~47s left
+done: 1278 run, 15 failures, 2134s

@@ -1,0 +1,1 @@
+{"planned": [{"text": "            ]\n        )\n        self.convs2 = nn.ModuleList(\n            [", "file": "site-packages/transformers/models/fastspeech2_conformer/modeling_fastspeech2_conformer.py", "line": 1308, "k": 4, "source": "other", "stratum": "k4/lone_s", "has_lone_s": true, "id": "b00835", "group": "sample"}]}

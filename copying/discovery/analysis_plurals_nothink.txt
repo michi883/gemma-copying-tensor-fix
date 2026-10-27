@@ -1,0 +1,62 @@
+plurals/nothink: 2000 original, 2000 patched results, 2000 paired, 0 with errors
+
+[sample] n=2000  original fails 274/2000 = 13.70% [12.26, 15.28]   patched fails 1/2000 = 0.05% [0.01, 0.28]
+
+By stratum: original fails | patched fails | orig-fail&patched-pass (fixed) | orig-pass&patched-fail (regression) | both fail    McNemar p
+  plural/NOT_S             n=  500  1/500 = 0.20% [0.04, 1.12]         0/500 = 0.00% [0.00, 0.76]         fixed    1  reg   0  both   0   p=1  (population 136073)
+  plural/S                 n= 1500  273/1500 = 18.20% [16.33, 20.23]   1/1500 = 0.07% [0.01, 0.38]        fixed  272  reg   0  both   1   p=2.64e-82  (population 12801)
+  ALL SAMPLE               n= 2000  274/2000 = 13.70% [12.26, 15.28]   1/2000 = 0.05% [0.01, 0.28]        fixed  273  reg   0  both   1   p=1.32e-82
+
+Failure categories (sample): original {'dropped_final_s': 260, 'chars_inserted': 6, 'chars_substituted': 3, 'suffix_altered': 2, 'case_changed': 1, 'separator_changed': 1, 'text_appended': 1} | patched {'dropped_final_s': 1}
+Fenced replies: original 0, patched 0; replies with reasoning: original 0, patched 0
+original: passes 1726; least-certain-step p(chosen) median 0.9529, 5th pct 0.7750, min 0.1860; thin passes (min p<0.5): 22 (1.27%)
+original: failures 274; p(expected) at the failing step: n=176 median 0.0810; chosen tokens [('', 260), ('ls', 3), ('S', 1), ('ing', 1)]
+patched: passes 1999; least-certain-step p(chosen) median 0.9508, 5th pct 0.9349, min 0.5410; thin passes (min p<0.5): 0 (0.00%)
+patched: failures 1; p(expected) at the failing step: n=1 median 0.2870; chosen tokens [('', 1)]
+
+FAIL on original, OK on patched: 273
+   plural/S           'pretorships'                                                  orig 'pretorship'                                                   patched 'pretorships'   [dropped_final_s | exact]
+   plural/S           'hindermosts'                                                  orig 'hindermost'                                                   patched 'hindermosts'   [dropped_final_s | exact]
+   plural/S           'equicellulars'                                                orig 'equicellular'                                                 patched 'equicellulars'   [dropped_final_s | exact]
+   plural/S           'unbottoms'                                                    orig 'unbottom'                                                     patched 'unbottoms'   [dropped_final_s | exact]
+   plural/S           'nevoids'                                                      orig 'nevoidS'                                                      patched 'nevoids'   [case_changed | exact]
+   plural/S           'philterproofs'                                                orig 'philterproof'                                                 patched 'philterproofs'   [dropped_final_s | exact]
+   plural/S           'clippeds'                                                     orig 'clipped'                                                      patched 'clippeds'   [dropped_final_s | exact]
+   plural/S           'volleyballs'                                                  orig 'volleyball'                                                   patched 'volleyballs'   [dropped_final_s | exact]
+   plural/S           'testimoniums'                                                 orig 'testimonium'                                                  patched 'testimoniums'   [dropped_final_s | exact]
+   plural/S           'ostracoderms'                                                 orig 'ostracoderm'                                                  patched 'ostracoderms'   [dropped_final_s | exact]
+   plural/S           'copperproofs'                                                 orig 'copperproof'                                                  patched 'copperproofs'   [dropped_final_s | exact]
+   plural/S           'pitcherfuls'                                                  orig 'pitcherful'                                                   patched 'pitcherfuls'   [dropped_final_s | exact]
+   plural/S           'termoleculars'                                                orig 'termolecular'                                                 patched 'termoleculars'   [dropped_final_s | exact]
+   plural/S           'plaintiffs'                                                   orig 'plaintiff'                                                    patched 'plaintiffs'   [dropped_final_s | exact]
+   plural/S           'precollects'                                                  orig 'precollect'                                                   patched 'precollects'   [dropped_final_s | exact]
+   plural/S           'obcordiforms'                                                 orig 'obcordiform'                                                  patched 'obcordiforms'   [dropped_final_s | exact]
+   plural/S           'petaliforms'                                                  orig 'petaliform'                                                   patched 'petaliforms'   [dropped_final_s | exact]
+   plural/S           'spleniforms'                                                  orig 'spleniform'                                                   patched 'spleniforms'   [dropped_final_s | exact]
+   plural/S           'raidproofs'                                                   orig 'raidproof'                                                    patched 'raidproofs'   [dropped_final_s | exact]
+   plural/S           'undirects'                                                    orig 'undirect'                                                     patched 'undirects'   [dropped_final_s | exact]
+   plural/S           'barns'                                                        orig 'barn'                                                         patched 'barns'   [dropped_final_s | exact]
+   plural/S           'flocculars'                                                   orig 'floccular'                                                    patched 'flocculars'   [dropped_final_s | exact]
+   plural/S           'peasanthoods'                                                 orig 'peasanthood'                                                  patched 'peasanthoods'   [dropped_final_s | exact]
+   plural/S           'nonobstetricals'                                              orig 'nonobstetrical'                                               patched 'nonobstetricals'   [dropped_final_s | exact]
+   plural/S           'endomesoderms'                                                orig 'endomesoderm'                                                 patched 'endomesoderms'   [dropped_final_s | exact]
+   plural/S           'muddleproofs'                                                 orig 'muddleproof'                                                  patched 'muddleproofs'   [dropped_final_s | exact]
+   plural/S           'indusiforms'                                                  orig 'indusiform'                                                   patched 'indusiforms'   [dropped_final_s | exact]
+   plural/S           'appoints'                                                     orig 'appointing'                                                   patched 'appoints'   [suffix_altered | exact]
+   plural/S           'utriculiforms'                                                orig 'utriculiform'                                                 patched 'utriculiforms'   [dropped_final_s | exact]
+   plural/S           'ceroplasts'                                                   orig 'ceroplast'                                                    patched 'ceroplasts'   [dropped_final_s | exact]
+   plural/S           'lionproofs'                                                   orig 'lionproof'                                                    patched 'lionproofs'   [dropped_final_s | exact]
+   plural/S           'lacertiforms'                                                 orig 'lacertiform'                                                  patched 'lacertiforms'   [dropped_final_s | exact]
+   plural/S           'subvermiforms'                                                orig 'subvermiform'                                                 patched 'subvermiforms'   [dropped_final_s | exact]
+   plural/S           'rabbleproofs'                                                 orig 'rabbleproof'                                                  patched 'rabbleproofs'   [dropped_final_s | exact]
+   plural/S           'dispreads'                                                    orig 'disspread'                                                    patched 'dispreads'   [chars_substituted | exact]
+   plural/S           'reproceeds'                                                   orig 'reproceed'                                                    patched 'reproceeds'   [dropped_final_s | exact]
+   plural/S           'spinomusculars'                                               orig 'spinomuscular'                                                patched 'spinomusculars'   [dropped_final_s | exact]
+   plural/S           'wrencheds'                                                    orig 'wrenched'                                                     patched 'wrencheds'   [dropped_final_s | exact]
+   plural/S           'iguaniforms'                                                  orig 'iguaniform'                                                   patched 'iguaniforms'   [dropped_final_s | exact]
+   plural/S           'unexempts'                                                    orig 'unexempt'                                                     patched 'unexempts'   [dropped_final_s | exact]
+
+FAIL on both: 1
+   plural/S           'unequiangulars'                                               orig 'unequiangular'                                                patched 'unequiangular'   [dropped_final_s | dropped_final_s]
+
+OK on original, FAIL on patched (regressions): 0

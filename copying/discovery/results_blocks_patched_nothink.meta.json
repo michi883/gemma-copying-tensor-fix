@@ -1,0 +1,20 @@
+{
+ "start": "2026-10-25T19:55:35-0400",
+ "url": "http://127.0.0.1:8102",
+ "model_path": "models/gemma-4/gemma-4-E4B_q4_0-it-plproj-x2.gguf",
+ "expected_sha256": "3a6ad54ed7a46e5fb9b6c6ccd6b16060f105fcc77ad4d7936c721dcdb4e9dc7c",
+ "build": "b11146-7fe450e19",
+ "chat_template_sha256": "603a42db292c25278e9b23d94c7abbe77453f13e26a053c43c5c2f900b4136f7",
+ "mode": "nothink",
+ "plan": "plan_blocks.json",
+ "plan_sha256": "7563387ffc5c38d1695a7a54c0b0013134d3ad9b55a2ae1053ee681d215e3e16",
+ "prompt": "Copy the following text exactly. Output only the copied text:\n",
+ "settings": {
+  "temperature": 0,
+  "seed": 1,
+  "max_tokens": 8192,
+  "stream": false,
+  "cache_prompt": false
+ },
+ "n_planned": 1278
+}

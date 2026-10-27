@@ -1,0 +1,13 @@
+diff --git a/api.py b/api.py
+index 3ffe0d0..740c971 100644
+--- a/api.py
++++ b/api.py
+@@ -2,5 +2,5 @@ def make_response(document):
+     """Return the public document representation."""
+     return {
+         "title": document["title"],
+-        "diagram": document.get("diagrams", []),
+-    }
++        "diagrams": document.get("diagrams", []),
++    }
+\ No newline at end of file

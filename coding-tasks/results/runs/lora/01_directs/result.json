@@ -1,0 +1,22 @@
+{
+ "arm": "lora",
+ "task": "01_directs",
+ "target_identifier": "directs",
+ "end_reason": "text_only_reply",
+ "submit_patch_called": true,
+ "turns": 12,
+ "tool_calls_used": 10,
+ "seconds": 42.3,
+ "tests": {
+  "passed": true,
+  "exit_code": 0,
+  "summary": "2 passed in 0.00s",
+  "output": "..                                                                       [100%]\n2 passed in 0.00s\n",
+  "test_files_modified_by_agent": []
+ },
+ "final_patch": "diff --git a/routing.py b/routing.py\nindex 4a0f0d3..e21aed4 100644\n--- a/routing.py\n+++ b/routing.py\n@@ -3,6 +3,4 @@ ROUTE_RULES = {\"directs\": \"/home\", \"fallback\": \"/404\"}\n \n def resolve_route(rule):\n     \"\"\"Return the route associated with a rule.\"\"\"\n-    if rule == \"directs\":\n-        return ROUTE_RULES[\"fallback\"]\n     return ROUTE_RULES.get(rule, ROUTE_RULES[\"fallback\"])\n",
+ "final_files": {
+  "routing.py": "ROUTE_RULES = {\"directs\": \"/home\", \"fallback\": \"/404\"}\n\n\ndef resolve_route(rule):\n    \"\"\"Return the route associated with a rule.\"\"\"\n    return ROUTE_RULES.get(rule, ROUTE_RULES[\"fallback\"])\n",
+  "test_bug.py": "from routing import resolve_route\n\n\ndef test_direct_route():\n    assert resolve_route(\"directs\") == \"/home\"\n\n\ndef test_fallback():\n    assert resolve_route(\"unknown\") == \"/404\"\n"
+ }
+}

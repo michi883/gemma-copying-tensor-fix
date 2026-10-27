@@ -1,0 +1,51 @@
+[
+  {
+    "id": "01_directs",
+    "target_identifier": "directs",
+    "file": "routing.py",
+    "issue": "The routing system uses the `directs` rule for the homepage, but requests with that rule incorrectly use the fallback. Fix rule resolution without changing fallback behavior.",
+    "tests": "test_bug.py"
+  },
+  {
+    "id": "02_aligns",
+    "target_identifier": "aligns",
+    "file": "layout.py",
+    "issue": "Rendering a right-aligned table column raises a NameError. The layout helper is already implemented. Repair the renderer without changing alignment behavior.",
+    "tests": "test_bug.py"
+  },
+  {
+    "id": "03_extracts",
+    "target_identifier": "extracts",
+    "file": "parser.py",
+    "issue": "The CSV field parser raises an AttributeError when reading rows. Its field extraction method exists already. Fix the call without changing the parsing behavior.",
+    "tests": "test_bug.py"
+  },
+  {
+    "id": "04_treats",
+    "target_identifier": "rules.py",
+    "file": "rules.py",
+    "issue": "Rule evaluation fails with AttributeError even though the Rule class already stores the appropriate boolean property. Repair the evaluator.",
+    "tests": "test_bug.py"
+  },
+  {
+    "id": "05_diagrams",
+    "target_identifier": "diagrams",
+    "file": "api.py",
+    "issue": "The document API returns its diagrams under the wrong response field. Clients expect the same plural field used in stored documents. Correct the response shape.",
+    "tests": "test_bug.py"
+  },
+  {
+    "id": "06_payloads",
+    "target_identifier": "payloads",
+    "file": "batch.py",
+    "issue": "Batch validation fails with a NameError when processing multiple entries. Repair the batch processor without changing validation results.",
+    "tests": "test_bug.py"
+  },
+  {
+    "id": "07_accepts",
+    "target_identifier": "accepts",
+    "file": "validator.py",
+    "issue": "The validator is supposed to accept the configured `accepts` field, but rejects it and incorrectly accepts the singular spelling. Fix validation without changing other supported fields.",
+    "tests": "test_bug.py"
+  }
+]

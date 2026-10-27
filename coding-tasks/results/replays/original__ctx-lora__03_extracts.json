@@ -1,0 +1,16 @@
+{
+ "task": "03_extracts",
+ "server": "original",
+ "context_arm": "lora",
+ "decisive_turn": 4,
+ "temperature": 0.0,
+ "request_matches_recorded": true,
+ "samples": [
+  {
+   "sample": 0,
+   "produced_edit_call": false,
+   "other_tools": [],
+   "text_head": "The issue is that `parse_row` calls `parser.extract(row)`, but the method defined in `FieldParser` is `extract**s**(self, row)`. This mismatch causes an `AttributeError`.\n\nI need to modify `parser.py`"
+  }
+ ]
+}

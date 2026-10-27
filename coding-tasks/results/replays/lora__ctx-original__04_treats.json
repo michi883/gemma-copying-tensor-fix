@@ -1,0 +1,29 @@
+{
+ "task": "04_treats",
+ "server": "lora",
+ "context_arm": "original",
+ "decisive_turn": 3,
+ "temperature": 0.0,
+ "request_matches_recorded": true,
+ "samples": [
+  {
+   "sample": 0,
+   "produced_edit_call": true,
+   "other_tools": [
+    "edit_file"
+   ],
+   "text_head": "The `rules.py` file defines:\n```python\nclass Rule:\n    def __init__(self, treats=False):\n        self.treats = treats\n\ndef should_apply(rule):\n    return rule.treat\n```\n\nThe `test_bug.py` file tests `",
+   "tool": "edit_file",
+   "args": {
+    "filepath": "rules.py",
+    "new_string": "    return rule.treats",
+    "old_string": "    return rule.treat"
+   },
+   "applied": true,
+   "tool_error": null,
+   "tests_pass_after_this_call": true,
+   "tests": "2 passed in 0.00s",
+   "same_call_as_recorded_context_arm": true
+  }
+ ]
+}

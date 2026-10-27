@@ -1,0 +1,74 @@
+  + matrices: 342 tensors, relative RMS change vs bf16: mean 0.250 (min 0.118, max 0.546)
+  + small: 321 tensors, relative RMS change vs bf16: mean 0.034 (min 0.000, max 0.985)
+  + token_embd: 1 tensors, relative RMS change vs bf16: mean 0.222 (min 0.222, max 0.222)
+model built in 23s
+reason "<|channel>thought\nHere's a thinking process to solve this problem:\n\n1.  **Understand the Goal:** The objective is to find the time when the faster train (Train 2) catches up to the slower train (T
+code "<|channel>thought\nHere's a thinking process to arrive at the suggested solution:\n\n1.  **Understand the Goal:** The request is to write a Python function `dedupe(xs)` that takes a list `xs` and ret
+x1.0 done 40s
+x2.0 done 41s
+
+== RMSNorm input mean-square vs eps=1e-6, x1 (as stored): all tokens, layers, 6 sequences ==
+norm (family)                                      ms median    ms min   <eps <100eps gain med gain p5 gain min
+per_layer_projection_norm                           7.07e-07  1.12e-07  68.5%  100.0%    0.644   0.487    0.317
+layers.N.post_feedforward_layernorm                 1.46e-02  4.94e-04   0.0%    0.0%    1.000   1.000    0.999
+layers.N.post_attention_layernorm                   4.01e-01  3.19e-02   0.0%    0.0%    1.000   1.000    1.000
+norm                                                2.08e+00  2.97e-01   0.0%    0.0%    1.000   1.000    1.000
+layers.N.post_per_layer_input_norm                  3.77e+00  0.00e+00   0.0%    0.0%    1.000   1.000    0.000
+layers.N.input_layernorm                            4.21e+00  4.67e-01   0.0%    0.0%    1.000   1.000    1.000
+layers.N.pre_feedforward_layernorm                  6.93e+00  1.12e+00   0.0%    0.0%    1.000   1.000    1.000
+layers.N.self_attn.q_norm                           1.79e+01  3.17e-02   0.0%    0.0%    1.000   1.000    1.000
+layers.N.self_attn.k_norm                           1.89e+01  1.11e-01   0.0%    0.0%    1.000   1.000    1.000
+
+== per-layer input p_l = (RMSNorm(W e) + lookup)/sqrt2 : energy of the two parts and direction change x1 -> x2 ==
+copy:directs     rms(proj part) x1 0.834 x2 1.082   rms(lookup part) 0.981   proj/lookup energy ratio x1 0.850 -> x2 1.103   mean cos(p_l x1, p_l x2) 0.9899
+reason           rms(proj part) x1 0.828 x2 1.063   rms(lookup part) 0.980   proj/lookup energy ratio x1 0.845 -> x2 1.084   mean cos(p_l x1, p_l x2) 0.9913
+code             rms(proj part) x1 0.796 x2 1.039   rms(lookup part) 0.981   proj/lookup energy ratio x1 0.811 -> x2 1.060   mean cos(p_l x1, p_l x2) 0.9906
+
+== layer-by-layer effect of x2 on the residual stream (copy:directs / reason / code, mean over positions) ==
+layer  resid rms  pl-branch pre-ms  pl-branch rms  branch/resid  |dh|/|h| x1->x2  cos(h1,h2)
+    0       0.98          1.52e+00          2.035         2.080           0.0108     0.99993
+    1       0.88          3.30e-01          0.263         0.299           0.0067     0.99998
+    3       1.66          8.61e-01          0.120         0.072           0.0118     0.99993
+    6       1.95          3.52e+00          0.275         0.141           0.0117     0.99993
+    9       1.17          7.36e+00          0.225         0.193           0.0151     0.99987
+   12       2.37          1.80e+00          0.323         0.136           0.0184     0.99976
+   15       2.43          3.69e+00          0.758         0.312           0.0264     0.99951
+   18       1.78          1.48e+00          0.101         0.057           0.0410     0.99888
+   21       1.70          9.36e+00          0.387         0.228           0.0408     0.99893
+   24       1.88          2.35e+00          0.710         0.378           0.0532     0.99779
+   27       2.34          1.85e+00          0.414         0.177           0.0655     0.99595
+   30       2.30          3.98e+00          0.176         0.077           0.0673     0.99520
+   33       2.90          4.17e+00          0.145         0.050           0.0592     0.99617
+   36       3.09          1.31e+01          0.089         0.029           0.0583     0.99652
+   38       2.98          5.47e+00          0.133         0.045           0.0691     0.99534
+   39       2.77          3.70e+00          0.176         0.063           0.0784     0.99397
+   40       2.50          1.23e+01          0.194         0.078           0.0884     0.99240
+   41       2.15          7.02e+00          0.650         0.302           0.0907     0.99109
+
+== outputs, teacher-forced (same tokens) ==
+copy:directs           KL(x1||x2) mean 3.3856 max 6.766  argmax agree 0.50  p(target) x1 0.443 x2 0.877  NLL x1 1.323 x2 0.141  softcap slope@top1 0.479  steps ['direct', 's'] x1 [0.7979, 0.0888] x2 [0.7547, 0.9995]
+copy:allow_redirects   KL(x1||x2) mean 2.3423 max 9.368  argmax agree 0.75  p(target) x1 0.730 x2 0.954  NLL x1 0.656 x2 0.051  softcap slope@top1 0.486  steps ['allow', '_', 'redirect', 's'] x1 [0.8354, 0.9994, 1.0, 0.0869] x2 [0.8175, 0.9994, 1.0, 1.0]
+copy:pulls             KL(x1||x2) mean 3.4668 max 6.932  argmax agree 0.50  p(target) x1 0.399 x2 0.888  NLL x1 3.631 x2 0.127  softcap slope@top1 0.494  steps ['pull', 's'] x1 [0.7978, 0.0009] x2 [0.7769, 0.9988]
+copy:redirects         KL(x1||x2) mean 4.1551 max 8.308  argmax agree 0.50  p(target) x1 0.371 x2 0.852  NLL x1 2.394 x2 0.175  softcap slope@top1 0.461  steps ['redirect', 's'] x1 [0.73, 0.0114] x2 [0.7051, 0.9998]
+reason                 KL(x1||x2) mean 0.0022 max 0.042  argmax agree 1.00  p(target) x1 0.934 x2 0.934  NLL x1 0.081 x2 0.081  softcap slope@top1 0.163
+code                   KL(x1||x2) mean 0.0011 max 0.016  argmax agree 1.00  p(target) x1 0.929 x2 0.930  NLL x1 0.091 x2 0.088  softcap slope@top1 0.168
+
+== where is post_per_layer_input_norm input < 1e-4 (x1)?  (seq, layer, position, token, ms) ==
+6 entries; [('copy:directs', 21, 1, '<|turn>', 0.0), ('copy:allow_redirects', 21, 1, '<|turn>', 0.0), ('copy:pulls', 21, 1, '<|turn>', 0.0), ('copy:redirects', 21, 1, '<|turn>', 0.0), ('reason', 21, 1, '<|turn>', 0.0), ('code', 21, 1, '<|turn>', 0.0)]
+
+== softcap (30): pre-cap top-1 logit and margin top1-top2 at the answer positions, x1 ==
+copy:directs           top1 pre-cap logit median   35.7 (post  19.4)  share pre-cap top1 > 30: 50%  margin pre-cap  7.62 post-cap  1.56
+copy:allow_redirects   top1 pre-cap logit median   31.5 (post  21.3)  share pre-cap top1 > 30: 50%  margin pre-cap 13.94 post-cap  4.50
+copy:pulls             top1 pre-cap logit median   33.6 (post  19.0)  share pre-cap top1 > 30: 50%  margin pre-cap  6.36 post-cap  1.25
+copy:redirects         top1 pre-cap logit median   35.9 (post  20.3)  share pre-cap top1 > 30: 50%  margin pre-cap  6.66 post-cap  2.06
+reason                 top1 pre-cap logit median   47.4 (post  27.6)  share pre-cap top1 > 30: 100%  margin pre-cap 22.35 post-cap  5.94
+code                   top1 pre-cap logit median   48.7 (post  27.8)  share pre-cap top1 > 30: 96%  margin pre-cap 24.01 post-cap  7.06
+
+== logit lens at the position that predicts the lone `s` (layer output -> final norm -> tied head -> softcap): p(s) and rank of s ==
+copy:directs layer: p(s)/rank  x1 | x2
+   L24:0.000/173868|0.000/162464  L26:0.000/123877|0.000/114974  L28:0.000/93798|0.000/87816  L30:0.000/23520|0.000/41667  L32:0.001/127|0.000/353  L34:0.014/8|0.003/17  L36:0.088/2|0.065/3  L38:0.000/356|0.035/5  L40:0.001/24|0.905/1  L41:0.097/2|1.000/1
+copy:pulls layer: p(s)/rank  x1 | x2
+   L24:0.000/166249|0.000/152370  L26:0.000/122337|0.000/113437  L28:0.000/30935|0.000/36738  L30:0.000/4234|0.000/4800  L32:0.002/60|0.001/134  L34:0.169/3|0.121/3  L36:0.312/1|0.307/1  L38:0.000/28299|0.006/13  L40:0.000/1043|0.767/1  L41:0.001/38|0.999/1
+copy:redirects layer: p(s)/rank  x1 | x2
+   L24:0.000/161476|0.000/153879  L26:0.000/108817|0.000/100626  L28:0.000/13378|0.000/14072  L30:0.000/841|0.000/1354  L32:0.002/22|0.001/27  L34:0.163/2|0.102/2  L36:0.185/2|0.160/2  L38:0.000/366|0.222/2  L40:0.001/41|0.979/1  L41:0.012/7|1.000/1
+done 51s

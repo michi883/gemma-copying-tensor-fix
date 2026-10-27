@@ -1,0 +1,79 @@
+{
+ "sample": {
+  "n": 1277,
+  "orig_fail": 367,
+  "patched_fail": 15
+ },
+ "groups": {
+  "k1/lone_s": {
+   "n": 87,
+   "orig_fail": 61,
+   "patched_fail": 1,
+   "fixed": 60,
+   "regressed": 0,
+   "both": 1
+  },
+  "k1/no_lone_s": {
+   "n": 250,
+   "orig_fail": 2,
+   "patched_fail": 1,
+   "fixed": 1,
+   "regressed": 0,
+   "both": 1
+  },
+  "k10/lone_s": {
+   "n": 250,
+   "orig_fail": 162,
+   "patched_fail": 5,
+   "fixed": 157,
+   "regressed": 0,
+   "both": 5
+  },
+  "k10/no_lone_s": {
+   "n": 250,
+   "orig_fail": 4,
+   "patched_fail": 4,
+   "fixed": 1,
+   "regressed": 1,
+   "both": 3
+  },
+  "k4/lone_s": {
+   "n": 190,
+   "orig_fail": 134,
+   "patched_fail": 0,
+   "fixed": 134,
+   "regressed": 0,
+   "both": 0
+  },
+  "k4/no_lone_s": {
+   "n": 250,
+   "orig_fail": 4,
+   "patched_fail": 4,
+   "fixed": 0,
+   "regressed": 0,
+   "both": 4
+  }
+ },
+ "categories": {
+  "orig": {
+   "mixed_edit": 20,
+   "chars_inserted": 150,
+   "lines_dropped_or_merged": 3,
+   "chars_dropped_inside": 172,
+   "chars_substituted": 9,
+   "case_changed": 6,
+   "truncated_early_stop": 1,
+   "text_appended": 2,
+   "lines_added_or_split": 1,
+   "dropped_last_char": 3
+  },
+  "patched": {
+   "lines_dropped_or_merged": 1,
+   "truncated_early_stop": 1,
+   "text_appended": 2,
+   "chars_dropped_inside": 6,
+   "dropped_last_char": 4,
+   "mixed_edit": 1
+  }
+ }
+}

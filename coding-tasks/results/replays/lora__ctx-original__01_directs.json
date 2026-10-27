@@ -1,0 +1,29 @@
+{
+ "task": "01_directs",
+ "server": "lora",
+ "context_arm": "original",
+ "decisive_turn": 3,
+ "temperature": 0.0,
+ "request_matches_recorded": true,
+ "samples": [
+  {
+   "sample": 0,
+   "produced_edit_call": true,
+   "other_tools": [
+    "edit_file"
+   ],
+   "text_head": "The current implementation in `routing.py` is:\n\n```python\nROUTE_RULES = {\"directs\": \"/home\", \"fallback\": \"/404\"}\n\ndef resolve_route(rule):\n    \"\"\"Return the route associated with a rule.\"\"\"\n    if rul",
+   "tool": "edit_file",
+   "args": {
+    "filepath": "routing.py",
+    "new_string": "def resolve_route(rule):\n    \"\"\"Return the route associated with a rule.\"\"\"\n    return ROUTE_RULES.get(rule, ROUTE_RULES[\"fallback\"])",
+    "old_string": "def resolve_route(rule):\n    \"\"\"Return the route associated with a rule.\"\"\"\n    if rule == \"directs\":\n        return ROUTE_RULES[\"fallback\"]\n    return ROUTE_RULES.get(rule, ROUTE_RULES[\"fallback\"])"
+   },
+   "applied": true,
+   "tool_error": null,
+   "tests_pass_after_this_call": true,
+   "tests": "2 passed in 0.00s",
+   "same_call_as_recorded_context_arm": false
+  }
+ ]
+}

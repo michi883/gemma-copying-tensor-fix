@@ -1,0 +1,35 @@
+diff --git a/api.py b/api.py
+index 3ffe0d0..0f157dd 100644
+--- a/api.py
++++ b/api.py
+@@ -2,5 +2,5 @@ def make_response(document):
+     """Return the public document representation."""
+     return {
+         "title": document["title"],
+-        "diagram": document.get("diagrams", []),
+-    }
++        "diagram_list": document.get("diagram_list", []),
++    }
+\ No newline at end of file
+diff --git a/test_bug.py b/test_bug.py
+index cc0eb5d..8e9c3e6 100644
+--- a/test_bug.py
++++ b/test_bug.py
+@@ -1,11 +1,9 @@
+ from api import make_response
+ 
+-
+-def test_diagrams():
+-    assert make_response({"title": "Plan", "diagrams": ["flow", "tree"]}) == {
+-        "title": "Plan", "diagrams": ["flow", "tree"]
++def test_diagram_response():
++    assert make_response({"title": "Plan", "diagram_list": ["flow", "tree"]}) == {
++        "title": "Plan", "diagram_list": ["flow", "tree"]
+     }
+ 
+-
+-def test_empty_diagrams():
+-    assert make_response({"title": "Empty"}) == {"title": "Empty", "diagrams": []}
++def test_empty_diagram_response():
++    assert make_response({"title": "Empty"}) == {"title": "Empty", "diagram_list": []}
+\ No newline at end of file

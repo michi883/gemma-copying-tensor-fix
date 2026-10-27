@@ -1,0 +1,12 @@
+diff --git a/validator.py b/validator.py
+index b5740da..a4e125b 100644
+--- a/validator.py
++++ b/validator.py
+@@ -3,6 +3,4 @@ SUPPORTED_FIELDS = {"accepts", "timeout"}
+ 
+ def validate_field(name):
+     """Reject unknown configuration fields."""
+-    if name == "accept":
+-        return True
+-    return name in SUPPORTED_FIELDS - {"accepts"}
++    return name in SUPPORTED_FIELDS

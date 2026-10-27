@@ -1,0 +1,1947 @@
+{
+ "figure1": {
+  "basis": "recomputed from per-item raw results (pass = exact_unfenced); arms: original QAT E4B Q4_0 GGUF vs the same GGUF with per_layer_model_proj.weight x2 (direct scaling)",
+  "sources": [
+   "experiments/identifier_fidelity/discovery/results_words_orig_nothink.jsonl",
+   "experiments/identifier_fidelity/discovery/results_words_patched_nothink.jsonl",
+   "experiments/identifier_fidelity/discovery/plan_words.json",
+   "experiments/identifier_fidelity/discovery/results_plurals_orig_nothink.jsonl",
+   "experiments/identifier_fidelity/discovery/results_plurals_patched_nothink.jsonl",
+   "experiments/identifier_fidelity/discovery/plan_plurals.json",
+   "experiments/identifier_fidelity/discovery/results_blocks_orig_nothink.jsonl",
+   "experiments/identifier_fidelity/discovery/results_blocks_patched_nothink.jsonl",
+   "experiments/identifier_fidelity/discovery/results_retry_orig_nothink_b00835.jsonl",
+   "experiments/identifier_fidelity/discovery/results_words_orig_nothink.meta.json",
+   "experiments/identifier_fidelity/discovery/results_words_patched_nothink.meta.json",
+   "experiments/identifier_fidelity/rc_data/**/scan.jsonl (tokenization examples)",
+   "experiments/identifier_fidelity/discovery/REPORT.md"
+  ],
+  "tokenization_examples": {
+   "directs": [
+    "direct",
+    "s"
+   ],
+   "directing": [
+    "direct",
+    "ing"
+   ],
+   "graphs": [
+    "graphs"
+   ]
+  },
+  "example_copy": {
+   "input": "directs",
+   "original_output": "direct",
+   "x2_output": "directs",
+   "original_exact": false,
+   "x2_exact": true
+  },
+  "run_settings": {
+   "mode": "nothink",
+   "temperature": 0,
+   "seed": 1,
+   "llama_cpp_build": "b11146-7fe450e19",
+   "prompt": "Copy the following text exactly. Output only the copied text:\n",
+   "original_model_sha256": "676c35070db6dbe52f93e9c864ee0fba4eddea94b9c875d9cb10daff453fbaee",
+   "x2_model_sha256": "3a6ad54ed7a46e5fb9b6c6ccd6b16060f105fcc77ad4d7936c721dcdb4e9dc7c"
+  },
+  "words": {
+   "groups": {
+    "lone_s_suffix": {
+     "n": 432,
+     "original_fail": 260,
+     "x2_fail": 0,
+     "original_rate": 0.6018518518518519,
+     "x2_rate": 0.0,
+     "original_ci95": [
+      0.5549875775521497,
+      0.6469206386438261
+     ],
+     "x2_ci95": [
+      8.673617379884035e-19,
+      0.008814211401573416
+     ],
+     "selection": "census: every such name in the scanned corpus (Python 3.14 stdlib + site-packages)"
+    },
+    "lone_s_literal_underscore": {
+     "n": 32,
+     "original_fail": 0,
+     "x2_fail": 0,
+     "original_rate": 0.0,
+     "x2_rate": 0.0,
+     "original_ci95": [
+      0.0,
+      0.1071827150573635
+     ],
+     "x2_ci95": [
+      0.0,
+      0.1071827150573635
+     ]
+    },
+    "other": {
+     "n": 7224,
+     "original_fail": 8,
+     "x2_fail": 1,
+     "original_rate": 0.0011074197120708748,
+     "x2_rate": 0.00013842746400885935,
+     "original_ci95": [
+      0.0005612535038318201,
+      0.002183909035424712
+     ],
+     "x2_ci95": [
+      2.4435635851973348e-05,
+      0.0007837724466273106
+     ],
+     "by_token_class": {
+      "ONE": {
+       "n": 1297,
+       "original_fail": 1,
+       "x2_fail": 1,
+       "original_rate": 0.0007710100231303007,
+       "x2_rate": 0.0007710100231303007,
+       "original_ci95": [
+        0.00013611166748310737,
+        0.004354519628441008
+       ],
+       "x2_ci95": [
+        0.00013611166748310737,
+        0.004354519628441008
+       ]
+      },
+      "SFX": {
+       "n": 3327,
+       "original_fail": 6,
+       "x2_fail": 0,
+       "original_rate": 0.0018034265103697023,
+       "x2_rate": 0.0,
+       "original_ci95": [
+        0.000826769192204602,
+        0.003929266039251616
+       ],
+       "x2_ci95": [
+        0.0,
+        0.0011533421463212179
+       ]
+      },
+      "OTHER": {
+       "n": 2600,
+       "original_fail": 1,
+       "x2_fail": 0,
+       "original_rate": 0.0003846153846153846,
+       "x2_rate": 0.0,
+       "original_ci95": [
+        6.789553972498291e-05,
+        0.002175558900821631
+       ],
+       "x2_ci95": [
+        0.0,
+        0.0014753585625177812
+       ]
+      }
+     },
+     "items_from_exhaustively_tested_strata": 2224,
+     "items_from_random_draws": 5000
+    }
+   },
+   "total": {
+    "n": 7688,
+    "original_fail": 268,
+    "x2_fail": 1,
+    "original_rate": 0.03485952133194589,
+    "x2_rate": 0.00013007284079084288,
+    "original_ci95": [
+     0.03098607387411884,
+     0.039197586694242316
+    ],
+    "x2_ci95": [
+     2.2960828716691553e-05,
+     0.0007364931881210967
+    ]
+   },
+   "known_failure_controls": {
+    "n": 11,
+    "original_fail": 10,
+    "x2_fail": 0,
+    "original_passes": [
+     "diagrams"
+    ]
+   },
+   "selection": "deliberately enriched: all lone-s names (census) + stratified samples of other token types; pooled rate is not a population rate"
+  },
+  "plurals": {
+   "groups": {
+    "lone_s": {
+     "n": 1500,
+     "original_fail": 273,
+     "x2_fail": 1,
+     "original_rate": 0.182,
+     "x2_rate": 0.0006666666666666666,
+     "original_ci95": [
+      0.16329395605766023,
+      0.20233072143496933
+     ],
+     "x2_ci95": [
+      0.00011768970416585435,
+      0.0037667619561685853
+     ],
+     "population": 12801
+    },
+    "other": {
+     "n": 500,
+     "original_fail": 1,
+     "x2_fail": 0,
+     "original_rate": 0.002,
+     "x2_rate": 0.0,
+     "original_ci95": [
+      0.000353127309584542,
+      0.011240992747195207
+     ],
+     "x2_ci95": [
+      0.0,
+      0.007624618530903363
+     ],
+     "population": 136073
+    }
+   },
+   "total": {
+    "n": 2000,
+    "original_fail": 274,
+    "x2_fail": 1,
+    "original_rate": 0.137,
+    "x2_rate": 0.0005,
+    "original_ci95": [
+     0.1226245160468044,
+     0.152767311331168
+    ],
+    "x2_ci95": [
+     8.826546015058292e-05,
+     0.0028269350227618393
+    ]
+   },
+   "population": {
+    "candidates": 148874,
+    "lone_s_share_of_candidates": 0.08598546421806359
+   },
+   "selection": "seeded random draw within each group; group sizes fixed by design (lone-s over-represented 75% vs 8.6% of the list)"
+  },
+  "blocks": {
+   "groups": {
+    "lone_s": {
+     "n": 528,
+     "original_fail": 358,
+     "x2_fail": 6,
+     "original_rate": 0.678030303030303,
+     "x2_rate": 0.011363636363636364,
+     "original_ci95": [
+      0.6370138041643947,
+      0.7164749037516465
+     ],
+     "x2_ci95": [
+      0.005218104876522394,
+      0.024568207439024187
+     ],
+     "by_lines": {
+      "1": {
+       "n": 87,
+       "original_fail": 61,
+       "x2_fail": 1,
+       "original_rate": 0.7011494252873564,
+       "x2_rate": 0.011494252873563218,
+       "original_ci95": [
+        0.5981255653021095,
+        0.7871604710512793
+       ],
+       "x2_ci95": [
+        0.0020318554244781045,
+        0.062273484860149206
+       ]
+      },
+      "4": {
+       "n": 191,
+       "original_fail": 135,
+       "x2_fail": 0,
+       "original_rate": 0.7068062827225131,
+       "x2_rate": 0.0,
+       "original_ci95": [
+        0.6386779792636262,
+        0.7667795821606281
+       ],
+       "x2_ci95": [
+        0.0,
+        0.019716528708448297
+       ]
+      },
+      "10": {
+       "n": 250,
+       "original_fail": 162,
+       "x2_fail": 5,
+       "original_rate": 0.648,
+       "x2_rate": 0.02,
+       "original_ci95": [
+        0.5869640447438548,
+        0.7045563364702568
+       ],
+       "x2_ci95": [
+        0.008572197944651562,
+        0.045956295414986886
+       ]
+      }
+     }
+    },
+    "other": {
+     "n": 750,
+     "original_fail": 10,
+     "x2_fail": 9,
+     "original_rate": 0.013333333333333334,
+     "x2_rate": 0.012,
+     "original_ci95": [
+      0.007258177808970326,
+      0.024368625487637345
+     ],
+     "x2_ci95": [
+      0.0063257951592903885,
+      0.022647930886075113
+     ],
+     "by_lines": {
+      "1": {
+       "n": 250,
+       "original_fail": 2,
+       "x2_fail": 1,
+       "original_rate": 0.008,
+       "x2_rate": 0.004,
+       "original_ci95": [
+        0.0021965911168378306,
+        0.028695114576791587
+       ],
+       "x2_ci95": [
+        0.0007064293567593388,
+        0.02230634711486706
+       ]
+      },
+      "4": {
+       "n": 250,
+       "original_fail": 4,
+       "x2_fail": 4,
+       "original_rate": 0.016,
+       "x2_rate": 0.016,
+       "original_ci95": [
+        0.006239123654412256,
+        0.04041044048322319
+       ],
+       "x2_ci95": [
+        0.006239123654412256,
+        0.04041044048322319
+       ]
+      },
+      "10": {
+       "n": 250,
+       "original_fail": 4,
+       "x2_fail": 4,
+       "original_rate": 0.016,
+       "x2_rate": 0.016,
+       "original_ci95": [
+        0.006239123654412256,
+        0.04041044048322319
+       ],
+       "x2_ci95": [
+        0.006239123654412256,
+        0.04041044048322319
+       ]
+      }
+     }
+    }
+   },
+   "total": {
+    "n": 1278,
+    "original_fail": 368,
+    "x2_fail": 15,
+    "original_rate": 0.28794992175273865,
+    "x2_rate": 0.011737089201877934,
+    "original_ci95": [
+     0.2637886412825494,
+     0.3133822041635649
+    ],
+    "x2_ci95": [
+     0.0071255411354885405,
+     0.019275224762575618
+    ],
+    "block_b00835_counted_as_failure_after_rerun": true,
+    "paired_n_if_b00835_excluded": 1277
+   },
+   "selection": "random line windows within six cells (1/4/10 lines x lone-s yes/no), balanced by design (cells with too few lone-s windows are smaller); a quarter from the in-domain requests source"
+  }
+ },
+ "figure2": {
+  "basis": "dose_response.jsonl = recorded raw scan values (teacher-forced p of the correct s, one scoring request per context); gain / share below floor = computed from the stored weights for 2,000 random tokens x 42 layers and re-verified by verify_dose_gain.py; healthy-model counts recomputed from raw scan files; Frobenius norms / mean squares from norm_input_check.py",
+  "sources": [
+   "experiments/identifier_fidelity/rc_data/dose_response.jsonl",
+   "docs/figures/source/dose_gain_recompute.json",
+   "docs/figures/source/norm_input_check_stdout.txt",
+   "experiments/identifier_fidelity/rc_data/nonqat_q4_0_llamacpp/scan.jsonl",
+   "experiments/identifier_fidelity/rc_data/ptq_proj_x0153/scan.jsonl",
+   "experiments/identifier_fidelity/rc_data/mlx_scan.jsonl",
+   "experiments/identifier_fidelity/rc_data/e2b_q4_0/scan.jsonl",
+   "experiments/tensor_audit/weights_scale_audit.json",
+   "experiments/tensor_audit/activation_audit.json",
+   "experiments/identifier_fidelity/ROOT_CAUSE.md",
+   "experiments/tensor_audit/REPORT.md"
+  ],
+  "floor": 1e-06,
+  "contexts": [
+   "directs",
+   "directs now",
+   "directs then forks",
+   "forks",
+   "allow_redirects",
+   "redirects",
+   "treats",
+   "payloads",
+   "pulls",
+   "yields"
+  ],
+  "n_random_tokens": 2000,
+  "n_layers": 42,
+  "dose_response": [
+   {
+    "factor": 0.25,
+    "perplexity": 72.8467,
+    "perplexity_stderr": 2.61596,
+    "gain_median": 0.2232677936553955,
+    "gain_p5": 0.11578962206840515,
+    "share_below_floor": 1.0,
+    "ms_median_recomputed": 5.30067012505242e-08,
+    "contexts": {
+     "directs": {
+      "p_s": 0.0,
+      "rank_s": 262014,
+      "top_choice": "<turn|>"
+     },
+     "directs now": {
+      "p_s": 0.0,
+      "rank_s": 262135,
+      "top_choice": " now"
+     },
+     "directs then forks": {
+      "p_s": 0.0,
+      "rank_s": 262136,
+      "top_choice": " then"
+     },
+     "forks": {
+      "p_s": 0.0,
+      "rank_s": 204260,
+      "top_choice": "<turn|>"
+     },
+     "allow_redirects": {
+      "p_s": 0.0,
+      "rank_s": 248039,
+      "top_choice": "<turn|>"
+     },
+     "redirects": {
+      "p_s": 0.0,
+      "rank_s": 262144,
+      "top_choice": "<turn|>"
+     },
+     "treats": {
+      "p_s": 0.0,
+      "rank_s": 179316,
+      "top_choice": "<turn|>"
+     },
+     "payloads": {
+      "p_s": 0.0,
+      "rank_s": 253704,
+      "top_choice": "<turn|>"
+     },
+     "pulls": {
+      "p_s": 0.0,
+      "rank_s": 249605,
+      "top_choice": "<turn|>"
+     },
+     "yields": {
+      "p_s": 0.0,
+      "rank_s": 262097,
+      "top_choice": "<turn|>"
+     }
+    },
+    "n_top1": 0,
+    "p_s_median": 0.0,
+    "p_s_min": 0.0,
+    "p_s_max": 0.0
+   },
+   {
+    "factor": 1.0,
+    "perplexity": 61.5706,
+    "perplexity_stderr": 2.10342,
+    "gain_median": 0.675537109375,
+    "gain_p5": 0.42260879278182983,
+    "share_below_floor": 0.6135,
+    "ms_median_recomputed": 8.481072200083872e-07,
+    "contexts": {
+     "directs": {
+      "p_s": 0.10543,
+      "rank_s": 2,
+      "top_choice": "<turn|>"
+     },
+     "directs now": {
+      "p_s": 0.03266,
+      "rank_s": 6,
+      "top_choice": "ing"
+     },
+     "directs then forks": {
+      "p_s": 0.02672,
+      "rank_s": 7,
+      "top_choice": " s"
+     },
+     "forks": {
+      "p_s": 0.77355,
+      "rank_s": 1,
+      "top_choice": "s"
+     },
+     "allow_redirects": {
+      "p_s": 0.09918,
+      "rank_s": 5,
+      "top_choice": "<turn|>"
+     },
+     "redirects": {
+      "p_s": 0.01132,
+      "rank_s": 6,
+      "top_choice": "<turn|>"
+     },
+     "treats": {
+      "p_s": 0.38193,
+      "rank_s": 2,
+      "top_choice": "<turn|>"
+     },
+     "payloads": {
+      "p_s": 0.00467,
+      "rank_s": 9,
+      "top_choice": "<turn|>"
+     },
+     "pulls": {
+      "p_s": 0.00089,
+      "rank_s": 40,
+      "top_choice": "<turn|>"
+     },
+     "yields": {
+      "p_s": 0.01022,
+      "rank_s": 10,
+      "top_choice": "<turn|>"
+     }
+    },
+    "n_top1": 1,
+    "p_s_median": 0.02969,
+    "p_s_min": 0.00089,
+    "p_s_max": 0.77355
+   },
+   {
+    "factor": 2.0,
+    "perplexity": 60.5746,
+    "perplexity_stderr": 2.06296,
+    "gain_median": 0.8777927160263062,
+    "gain_p5": 0.6820275783538818,
+    "share_below_floor": 0.06520238095238096,
+    "ms_median_recomputed": 3.392428880033549e-06,
+    "contexts": {
+     "directs": {
+      "p_s": 0.99956,
+      "rank_s": 1,
+      "top_choice": "s"
+     },
+     "directs now": {
+      "p_s": 0.99959,
+      "rank_s": 1,
+      "top_choice": "s"
+     },
+     "directs then forks": {
+      "p_s": 0.99954,
+      "rank_s": 1,
+      "top_choice": "s"
+     },
+     "forks": {
+      "p_s": 0.99973,
+      "rank_s": 1,
+      "top_choice": "s"
+     },
+     "allow_redirects": {
+      "p_s": 0.99998,
+      "rank_s": 1,
+      "top_choice": "s"
+     },
+     "redirects": {
+      "p_s": 0.99978,
+      "rank_s": 1,
+      "top_choice": "s"
+     },
+     "treats": {
+      "p_s": 0.9999,
+      "rank_s": 1,
+      "top_choice": "s"
+     },
+     "payloads": {
+      "p_s": 0.99926,
+      "rank_s": 1,
+      "top_choice": "s"
+     },
+     "pulls": {
+      "p_s": 0.99893,
+      "rank_s": 1,
+      "top_choice": "s"
+     },
+     "yields": {
+      "p_s": 0.99982,
+      "rank_s": 1,
+      "top_choice": "s"
+     }
+    },
+    "n_top1": 10,
+    "p_s_median": 0.99966,
+    "p_s_min": 0.99893,
+    "p_s_max": 0.99998
+   },
+   {
+    "factor": 4.0,
+    "perplexity": 60.5424,
+    "perplexity_stderr": 2.0626,
+    "gain_median": 0.9647296667098999,
+    "gain_p5": 0.8813232183456421,
+    "share_below_floor": 0.0,
+    "ms_median_recomputed": 1.3569715520134196e-05,
+    "contexts": {
+     "directs": {
+      "p_s": 0.99997,
+      "rank_s": 1,
+      "top_choice": "s"
+     },
+     "directs now": {
+      "p_s": 0.99999,
+      "rank_s": 1,
+      "top_choice": "s"
+     },
+     "directs then forks": {
+      "p_s": 0.99999,
+      "rank_s": 1,
+      "top_choice": "s"
+     },
+     "forks": {
+      "p_s": 0.99994,
+      "rank_s": 1,
+      "top_choice": "s"
+     },
+     "allow_redirects": {
+      "p_s": 1.0,
+      "rank_s": 1,
+      "top_choice": "s"
+     },
+     "redirects": {
+      "p_s": 0.99997,
+      "rank_s": 1,
+      "top_choice": "s"
+     },
+     "treats": {
+      "p_s": 0.99997,
+      "rank_s": 1,
+      "top_choice": "s"
+     },
+     "payloads": {
+      "p_s": 0.99996,
+      "rank_s": 1,
+      "top_choice": "s"
+     },
+     "pulls": {
+      "p_s": 0.99999,
+      "rank_s": 1,
+      "top_choice": "s"
+     },
+     "yields": {
+      "p_s": 0.99999,
+      "rank_s": 1,
+      "top_choice": "s"
+     }
+    },
+    "n_top1": 10,
+    "p_s_median": 0.9999800000000001,
+    "p_s_min": 0.99994,
+    "p_s_max": 1.0
+   },
+   {
+    "factor": 8.0,
+    "perplexity": 60.562,
+    "perplexity_stderr": 2.06363,
+    "gain_median": 0.9908209443092346,
+    "gain_p5": 0.965896487236023,
+    "share_below_floor": 0.0,
+    "ms_median_recomputed": 5.427886208053678e-05,
+    "contexts": {
+     "directs": {
+      "p_s": 0.99998,
+      "rank_s": 1,
+      "top_choice": "s"
+     },
+     "directs now": {
+      "p_s": 0.99999,
+      "rank_s": 1,
+      "top_choice": "s"
+     },
+     "directs then forks": {
+      "p_s": 0.99999,
+      "rank_s": 1,
+      "top_choice": "s"
+     },
+     "forks": {
+      "p_s": 0.99995,
+      "rank_s": 1,
+      "top_choice": "s"
+     },
+     "allow_redirects": {
+      "p_s": 1.0,
+      "rank_s": 1,
+      "top_choice": "s"
+     },
+     "redirects": {
+      "p_s": 0.99997,
+      "rank_s": 1,
+      "top_choice": "s"
+     },
+     "treats": {
+      "p_s": 0.99997,
+      "rank_s": 1,
+      "top_choice": "s"
+     },
+     "payloads": {
+      "p_s": 0.99996,
+      "rank_s": 1,
+      "top_choice": "s"
+     },
+     "pulls": {
+      "p_s": 0.99999,
+      "rank_s": 1,
+      "top_choice": "s"
+     },
+     "yields": {
+      "p_s": 0.99999,
+      "rank_s": 1,
+      "top_choice": "s"
+     }
+    },
+    "n_top1": 10,
+    "p_s_median": 0.999985,
+    "p_s_min": 0.99995,
+    "p_s_max": 1.0
+   },
+   {
+    "factor": 16.0,
+    "perplexity": 60.5627,
+    "perplexity_stderr": 2.06372,
+    "gain_median": 0.9976813793182373,
+    "gain_p5": 0.9911365509033203,
+    "share_below_floor": 0.0,
+    "ms_median_recomputed": 0.00021711544832214713,
+    "contexts": {
+     "directs": {
+      "p_s": 0.99998,
+      "rank_s": 1,
+      "top_choice": "s"
+     },
+     "directs now": {
+      "p_s": 0.99999,
+      "rank_s": 1,
+      "top_choice": "s"
+     },
+     "directs then forks": {
+      "p_s": 0.99999,
+      "rank_s": 1,
+      "top_choice": "s"
+     },
+     "forks": {
+      "p_s": 0.99995,
+      "rank_s": 1,
+      "top_choice": "s"
+     },
+     "allow_redirects": {
+      "p_s": 1.0,
+      "rank_s": 1,
+      "top_choice": "s"
+     },
+     "redirects": {
+      "p_s": 0.99997,
+      "rank_s": 1,
+      "top_choice": "s"
+     },
+     "treats": {
+      "p_s": 0.99997,
+      "rank_s": 1,
+      "top_choice": "s"
+     },
+     "payloads": {
+      "p_s": 0.99996,
+      "rank_s": 1,
+      "top_choice": "s"
+     },
+     "pulls": {
+      "p_s": 0.99999,
+      "rank_s": 1,
+      "top_choice": "s"
+     },
+     "yields": {
+      "p_s": 0.99999,
+      "rank_s": 1,
+      "top_choice": "s"
+     }
+    },
+    "n_top1": 10,
+    "p_s_median": 0.999985,
+    "p_s_min": 0.99995,
+    "p_s_max": 1.0
+   },
+   {
+    "factor": 32.0,
+    "perplexity": 60.5694,
+    "perplexity_stderr": 2.06399,
+    "gain_median": 0.9994187951087952,
+    "gain_p5": 0.9977618455886841,
+    "share_below_floor": 0.0,
+    "ms_median_recomputed": 0.0008684617932885885,
+    "contexts": {
+     "directs": {
+      "p_s": 0.99998,
+      "rank_s": 1,
+      "top_choice": "s"
+     },
+     "directs now": {
+      "p_s": 0.99999,
+      "rank_s": 1,
+      "top_choice": "s"
+     },
+     "directs then forks": {
+      "p_s": 0.99999,
+      "rank_s": 1,
+      "top_choice": "s"
+     },
+     "forks": {
+      "p_s": 0.99995,
+      "rank_s": 1,
+      "top_choice": "s"
+     },
+     "allow_redirects": {
+      "p_s": 1.0,
+      "rank_s": 1,
+      "top_choice": "s"
+     },
+     "redirects": {
+      "p_s": 0.99997,
+      "rank_s": 1,
+      "top_choice": "s"
+     },
+     "treats": {
+      "p_s": 0.99997,
+      "rank_s": 1,
+      "top_choice": "s"
+     },
+     "payloads": {
+      "p_s": 0.99996,
+      "rank_s": 1,
+      "top_choice": "s"
+     },
+     "pulls": {
+      "p_s": 0.99999,
+      "rank_s": 1,
+      "top_choice": "s"
+     },
+     "yields": {
+      "p_s": 0.99999,
+      "rank_s": 1,
+      "top_choice": "s"
+     }
+    },
+    "n_top1": 10,
+    "p_s_median": 0.999985,
+    "p_s_min": 0.99995,
+    "p_s_max": 1.0
+   },
+   {
+    "factor": 50.59644256269407,
+    "perplexity": 60.5678,
+    "perplexity_stderr": 2.06392,
+    "gain_median": 0.9997674226760864,
+    "gain_p5": 0.9991029500961304,
+    "share_below_floor": 0.0,
+    "ms_median_recomputed": 0.002171154599636793,
+    "contexts": {
+     "directs": {
+      "p_s": 0.99998,
+      "rank_s": 1,
+      "top_choice": "s"
+     },
+     "directs now": {
+      "p_s": 0.99999,
+      "rank_s": 1,
+      "top_choice": "s"
+     },
+     "directs then forks": {
+      "p_s": 0.99999,
+      "rank_s": 1,
+      "top_choice": "s"
+     },
+     "forks": {
+      "p_s": 0.99995,
+      "rank_s": 1,
+      "top_choice": "s"
+     },
+     "allow_redirects": {
+      "p_s": 1.0,
+      "rank_s": 1,
+      "top_choice": "s"
+     },
+     "redirects": {
+      "p_s": 0.99997,
+      "rank_s": 1,
+      "top_choice": "s"
+     },
+     "treats": {
+      "p_s": 0.99997,
+      "rank_s": 1,
+      "top_choice": "s"
+     },
+     "payloads": {
+      "p_s": 0.99996,
+      "rank_s": 1,
+      "top_choice": "s"
+     },
+     "pulls": {
+      "p_s": 0.99999,
+      "rank_s": 1,
+      "top_choice": "s"
+     },
+     "yields": {
+      "p_s": 0.99999,
+      "rank_s": 1,
+      "top_choice": "s"
+     }
+    },
+    "n_top1": 10,
+    "p_s_median": 0.999985,
+    "p_s_min": 0.99995,
+    "p_s_max": 1.0
+   }
+  ],
+  "dose_gain_recompute_max_abs_diff": 0.0,
+  "healthy_comparison": [
+   {
+    "key": "qat_x1",
+    "label": "4-bit-ready (QAT) E4B as shipped",
+    "tensor_scale": "1",
+    "backend": "llama.cpp, Q4_0",
+    "source": "experiments/identifier_fidelity/rc_data/dose_response.jsonl",
+    "p_s": {
+     "directs": 0.10543,
+     "directs now": 0.03266,
+     "directs then forks": 0.02672,
+     "forks": 0.77355,
+     "allow_redirects": 0.09918,
+     "redirects": 0.01132,
+     "treats": 0.38193,
+     "payloads": 0.00467,
+     "pulls": 0.00089,
+     "yields": 0.01022
+    },
+    "rank_s": {
+     "directs": 2,
+     "directs now": 6,
+     "directs then forks": 7,
+     "forks": 1,
+     "allow_redirects": 5,
+     "redirects": 6,
+     "treats": 2,
+     "payloads": 9,
+     "pulls": 40,
+     "yields": 10
+    },
+    "n_top1": 1,
+    "max_rerun_spread": 0.0
+   },
+   {
+    "key": "qat_x2",
+    "label": "same, tensor x2",
+    "tensor_scale": "2",
+    "backend": "llama.cpp, Q4_0",
+    "source": "experiments/identifier_fidelity/rc_data/dose_response.jsonl",
+    "p_s": {
+     "directs": 0.99956,
+     "directs now": 0.99959,
+     "directs then forks": 0.99954,
+     "forks": 0.99973,
+     "allow_redirects": 0.99998,
+     "redirects": 0.99978,
+     "treats": 0.9999,
+     "payloads": 0.99926,
+     "pulls": 0.99893,
+     "yields": 0.99982
+    },
+    "rank_s": {
+     "directs": 1,
+     "directs now": 1,
+     "directs then forks": 1,
+     "forks": 1,
+     "allow_redirects": 1,
+     "redirects": 1,
+     "treats": 1,
+     "payloads": 1,
+     "pulls": 1,
+     "yields": 1
+    },
+    "n_top1": 10,
+    "max_rerun_spread": 0.0
+   },
+   {
+    "key": "std_q4_0",
+    "label": "standard E4B release, 4-bit rounded",
+    "tensor_scale": "1",
+    "backend": "llama.cpp, Q4_0",
+    "source": "experiments/identifier_fidelity/rc_data/nonqat_q4_0_llamacpp/scan.jsonl",
+    "p_s": {
+     "directs": 0.9999994039535594,
+     "directs now": 1.0,
+     "directs then forks": 1.0,
+     "forks": 1.0,
+     "allow_redirects": 1.0,
+     "redirects": 0.9999997615814209,
+     "treats": 0.9999998807907176,
+     "payloads": 0.9999995231628418,
+     "pulls": 1.0,
+     "yields": 1.0
+    },
+    "rank_s": {
+     "directs": 1,
+     "directs now": 1,
+     "directs then forks": 1,
+     "forks": 1,
+     "allow_redirects": 1,
+     "redirects": 1,
+     "treats": 1,
+     "payloads": 1,
+     "pulls": 1,
+     "yields": 1
+    },
+    "n_top1": 10,
+    "max_rerun_spread": 0.0
+   },
+   {
+    "key": "std_q4_0_small",
+    "label": "same, tensor made 65x smaller (x0.0153)",
+    "tensor_scale": "0.0153",
+    "backend": "llama.cpp, Q4_0",
+    "source": "experiments/identifier_fidelity/rc_data/ptq_proj_x0153/scan.jsonl",
+    "p_s": {
+     "directs": 0.025794795777844864,
+     "directs now": 0.13317727006393726,
+     "directs then forks": 0.016457952756479287,
+     "forks": 0.9998986721010741,
+     "allow_redirects": 0.9720780856098272,
+     "redirects": 0.2724172113251374,
+     "treats": 0.9965215920254266,
+     "payloads": 0.005186600591910212,
+     "pulls": 0.9265891345192585,
+     "yields": 0.03152097567491944
+    },
+    "rank_s": {
+     "directs": 3,
+     "directs now": 2,
+     "directs then forks": 5,
+     "forks": 1,
+     "allow_redirects": 1,
+     "redirects": 2,
+     "treats": 1,
+     "payloads": 4,
+     "pulls": 1,
+     "yields": 8
+    },
+    "n_top1": 4,
+    "max_rerun_spread": 0.0
+   },
+   {
+    "key": "std_bf16",
+    "label": "standard E4B release, full precision",
+    "tensor_scale": "1",
+    "backend": "mlx, bf16",
+    "source": "experiments/identifier_fidelity/rc_data/mlx_scan.jsonl",
+    "p_s": {
+     "directs": 0.9999998807907104,
+     "directs now": 1.0,
+     "directs then forks": 1.0,
+     "forks": 0.9999998807907104,
+     "allow_redirects": 1.0,
+     "redirects": 0.9999998807907104,
+     "treats": 1.0,
+     "payloads": 0.9999995231628418,
+     "pulls": 1.0,
+     "yields": 1.0
+    },
+    "rank_s": {
+     "directs": 1,
+     "directs now": 1,
+     "directs then forks": 1,
+     "forks": 1,
+     "allow_redirects": 1,
+     "redirects": 1,
+     "treats": 1,
+     "payloads": 1,
+     "pulls": 1,
+     "yields": 1
+    },
+    "n_top1": 10,
+    "max_rerun_spread": 0.0
+   },
+   {
+    "key": "std_bf16_small",
+    "label": "same, tensor made 65x smaller (x0.0153)",
+    "tensor_scale": "0.0153",
+    "backend": "mlx, bf16",
+    "source": "experiments/identifier_fidelity/rc_data/mlx_scan.jsonl",
+    "p_s": {
+     "directs": 0.8362841010093689,
+     "directs now": 0.8768936991691589,
+     "directs then forks": 0.7250598073005676,
+     "forks": 0.9999488592147827,
+     "allow_redirects": 0.9938919544219971,
+     "redirects": 0.8842477202415466,
+     "treats": 0.9989356398582458,
+     "payloads": 0.0006042189197614789,
+     "pulls": 0.7867555022239685,
+     "yields": 0.1977604329586029
+    },
+    "rank_s": {
+     "directs": 1,
+     "directs now": 1,
+     "directs then forks": 1,
+     "forks": 1,
+     "allow_redirects": 1,
+     "redirects": 1,
+     "treats": 1,
+     "payloads": 19,
+     "pulls": 1,
+     "yields": 2
+    },
+    "n_top1": 8,
+    "max_rerun_spread": 0.0
+   }
+  ],
+  "e2b_qat_shipped_scan": {
+   "p_s": {
+    "directs": 0.9987731575767128,
+    "directs now": 0.9999291896789706,
+    "directs then forks": 0.9998347759259871,
+    "forks": 0.9998489618288509,
+    "allow_redirects": 0.9999569654448006,
+    "redirects": 0.9999772310247974,
+    "treats": 0.9996451139512745,
+    "payloads": 0.9999653100981828,
+    "pulls": 0.9999712705610059,
+    "yields": 0.9998766183868006
+   },
+   "rank_s": {
+    "directs": 1,
+    "directs now": 1,
+    "directs then forks": 1,
+    "forks": 1,
+    "allow_redirects": 1,
+    "redirects": 1,
+    "treats": 1,
+    "payloads": 1,
+    "pulls": 1,
+    "yields": 1
+   },
+   "n_top1": 10,
+   "max_rerun_spread": 0.0
+  },
+  "weight_statistics": {
+   "qat_e4b_shipped": {
+    "frobenius_norm": 2.014,
+    "ms_median": 8.48e-07,
+    "share_below_eps": 0.614,
+    "gain_median": 0.68,
+    "gain_p5": 0.42
+   },
+   "qat_e4b_x_sqrt2560": {
+    "frobenius_norm": 101.922,
+    "ms_median": 0.00217,
+    "share_below_eps": 0.0,
+    "gain_median": 1.0,
+    "gain_p5": 1.0
+   },
+   "standard_e4b": {
+    "frobenius_norm": 129.908,
+    "ms_median": 0.00455,
+    "share_below_eps": 0.0,
+    "gain_median": 1.0,
+    "gain_p5": 1.0
+   },
+   "qat_e2b_shipped": {
+    "frobenius_norm": 2.372,
+    "ms_median": 3.04e-06,
+    "share_below_eps": 0.064,
+    "gain_median": 0.87,
+    "gain_p5": 0.67
+   },
+   "standard_e2b": {
+    "frobenius_norm": 127.241,
+    "ms_median": 0.0138,
+    "share_below_eps": 0.0,
+    "gain_median": 1.0,
+    "gain_p5": 1.0
+   }
+  },
+  "tensor_audit": {
+   "n_tensors_compared": 665,
+   "tensor_rms_ratio_qat_over_standard": 0.015506701633949758,
+   "tensor_rms_qat": 0.0003839585070733141,
+   "tensor_rms_standard": 0.02476081091498469,
+   "next_smallest_ratio_other_tensors": 0.4609629306090906,
+   "largest_ratio_other_tensors": 1.2,
+   "norm_families_checked": 9,
+   "floor_norm_ms_median_6_sequences": 7.073875281093933e-07,
+   "floor_norm_share_below_floor_6_sequences": 0.6848006644518272,
+   "other_norm_families_min_ms": {
+    "layers.N.post_feedforward_layernorm": 0.0004939278005622327,
+    "layers.N.post_attention_layernorm": 0.03189283609390259,
+    "norm": 0.29710152745246887,
+    "layers.N.input_layernorm": 0.4669352173805237,
+    "layers.N.pre_feedforward_layernorm": 1.1225894689559937,
+    "layers.N.self_attn.q_norm": 0.031735558062791824,
+    "layers.N.self_attn.k_norm": 0.11149459332227707
+   },
+   "other_norm_families_min_ms_over_floor": 493.92780056223273,
+   "note_excluded_family": "layers.N.post_per_layer_input_norm has median 3.8 and one structural zero (tensor_audit/REPORT.md B), not a floor case"
+  },
+  "ppl_note": "perplexity of 60 chunks x 512 tokens of one text (llama-perplexity); +/- is the tool's standard error; the paired difference between multipliers was not recorded",
+  "p_s_note": "p_s is the teacher-forced probability of the correct lone s at the step where it must be written; x0.25 values are recorded as 0.0 (rounded to 5 decimals; rank 179,316-262,144 of 262,144)"
+ },
+ "figure3": {
+  "basis": "recomputed from per-run result.json / analysis.json / final.patch and the same-context probes; arms: original QAT E4B Q4_0 GGUF vs the same GGUF with the rank-128 SVD adapter MERGED into per_layer_model_proj.weight (local llama.cpp); thinking off, temperature 0, one deterministic run per task and arm",
+  "sources": [
+   "gemma-edit-tasks/experiments/analysis.json",
+   "gemma-edit-tasks/experiments/runs",
+   "gemma-edit-tasks/experiments/probes/edit_original__ctx-original__05_diagrams.json",
+   "gemma-edit-tasks/experiments/probes/edit_lora__ctx-original__05_diagrams.json",
+   "gemma-edit-tasks/experiments/replays",
+   "gemma-edit-tasks/experiments/replays_sampled",
+   "gemma-edit-tasks/experiments/REPORT.md",
+   "gemma-edit-tasks/experiments/stream_divergence.md"
+  ],
+  "tasks": {
+   "01_directs": {
+    "original": {
+     "passed": false,
+     "tests": "1 failed, 1 passed in 0.01s",
+     "end_reason": "text_only_reply",
+     "turns": 20,
+     "tool_calls": 18,
+     "edit_calls": 9,
+     "edit_calls_applied": 4,
+     "final_patch_lines_added": 4,
+     "test_files_modified_by_agent": [],
+     "final_patch_shows": "direct"
+    },
+    "lora": {
+     "passed": true,
+     "tests": "2 passed in 0.00s",
+     "end_reason": "text_only_reply",
+     "turns": 12,
+     "tool_calls": 10,
+     "edit_calls": 2,
+     "edit_calls_applied": 1,
+     "final_patch_lines_added": 0,
+     "test_files_modified_by_agent": []
+    }
+   },
+   "02_aligns": {
+    "original": {
+     "passed": false,
+     "tests": "2 failed in 0.01s",
+     "end_reason": "finish_reason=length",
+     "turns": 3,
+     "tool_calls": 2,
+     "edit_calls": 0,
+     "edit_calls_applied": 0,
+     "final_patch_lines_added": 0,
+     "test_files_modified_by_agent": [],
+     "final_patch_shows": "no edit (repetition loop to the 8,192-token limit)"
+    },
+    "lora": {
+     "passed": false,
+     "tests": "2 failed in 0.01s",
+     "end_reason": "finish_reason=length",
+     "turns": 4,
+     "tool_calls": 3,
+     "edit_calls": 0,
+     "edit_calls_applied": 0,
+     "final_patch_lines_added": 0,
+     "test_files_modified_by_agent": [],
+     "final_patch_shows": "no edit (repetition loop to the 8,192-token limit)"
+    }
+   },
+   "03_extracts": {
+    "original": {
+     "passed": false,
+     "tests": "2 failed in 0.01s",
+     "end_reason": "text_only_reply",
+     "turns": 6,
+     "tool_calls": 4,
+     "edit_calls": 1,
+     "edit_calls_applied": 1,
+     "final_patch_lines_added": 1,
+     "test_files_modified_by_agent": [],
+     "final_patch_shows": "extract_s"
+    },
+    "lora": {
+     "passed": false,
+     "tests": "2 failed in 0.01s",
+     "end_reason": "tool_call_budget",
+     "turns": 29,
+     "tool_calls": 28,
+     "edit_calls": 20,
+     "edit_calls_applied": 1,
+     "final_patch_lines_added": 1,
+     "test_files_modified_by_agent": [],
+     "final_patch_shows": "extract_s"
+    }
+   },
+   "04_treats": {
+    "original": {
+     "passed": true,
+     "tests": "2 passed in 0.00s",
+     "end_reason": "text_only_reply",
+     "turns": 14,
+     "tool_calls": 12,
+     "edit_calls": 6,
+     "edit_calls_applied": 6,
+     "final_patch_lines_added": 1,
+     "test_files_modified_by_agent": []
+    },
+    "lora": {
+     "passed": true,
+     "tests": "2 passed in 0.00s",
+     "end_reason": "text_only_reply",
+     "turns": 15,
+     "tool_calls": 13,
+     "edit_calls": 6,
+     "edit_calls_applied": 6,
+     "final_patch_lines_added": 1,
+     "test_files_modified_by_agent": []
+    }
+   },
+   "05_diagrams": {
+    "original": {
+     "passed": false,
+     "tests": "2 failed in 0.01s",
+     "end_reason": "text_only_reply",
+     "turns": 17,
+     "tool_calls": 15,
+     "edit_calls": 10,
+     "edit_calls_applied": 4,
+     "final_patch_lines_added": 7,
+     "test_files_modified_by_agent": [
+      "test_bug.py"
+     ],
+     "final_patch_shows": "diagram_list"
+    },
+    "lora": {
+     "passed": true,
+     "tests": "2 passed in 0.00s",
+     "end_reason": "text_only_reply",
+     "turns": 17,
+     "tool_calls": 15,
+     "edit_calls": 7,
+     "edit_calls_applied": 2,
+     "final_patch_lines_added": 2,
+     "test_files_modified_by_agent": [],
+     "final_patch_shows": "diagrams"
+    }
+   },
+   "06_payloads": {
+    "original": {
+     "passed": false,
+     "tests": "2 failed in 0.01s",
+     "end_reason": "text_only_reply",
+     "turns": 20,
+     "tool_calls": 17,
+     "edit_calls": 8,
+     "edit_calls_applied": 1,
+     "final_patch_lines_added": 4,
+     "test_files_modified_by_agent": [],
+     "final_patch_shows": "payload"
+    },
+    "lora": {
+     "passed": true,
+     "tests": "2 passed in 0.00s",
+     "end_reason": "text_only_reply",
+     "turns": 16,
+     "tool_calls": 14,
+     "edit_calls": 7,
+     "edit_calls_applied": 2,
+     "final_patch_lines_added": 1,
+     "test_files_modified_by_agent": [],
+     "final_patch_shows": "payloads"
+    }
+   },
+   "07_accepts": {
+    "original": {
+     "passed": false,
+     "tests": "2 failed, 2 passed in 0.01s",
+     "end_reason": "text_only_reply",
+     "turns": 18,
+     "tool_calls": 15,
+     "edit_calls": 8,
+     "edit_calls_applied": 2,
+     "final_patch_lines_added": 2,
+     "test_files_modified_by_agent": [],
+     "final_patch_shows": "accept"
+    },
+    "lora": {
+     "passed": true,
+     "tests": "4 passed in 0.00s",
+     "end_reason": "text_only_reply",
+     "turns": 11,
+     "tool_calls": 8,
+     "edit_calls": 4,
+     "edit_calls_applied": 1,
+     "final_patch_lines_added": 1,
+     "test_files_modified_by_agent": []
+    }
+   }
+  },
+  "n_tasks": 7,
+  "passed": {
+   "original": 1,
+   "lora": 5
+  },
+  "flips": {
+   "fail_to_pass": [
+    "01_directs",
+    "05_diagrams",
+    "06_payloads",
+    "07_accepts"
+   ],
+   "pass_to_fail": []
+  },
+  "reasoning_chars_in_all_14_runs": 0,
+  "diagrams_probe": {
+   "prefix_tokens_before_divergence": 85,
+   "next_token_after": "document.get(\"diagram",
+   "tokens_shown": [
+    "\",",
+    "_",
+    "s"
+   ],
+   "original": {
+    "chosen": "\",",
+    "p": {
+     "\",": 0.7925497493467781,
+     "_": 0.1461824178269468,
+     "s": 0.0087684081491715
+    }
+   },
+   "merged_adapter": {
+    "chosen": "s",
+    "p": {
+     "\",": 0.0025793960412275733,
+     "_": 0.0003368745338667261,
+     "s": 0.997004495503373
+    }
+   },
+   "original_edit_old_string": "        \"diagram\": document.get(\"diagram\", []),",
+   "merged_adapter_edit_old_string": "        \"diagram\": document.get(\"diagrams\", []),",
+   "replay_temperature_0": {
+    "original": {
+     "applied": false,
+     "tool_error": "Failed to replace: old_string not found. Ensure you're not escaping content incorrectly and check whitespace, indentation, and context.",
+     "tests": "2 failed in 0.01s"
+    },
+    "merged_adapter": {
+     "applied": true,
+     "tool_error": null,
+     "tests": "2 passed in 0.00s"
+    }
+   },
+   "replay_sampled_temperature_0_2": {
+    "n_seeds": 10,
+    "temperature": 0.2,
+    "original_edit_calls_produced": 9,
+    "merged_adapter_edit_calls_produced": 10,
+    "original_applied": 0,
+    "merged_adapter_applied": 10,
+    "original_tests_pass": 0,
+    "merged_adapter_tests_pass": 10
+   },
+   "diagrams_copied_alone_by_original": true
+  },
+  "sampled_replays_all_tasks": {
+   "edits_per_model": 120,
+   "original_tests_pass": 23,
+   "merged_adapter_tests_pass": 68,
+   "note": "6 tasks with an edit x 2 contexts x 10 seeds, temperature 0.2; repeated edits in fixed contexts, not independent tasks"
+  }
+ },
+ "kaggle_vllm_adapter": {
+  "summary": {
+   "total": 18,
+   "base_failures": 15,
+   "lora_failures": 1,
+   "fixed": 14,
+   "regressions": 0,
+   "any_reasoning_field": false
+  },
+  "inputs": [
+   {
+    "input": "redirects",
+    "base_ok": false,
+    "adapter_ok": true
+   },
+   {
+    "input": "directs",
+    "base_ok": false,
+    "adapter_ok": true
+   },
+   {
+    "input": "allow_redirects",
+    "base_ok": false,
+    "adapter_ok": true
+   },
+   {
+    "input": "resolve_redirects",
+    "base_ok": false,
+    "adapter_ok": true
+   },
+   {
+    "input": "aligns",
+    "base_ok": false,
+    "adapter_ok": true
+   },
+   {
+    "input": "extracts",
+    "base_ok": false,
+    "adapter_ok": true
+   },
+   {
+    "input": "treats",
+    "base_ok": false,
+    "adapter_ok": true
+   },
+   {
+    "input": "diagrams",
+    "base_ok": true,
+    "adapter_ok": true
+   },
+   {
+    "input": "payloads",
+    "base_ok": false,
+    "adapter_ok": true
+   },
+   {
+    "input": "accepts",
+    "base_ok": false,
+    "adapter_ok": true
+   },
+   {
+    "input": "indenting",
+    "base_ok": false,
+    "adapter_ok": true
+   },
+   {
+    "input": "detecting",
+    "base_ok": false,
+    "adapter_ok": true
+   },
+   {
+    "input": "subtracting",
+    "base_ok": false,
+    "adapter_ok": true
+   },
+   {
+    "input": "dumping",
+    "base_ok": true,
+    "adapter_ok": true
+   },
+   {
+    "input": "interpoling",
+    "base_ok": false,
+    "adapter_ok": true
+   },
+   {
+    "input": "Constructs a",
+    "base_ok": false,
+    "adapter_ok": true
+   },
+   {
+    "input": "nPlease",
+    "base_ok": false,
+    "adapter_ok": false
+   },
+   {
+    "input": "forks",
+    "base_ok": true,
+    "adapter_ok": true
+   }
+  ],
+  "vllm_version": "0.19.1",
+  "tensor_parallel_size": 4,
+  "adapter_weights_sha256": "9ce83a7cad3d8523c14750696dca06ee1ca89f50813047ae390ee00c7f17c888",
+  "adapter_rank": 128,
+  "model_name": "gemma-4-e4b-it-qat-w4a16-ct",
+  "selection": "hand-picked copy inputs, not a random sample; no control set",
+  "sources": [
+   "docs/kaggle-vllm-evidence/copy_lora_evidence.zip:copy_test_lora_results.json",
+   "docs/kaggle-vllm-evidence/copy_lora_evidence.zip:manifest.json"
+  ]
+ },
+ "arms": {
+  "original": "Google gemma-4-E4B_q4_0-it.gguf (QAT, Q4_0), sha256 676c3507...; local llama.cpp b11146 (Metal)",
+  "x2_tensor": "the same GGUF with per_layer_model_proj.weight multiplied by 2 (gemma-4-E4B_q4_0-it-plproj-x2.gguf, sha256 3a6ad54e...); used in figures 1 and 2",
+  "merged_adapter_local": "the same GGUF with the rank-128 truncated-SVD adapter (3,408,208 bytes, sha256 9ce83a7c...) merged into per_layer_model_proj.weight (W + B@A, stored F16); local llama.cpp; used in figure 3",
+  "kaggle_vllm_adapter": "the same adapter file served as a LoRA next to gemma-4-e4b-it-qat-w4a16-ct by vLLM 0.19.1 on 4 x L4; 18 hand-picked copy inputs; NOT plotted, reported in the README only"
+ },
+ "claim_checks": [
+  {
+   "claim": "words: original failures / x2 failures / tested",
+   "recomputed": [
+    268,
+    1,
+    7688
+   ],
+   "stated": [
+    268,
+    1,
+    7688
+   ],
+   "source": "docs/identifier-fidelity-paper-draft-v2.md s2 table; experiments/identifier_fidelity/discovery/REPORT.md s2",
+   "match": true
+  },
+  {
+   "claim": "words: lone-s suffix names failing / tested (original)",
+   "recomputed": [
+    260,
+    432
+   ],
+   "stated": [
+    260,
+    432
+   ],
+   "source": "experiments/identifier_fidelity/discovery/REPORT.md s2",
+   "match": true
+  },
+  {
+   "claim": "words: lone-s share failing, rounded to whole %",
+   "recomputed": 60,
+   "stated": 60,
+   "source": "docs/identifier-fidelity-paper-draft-v2.md s2 (\"roughly 60%\")",
+   "match": true
+  },
+  {
+   "claim": "words: all other items failing / tested (original, x2)",
+   "recomputed": [
+    8,
+    1,
+    7224
+   ],
+   "stated": [
+    8,
+    1,
+    7224
+   ],
+   "source": "experiments/identifier_fidelity/discovery/REPORT.md s2 (8/7,224 = 0.11%)",
+   "match": true
+  },
+  {
+   "claim": "words: literal \"_s\" names (omitted from the 432) failing",
+   "recomputed": [
+    32,
+    0
+   ],
+   "stated": [
+    32,
+    0
+   ],
+   "source": "experiments/identifier_fidelity/discovery/REPORT.md s2 table",
+   "match": true
+  },
+  {
+   "claim": "plurals: failures original / x2 / tested",
+   "recomputed": [
+    274,
+    1,
+    2000
+   ],
+   "stated": [
+    274,
+    1,
+    2000
+   ],
+   "source": "docs/identifier-fidelity-paper-draft-v2.md s2 table",
+   "match": true
+  },
+  {
+   "claim": "plurals: lone-s failing / tested (original, x2)",
+   "recomputed": [
+    273,
+    1,
+    1500
+   ],
+   "stated": [
+    273,
+    1,
+    1500
+   ],
+   "source": "experiments/identifier_fidelity/discovery/REPORT.md s3",
+   "match": true
+  },
+  {
+   "claim": "plurals: lone-s population",
+   "recomputed": 12801,
+   "stated": 12801,
+   "source": "experiments/identifier_fidelity/discovery/REPORT.md s3",
+   "match": true
+  },
+  {
+   "claim": "blocks: failures original / x2 / tested",
+   "recomputed": [
+    368,
+    15,
+    1278
+   ],
+   "stated": [
+    368,
+    15,
+    1278
+   ],
+   "source": "docs/identifier-fidelity-paper-draft-v2.md s2 table",
+   "match": true
+  },
+  {
+   "claim": "blocks: lone-s blocks failing original / x2 / tested",
+   "recomputed": [
+    358,
+    6,
+    528
+   ],
+   "stated": [
+    358,
+    6,
+    528
+   ],
+   "source": "experiments/identifier_fidelity/discovery/REPORT.md s4",
+   "match": true
+  },
+  {
+   "claim": "blocks: other blocks failing original / x2 / tested",
+   "recomputed": [
+    10,
+    9,
+    750
+   ],
+   "stated": [
+    10,
+    9,
+    750
+   ],
+   "source": "experiments/identifier_fidelity/discovery/REPORT.md s4",
+   "match": true
+  },
+  {
+   "claim": "dose-response: perplexity x1 / x2 (2 decimals)",
+   "recomputed": [
+    61.57,
+    60.57
+   ],
+   "stated": [
+    61.57,
+    60.57
+   ],
+   "source": "experiments/identifier_fidelity/ROOT_CAUSE.md s3",
+   "match": true
+  },
+  {
+   "claim": "dose-response: contexts (of 10) with correct s on top, x0.25 / x1 / x2 / x4",
+   "recomputed": [
+    0,
+    1,
+    10,
+    10
+   ],
+   "stated": [
+    0,
+    1,
+    10,
+    10
+   ],
+   "source": "ROOT_CAUSE.md s2 (shipped file: 9 of 10 flip)",
+   "match": true
+  },
+  {
+   "claim": "dose-response: gain median x1 / x2 (2 decimals)",
+   "recomputed": [
+    0.68,
+    0.88
+   ],
+   "stated": [
+    0.68,
+    0.88
+   ],
+   "source": "ROOT_CAUSE.md s3",
+   "match": true
+  },
+  {
+   "claim": "dose-response: share of pairs below the floor x1 / x2 (whole %)",
+   "recomputed": [
+    61,
+    7
+   ],
+   "stated": [
+    61,
+    7
+   ],
+   "source": "ROOT_CAUSE.md s3",
+   "match": true
+  },
+  {
+   "claim": "healthy test: contexts with correct s on top (of 10): shipped / q4_0 shrunk / bf16 shrunk",
+   "recomputed": [
+    1,
+    4,
+    8
+   ],
+   "stated": [
+    1,
+    4,
+    8
+   ],
+   "source": "ROOT_CAUSE.md s2 (9 / 6 / 2 of 10 no longer arg-max)",
+   "match": true
+  },
+  {
+   "claim": "healthy test: unshrunk standard release correct (q4_0, bf16)",
+   "recomputed": [
+    10,
+    10
+   ],
+   "stated": [
+    10,
+    10
+   ],
+   "source": "ROOT_CAUSE.md s2 rows 6-7",
+   "match": true
+  },
+  {
+   "claim": "tensors compared / tensor RMS ratio (3 decimals)",
+   "recomputed": [
+    665,
+    0.016
+   ],
+   "stated": [
+    665,
+    0.016
+   ],
+   "source": "docs/identifier-fidelity-paper-draft-v2.md s3 (665 tensors, ~65x smaller)",
+   "match": true
+  },
+  {
+   "claim": "Frobenius norm shipped / standard E4B",
+   "recomputed": [
+    2.014,
+    129.908
+   ],
+   "stated": [
+    2.014,
+    129.908
+   ],
+   "source": "lora_feasibility/REPORT.md s B (2.05 W4A16, ~130 standard)",
+   "match": true
+  },
+  {
+   "claim": "other norm families sit at least 490x above the floor",
+   "recomputed": true,
+   "stated": true,
+   "source": "tensor_audit/REPORT.md B",
+   "match": true
+  },
+  {
+   "claim": "tasks passed original / merged adapter (of 7)",
+   "recomputed": [
+    1,
+    5,
+    7
+   ],
+   "stated": [
+    1,
+    5,
+    7
+   ],
+   "source": "docs/identifier-fidelity-paper-draft-v2.md s5 table",
+   "match": true
+  },
+  {
+   "claim": "tasks flipped fail->pass / pass->fail",
+   "recomputed": [
+    4,
+    0
+   ],
+   "stated": [
+    4,
+    0
+   ],
+   "source": "gemma-edit-tasks/experiments/REPORT.md",
+   "match": true
+  },
+  {
+   "claim": "diagrams: p(correct s) original / merged adapter, as % rounded to 0.1",
+   "recomputed": [
+    0.9,
+    99.7
+   ],
+   "stated": [
+    0.9,
+    99.7
+   ],
+   "source": "docs/identifier-fidelity-paper-draft-v2.md s5 (0.9% / 99.7%)",
+   "match": true
+  },
+  {
+   "claim": "diagrams: original copied the word alone correctly",
+   "recomputed": true,
+   "stated": true,
+   "source": "discovery/REPORT.md s1 controls (`diagrams` passes on the original in isolation)",
+   "match": true
+  },
+  {
+   "claim": "sampled replays: tests pass original / merged adapter (of 120)",
+   "recomputed": [
+    23,
+    68,
+    120
+   ],
+   "stated": [
+    23,
+    68,
+    120
+   ],
+   "source": "docs/identifier-fidelity-paper-draft-v2.md s5",
+   "match": true
+  },
+  {
+   "claim": "Kaggle vLLM: inputs / base failures / adapter failures / fixed / regressions",
+   "recomputed": [
+    18,
+    15,
+    1,
+    14,
+    0
+   ],
+   "stated": [
+    18,
+    15,
+    1,
+    14,
+    0
+   ],
+   "source": "docs/identifier-fidelity-paper-draft-v2.md s4; docs/identifier-fidelity-paper-fable-review.md",
+   "match": true
+  }
+ ]
+}

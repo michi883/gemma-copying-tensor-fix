@@ -1,0 +1,2996 @@
+{
+ "seed": 7,
+ "n_S_pool": 204,
+ "n_other_pool": 7216,
+ "planned": [
+  {
+   "text": "CFArrayCallBacks",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w02458",
+   "id": "l0000"
+  },
+  {
+   "text": "kCFTypeArrayCallBacks",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w06305",
+   "id": "l0001"
+  },
+  {
+   "text": "_assertNotWarns",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w07170",
+   "id": "l0002"
+  },
+  {
+   "text": "assertWarns",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w00903",
+   "id": "l0003"
+  },
+  {
+   "text": "CharWidths",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w07202",
+   "id": "l0004"
+  },
+  {
+   "text": "abstracts",
+   "group": "known_fail",
+   "stratum": "word/S/True",
+   "src_id": "w01226",
+   "id": "l0005"
+  },
+  {
+   "text": "adjusts",
+   "group": "known_fail",
+   "stratum": "word/S/True",
+   "src_id": "w01289",
+   "id": "l0006"
+  },
+  {
+   "text": "compile_uses_cudagraphs",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w04064",
+   "id": "l0007"
+  },
+  {
+   "text": "cudagraphs",
+   "group": "known_fail",
+   "stratum": "jargon/S/True",
+   "src_id": "w03840",
+   "id": "l0008"
+  },
+  {
+   "text": "col_aligns",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w00079",
+   "id": "l0009"
+  },
+  {
+   "text": "assigns",
+   "group": "known_fail",
+   "stratum": "word/S/True",
+   "src_id": "w01497",
+   "id": "l0010"
+  },
+  {
+   "text": "asyncs",
+   "group": "known_fail",
+   "stratum": "jargon/S/True",
+   "src_id": "w04817",
+   "id": "l0011"
+  },
+  {
+   "text": "auths",
+   "group": "known_fail",
+   "stratum": "jargon/S/True",
+   "src_id": "w03943",
+   "id": "l0012"
+  },
+  {
+   "text": "bandwidths",
+   "group": "known_fail",
+   "stratum": "jargon/S/True",
+   "src_id": "w05013",
+   "id": "l0013"
+  },
+  {
+   "text": "target_bandwidths",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w07568",
+   "id": "l0014"
+  },
+  {
+   "text": "broadcasts",
+   "group": "known_fail",
+   "stratum": "word/S/True",
+   "src_id": "w02023",
+   "id": "l0015"
+  },
+  {
+   "text": "_supports_arm64_builds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w00647",
+   "id": "l0016"
+  },
+  {
+   "text": "_supports_universal_builds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w00154",
+   "id": "l0017"
+  },
+  {
+   "text": "builds",
+   "group": "known_fail",
+   "stratum": "word/S/True",
+   "src_id": "w04943",
+   "id": "l0018"
+  },
+  {
+   "text": "rebuilds",
+   "group": "known_fail",
+   "stratum": "word/S/True",
+   "src_id": "w03463",
+   "id": "l0019"
+  },
+  {
+   "text": "correction_coefs",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w07187",
+   "id": "l0020"
+  },
+  {
+   "text": "collects",
+   "group": "known_fail",
+   "stratum": "word/S/True",
+   "src_id": "w07047",
+   "id": "l0021"
+  },
+  {
+   "text": "constructs",
+   "group": "known_fail",
+   "stratum": "word/S/True",
+   "src_id": "w00573",
+   "id": "l0022"
+  },
+  {
+   "text": "reconstructs",
+   "group": "known_fail",
+   "stratum": "word/S/True",
+   "src_id": "w05603",
+   "id": "l0023"
+  },
+  {
+   "text": "auxiliary_num_convs",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w00319",
+   "id": "l0024"
+  },
+  {
+   "text": "convs",
+   "group": "known_fail",
+   "stratum": "jargon/S/True",
+   "src_id": "w03803",
+   "id": "l0025"
+  },
+  {
+   "text": "downsample_convs",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w00658",
+   "id": "l0026"
+  },
+  {
+   "text": "fpn_convs",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w03845",
+   "id": "l0027"
+  },
+  {
+   "text": "lateral_convs",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w02198",
+   "id": "l0028"
+  },
+  {
+   "text": "matting_convs",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w04416",
+   "id": "l0029"
+  },
+  {
+   "text": "num_convs",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w00794",
+   "id": "l0030"
+  },
+  {
+   "text": "output_convs",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w06680",
+   "id": "l0031"
+  },
+  {
+   "text": "corrects",
+   "group": "known_fail",
+   "stratum": "word/S/True",
+   "src_id": "w06984",
+   "id": "l0032"
+  },
+  {
+   "text": "depths",
+   "group": "known_fail",
+   "stratum": "word/S/True",
+   "src_id": "w03071",
+   "id": "l0033"
+  },
+  {
+   "text": "prompt_depths",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w03308",
+   "id": "l0034"
+  },
+  {
+   "text": "detects",
+   "group": "known_fail",
+   "stratum": "word/S/True",
+   "src_id": "w02243",
+   "id": "l0035"
+  },
+  {
+   "text": "dialogs",
+   "group": "known_fail",
+   "stratum": "jargon/S/True",
+   "src_id": "w01389",
+   "id": "l0036"
+  },
+  {
+   "text": "diffs",
+   "group": "known_fail",
+   "stratum": "jargon/S/True",
+   "src_id": "w00802",
+   "id": "l0037"
+  },
+  {
+   "text": "left_diffs",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w05957",
+   "id": "l0038"
+  },
+  {
+   "text": "normalized_temporal_diffs",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w05825",
+   "id": "l0039"
+  },
+  {
+   "text": "right_diffs",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w00262",
+   "id": "l0040"
+  },
+  {
+   "text": "disconnects",
+   "group": "known_fail",
+   "stratum": "word/S/True",
+   "src_id": "w03518",
+   "id": "l0041"
+  },
+  {
+   "text": "dolls",
+   "group": "known_fail",
+   "stratum": "word/S/True",
+   "src_id": "w00499",
+   "id": "l0042"
+  },
+  {
+   "text": "drafts",
+   "group": "known_fail",
+   "stratum": "word/S/True",
+   "src_id": "w03409",
+   "id": "l0043"
+  },
+  {
+   "text": "dsls",
+   "group": "known_fail",
+   "stratum": "jargon/S/True",
+   "src_id": "w06342",
+   "id": "l0044"
+  },
+  {
+   "text": "_feed_hidden_states_as_input_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w05746",
+   "id": "l0045"
+  },
+  {
+   "text": "_get_noise_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w02724",
+   "id": "l0046"
+  },
+  {
+   "text": "action_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w03874",
+   "id": "l0047"
+  },
+  {
+   "text": "action_time_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w03194",
+   "id": "l0048"
+  },
+  {
+   "text": "atom_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w04736",
+   "id": "l0049"
+  },
+  {
+   "text": "audio_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w04471",
+   "id": "l0050"
+  },
+  {
+   "text": "audio_eos_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w00027",
+   "id": "l0051"
+  },
+  {
+   "text": "audio_inputs_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w01897",
+   "id": "l0052"
+  },
+  {
+   "text": "audio_plus_text_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w02981",
+   "id": "l0053"
+  },
+  {
+   "text": "audio_video_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w04954",
+   "id": "l0054"
+  },
+  {
+   "text": "best_class_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w00640",
+   "id": "l0055"
+  },
+  {
+   "text": "cache_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w00553",
+   "id": "l0056"
+  },
+  {
+   "text": "cached_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w06437",
+   "id": "l0057"
+  },
+  {
+   "text": "chunk_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w01842",
+   "id": "l0058"
+  },
+  {
+   "text": "chunk_input_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w06849",
+   "id": "l0059"
+  },
+  {
+   "text": "class_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w06068",
+   "id": "l0060"
+  },
+  {
+   "text": "codec_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w01272",
+   "id": "l0061"
+  },
+  {
+   "text": "codec_num_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w05429",
+   "id": "l0062"
+  },
+  {
+   "text": "conditioning_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w02053",
+   "id": "l0063"
+  },
+  {
+   "text": "conditioning_encoder_inputs_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w00699",
+   "id": "l0064"
+  },
+  {
+   "text": "coord_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w04398",
+   "id": "l0065"
+  },
+  {
+   "text": "create_position_ids_from_inputs_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w02046",
+   "id": "l0066"
+  },
+  {
+   "text": "cross_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w01596",
+   "id": "l0067"
+  },
+  {
+   "text": "current_vision_pos_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w02475",
+   "id": "l0068"
+  },
+  {
+   "text": "decoder_inputs_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w01699",
+   "id": "l0069"
+  },
+  {
+   "text": "deepstack_image_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w01355",
+   "id": "l0070"
+  },
+  {
+   "text": "deepstack_video_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w00687",
+   "id": "l0071"
+  },
+  {
+   "text": "deepstack_visual_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w04620",
+   "id": "l0072"
+  },
+  {
+   "text": "diffusion_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w03935",
+   "id": "l0073"
+  },
+  {
+   "text": "dummy_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w05979",
+   "id": "l0074"
+  },
+  {
+   "text": "dummy_input_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w02412",
+   "id": "l0075"
+  },
+  {
+   "text": "embeds",
+   "group": "known_fail",
+   "stratum": "word/S/True",
+   "src_id": "w01000",
+   "id": "l0076"
+  },
+  {
+   "text": "encoder_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w02641",
+   "id": "l0077"
+  },
+  {
+   "text": "encoder_inputs_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w02188",
+   "id": "l0078"
+  },
+  {
+   "text": "fifo_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w04131",
+   "id": "l0079"
+  },
+  {
+   "text": "flat_inputs_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w04733",
+   "id": "l0080"
+  },
+  {
+   "text": "flatten_patch_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w01486",
+   "id": "l0081"
+  },
+  {
+   "text": "full_user_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w06091",
+   "id": "l0082"
+  },
+  {
+   "text": "get_audio_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w04358",
+   "id": "l0083"
+  },
+  {
+   "text": "get_audio_plus_text_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w06073",
+   "id": "l0084"
+  },
+  {
+   "text": "get_audio_video_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w02530",
+   "id": "l0085"
+  },
+  {
+   "text": "get_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w00645",
+   "id": "l0086"
+  },
+  {
+   "text": "get_position_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w02936",
+   "id": "l0087"
+  },
+  {
+   "text": "get_text_audio_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w05144",
+   "id": "l0088"
+  },
+  {
+   "text": "get_text_audio_video_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w02215",
+   "id": "l0089"
+  },
+  {
+   "text": "get_text_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w05241",
+   "id": "l0090"
+  },
+  {
+   "text": "get_text_video_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w03333",
+   "id": "l0091"
+  },
+  {
+   "text": "get_video_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w05439",
+   "id": "l0092"
+  },
+  {
+   "text": "get_video_plus_text_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w07620",
+   "id": "l0093"
+  },
+  {
+   "text": "image_class_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w06863",
+   "id": "l0094"
+  },
+  {
+   "text": "image_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w04975",
+   "id": "l0095"
+  },
+  {
+   "text": "image_group_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w05248",
+   "id": "l0096"
+  },
+  {
+   "text": "img_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w02785",
+   "id": "l0097"
+  },
+  {
+   "text": "img_pos_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w00502",
+   "id": "l0098"
+  },
+  {
+   "text": "input_audio_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w04055",
+   "id": "l0099"
+  },
+  {
+   "text": "input_image_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w04061",
+   "id": "l0100"
+  },
+  {
+   "text": "inputs_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w06041",
+   "id": "l0101"
+  },
+  {
+   "text": "instance_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w06499",
+   "id": "l0102"
+  },
+  {
+   "text": "llm_inputs_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w00125",
+   "id": "l0103"
+  },
+  {
+   "text": "mean_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w00532",
+   "id": "l0104"
+  },
+  {
+   "text": "merged_audio_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w03824",
+   "id": "l0105"
+  },
+  {
+   "text": "merged_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w05401",
+   "id": "l0106"
+  },
+  {
+   "text": "model_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w06382",
+   "id": "l0107"
+  },
+  {
+   "text": "next_inputs_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w01006",
+   "id": "l0108"
+  },
+  {
+   "text": "noise_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w04000",
+   "id": "l0109"
+  },
+  {
+   "text": "num_chunk_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w02503",
+   "id": "l0110"
+  },
+  {
+   "text": "num_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w07156",
+   "id": "l0111"
+  },
+  {
+   "text": "padded_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w00062",
+   "id": "l0112"
+  },
+  {
+   "text": "padded_inputs_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w01418",
+   "id": "l0113"
+  },
+  {
+   "text": "patch_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w00933",
+   "id": "l0114"
+  },
+  {
+   "text": "pos_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w04863",
+   "id": "l0115"
+  },
+  {
+   "text": "position_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w07022",
+   "id": "l0116"
+  },
+  {
+   "text": "projected_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w00765",
+   "id": "l0117"
+  },
+  {
+   "text": "prompt_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w01166",
+   "id": "l0118"
+  },
+  {
+   "text": "protein_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w05740",
+   "id": "l0119"
+  },
+  {
+   "text": "query_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w00876",
+   "id": "l0120"
+  },
+  {
+   "text": "query_image_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w05001",
+   "id": "l0121"
+  },
+  {
+   "text": "question_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w03852",
+   "id": "l0122"
+  },
+  {
+   "text": "repeated_vision_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w04447",
+   "id": "l0123"
+  },
+  {
+   "text": "reshaped_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w07413",
+   "id": "l0124"
+  },
+  {
+   "text": "retrieved_doc_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w05538",
+   "id": "l0125"
+  },
+  {
+   "text": "return_audio_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w06354",
+   "id": "l0126"
+  },
+  {
+   "text": "return_base_image_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w07237",
+   "id": "l0127"
+  },
+  {
+   "text": "return_video_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w04967",
+   "id": "l0128"
+  },
+  {
+   "text": "segment_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w00328",
+   "id": "l0129"
+  },
+  {
+   "text": "seq_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w01791",
+   "id": "l0130"
+  },
+  {
+   "text": "silence_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w05599",
+   "id": "l0131"
+  },
+  {
+   "text": "sinusoid_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w06430",
+   "id": "l0132"
+  },
+  {
+   "text": "spatial_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w00119",
+   "id": "l0133"
+  },
+  {
+   "text": "speech_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w03408",
+   "id": "l0134"
+  },
+  {
+   "text": "state_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w06957",
+   "id": "l0135"
+  },
+  {
+   "text": "t2u_input_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w00351",
+   "id": "l0136"
+  },
+  {
+   "text": "talker_assistant_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w06772",
+   "id": "l0137"
+  },
+  {
+   "text": "talker_inputs_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w01870",
+   "id": "l0138"
+  },
+  {
+   "text": "talker_user_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w03680",
+   "id": "l0139"
+  },
+  {
+   "text": "temporal_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w03179",
+   "id": "l0140"
+  },
+  {
+   "text": "text_audio_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w01111",
+   "id": "l0141"
+  },
+  {
+   "text": "text_audio_video_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w02309",
+   "id": "l0142"
+  },
+  {
+   "text": "text_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w02805",
+   "id": "l0143"
+  },
+  {
+   "text": "text_encoder_inputs_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w02542",
+   "id": "l0144"
+  },
+  {
+   "text": "text_video_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w04582",
+   "id": "l0145"
+  },
+  {
+   "text": "thinker_token_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w02019",
+   "id": "l0146"
+  },
+  {
+   "text": "time_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w02418",
+   "id": "l0147"
+  },
+  {
+   "text": "token_type_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w02816",
+   "id": "l0148"
+  },
+  {
+   "text": "transformed_text_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w00128",
+   "id": "l0149"
+  },
+  {
+   "text": "use_inputs_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w01852",
+   "id": "l0150"
+  },
+  {
+   "text": "value_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w05967",
+   "id": "l0151"
+  },
+  {
+   "text": "video_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w04624",
+   "id": "l0152"
+  },
+  {
+   "text": "video_plus_text_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w00175",
+   "id": "l0153"
+  },
+  {
+   "text": "vision_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w01839",
+   "id": "l0154"
+  },
+  {
+   "text": "vision_pos_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w00960",
+   "id": "l0155"
+  },
+  {
+   "text": "visual_embeds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w02735",
+   "id": "l0156"
+  },
+  {
+   "text": "attributemethods",
+   "group": "known_fail",
+   "stratum": "jargon/S/True",
+   "src_id": "w06194",
+   "id": "l0157"
+  },
+  {
+   "text": "sequencemethods",
+   "group": "known_fail",
+   "stratum": "jargon/S/True",
+   "src_id": "w04189",
+   "id": "l0158"
+  },
+  {
+   "text": "_get_assertion_exprs",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w02934",
+   "id": "l0159"
+  },
+  {
+   "text": "dimension_exprs",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w07465",
+   "id": "l0160"
+  },
+  {
+   "text": "exprs",
+   "group": "known_fail",
+   "stratum": "jargon/S/True",
+   "src_id": "w02964",
+   "id": "l0161"
+  },
+  {
+   "text": "faults",
+   "group": "known_fail",
+   "stratum": "word/S/True",
+   "src_id": "w02055",
+   "id": "l0162"
+  },
+  {
+   "text": "forecasts",
+   "group": "known_fail",
+   "stratum": "word/S/True",
+   "src_id": "w04079",
+   "id": "l0163"
+  },
+  {
+   "text": "foregrounds",
+   "group": "known_fail",
+   "stratum": "word/S/True",
+   "src_id": "w02297",
+   "id": "l0164"
+  },
+  {
+   "text": "frameworks",
+   "group": "known_fail",
+   "stratum": "word/S/True",
+   "src_id": "w01967",
+   "id": "l0165"
+  },
+  {
+   "text": "habana_frameworks",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w02923",
+   "id": "l0166"
+  },
+  {
+   "text": "_rope_freqs",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w01184",
+   "id": "l0167"
+  },
+  {
+   "text": "all_freqs",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w04980",
+   "id": "l0168"
+  },
+  {
+   "text": "compute_freqs",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w02374",
+   "id": "l0169"
+  },
+  {
+   "text": "fft_freqs",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w01407",
+   "id": "l0170"
+  },
+  {
+   "text": "filter_freqs",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w01503",
+   "id": "l0171"
+  },
+  {
+   "text": "freqs",
+   "group": "known_fail",
+   "stratum": "jargon/S/True",
+   "src_id": "w04945",
+   "id": "l0172"
+  },
+  {
+   "text": "mel_freqs",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w03826",
+   "id": "l0173"
+  },
+  {
+   "text": "n_freqs",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w06129",
+   "id": "l0174"
+  },
+  {
+   "text": "new_freqs",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w03678",
+   "id": "l0175"
+  },
+  {
+   "text": "pos_freqs",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w01459",
+   "id": "l0176"
+  },
+  {
+   "text": "smooth_freqs",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w00909",
+   "id": "l0177"
+  },
+  {
+   "text": "stack_freqs",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w05056",
+   "id": "l0178"
+  },
+  {
+   "text": "time_freqs",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w00675",
+   "id": "l0179"
+  },
+  {
+   "text": "window_freqs",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w03224",
+   "id": "l0180"
+  },
+  {
+   "text": "fulls",
+   "group": "known_fail",
+   "stratum": "word/S/True",
+   "src_id": "w07598",
+   "id": "l0181"
+  },
+  {
+   "text": "cumheights",
+   "group": "known_fail",
+   "stratum": "jargon/S/True",
+   "src_id": "w06759",
+   "id": "l0182"
+  },
+  {
+   "text": "heights",
+   "group": "known_fail",
+   "stratum": "word/S/True",
+   "src_id": "w00480",
+   "id": "l0183"
+  },
+  {
+   "text": "image_unpadded_heights",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w00957",
+   "id": "l0184"
+  },
+  {
+   "text": "input_cumheights",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w07244",
+   "id": "l0185"
+  },
+  {
+   "text": "input_heights",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w03638",
+   "id": "l0186"
+  },
+  {
+   "text": "max_heights",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w04524",
+   "id": "l0187"
+  },
+  {
+   "text": "new_heights",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w04026",
+   "id": "l0188"
+  },
+  {
+   "text": "render_heights",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w05703",
+   "id": "l0189"
+  },
+  {
+   "text": "target_heights",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w04753",
+   "id": "l0190"
+  },
+  {
+   "text": "unnormalized_heights",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w06024",
+   "id": "l0191"
+  },
+  {
+   "text": "_parent_hrefs",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w06835",
+   "id": "l0192"
+  },
+  {
+   "text": "impacts",
+   "group": "known_fail",
+   "stratum": "word/S/True",
+   "src_id": "w00448",
+   "id": "l0193"
+  },
+  {
+   "text": "get_algorithm_impls",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w01936",
+   "id": "l0194"
+  },
+  {
+   "text": "get_hookimpls",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w02262",
+   "id": "l0195"
+  },
+  {
+   "text": "hook_impls",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w02584",
+   "id": "l0196"
+  },
+  {
+   "text": "hookimpls",
+   "group": "known_fail",
+   "stratum": "jargon/S/True",
+   "src_id": "w03325",
+   "id": "l0197"
+  },
+  {
+   "text": "impls",
+   "group": "known_fail",
+   "stratum": "jargon/S/True",
+   "src_id": "w01158",
+   "id": "l0198"
+  },
+  {
+   "text": "initials",
+   "group": "known_fail",
+   "stratum": "word/S/True",
+   "src_id": "w05597",
+   "id": "l0199"
+  },
+  {
+   "text": "injects",
+   "group": "known_fail",
+   "stratum": "word/S/True",
+   "src_id": "w02649",
+   "id": "l0200"
+  },
+  {
+   "text": "inspects",
+   "group": "known_fail",
+   "stratum": "word/S/True",
+   "src_id": "w06866",
+   "id": "l0201"
+  },
+  {
+   "text": "instrs",
+   "group": "known_fail",
+   "stratum": "jargon/S/True",
+   "src_id": "w06924",
+   "id": "l0202"
+  },
+  {
+   "text": "instructs",
+   "group": "known_fail",
+   "stratum": "word/S/True",
+   "src_id": "w06249",
+   "id": "l0203"
+  },
+  {
+   "text": "interrupts",
+   "group": "known_fail",
+   "stratum": "word/S/True",
+   "src_id": "w03981",
+   "id": "l0204"
+  },
+  {
+   "text": "knows",
+   "group": "known_fail",
+   "stratum": "word/S/True",
+   "src_id": "w07606",
+   "id": "l0205"
+  },
+  {
+   "text": "learns",
+   "group": "known_fail",
+   "stratum": "word/S/True",
+   "src_id": "w04939",
+   "id": "l0206"
+  },
+  {
+   "text": "_n_mallocs",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w05328",
+   "id": "l0207"
+  },
+  {
+   "text": "mallocs",
+   "group": "known_fail",
+   "stratum": "jargon/S/True",
+   "src_id": "w07588",
+   "id": "l0208"
+  },
+  {
+   "text": "manifests",
+   "group": "known_fail",
+   "stratum": "word/S/True",
+   "src_id": "w00671",
+   "id": "l0209"
+  },
+  {
+   "text": "manuals",
+   "group": "known_fail",
+   "stratum": "word/S/True",
+   "src_id": "w07541",
+   "id": "l0210"
+  },
+  {
+   "text": "mounts",
+   "group": "known_fail",
+   "stratum": "word/S/True",
+   "src_id": "w03079",
+   "id": "l0211"
+  },
+  {
+   "text": "strengthens",
+   "group": "known_fail",
+   "stratum": "word/S/True",
+   "src_id": "w01981",
+   "id": "l0212"
+  },
+  {
+   "text": "overflows",
+   "group": "known_fail",
+   "stratum": "word/S/True",
+   "src_id": "w02438",
+   "id": "l0213"
+  },
+  {
+   "text": "custom_payloads",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w02118",
+   "id": "l0214"
+  },
+  {
+   "text": "default_payloads",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w06859",
+   "id": "l0215"
+  },
+  {
+   "text": "unknown_payloads",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w03909",
+   "id": "l0216"
+  },
+  {
+   "text": "predicts",
+   "group": "known_fail",
+   "stratum": "word/S/True",
+   "src_id": "w04549",
+   "id": "l0217"
+  },
+  {
+   "text": "proceeds",
+   "group": "known_fail",
+   "stratum": "word/S/True",
+   "src_id": "w05786",
+   "id": "l0218"
+  },
+  {
+   "text": "protects",
+   "group": "known_fail",
+   "stratum": "word/S/True",
+   "src_id": "w00522",
+   "id": "l0219"
+  },
+  {
+   "text": "pulls",
+   "group": "known_fail",
+   "stratum": "word/S/True",
+   "src_id": "w07114",
+   "id": "l0220"
+  },
+  {
+   "text": "redraws",
+   "group": "known_fail",
+   "stratum": "word/S/True",
+   "src_id": "w02263",
+   "id": "l0221"
+  },
+  {
+   "text": "reflects",
+   "group": "known_fail",
+   "stratum": "word/S/True",
+   "src_id": "w03251",
+   "id": "l0222"
+  },
+  {
+   "text": "regexs",
+   "group": "known_fail",
+   "stratum": "jargon/S/True",
+   "src_id": "w02391",
+   "id": "l0223"
+  },
+  {
+   "text": "rejects",
+   "group": "known_fail",
+   "stratum": "word/S/True",
+   "src_id": "w05095",
+   "id": "l0224"
+  },
+  {
+   "text": "reprs",
+   "group": "known_fail",
+   "stratum": "jargon/S/True",
+   "src_id": "w06755",
+   "id": "l0225"
+  },
+  {
+   "text": "_convert_egg_info_reqs_to_simple_reqs",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w02622",
+   "id": "l0226"
+  },
+  {
+   "text": "_read_dist_info_reqs",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w07124",
+   "id": "l0227"
+  },
+  {
+   "text": "_read_egg_info_reqs",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w05314",
+   "id": "l0228"
+  },
+  {
+   "text": "cert_reqs",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w00144",
+   "id": "l0229"
+  },
+  {
+   "text": "group_reqs",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w03285",
+   "id": "l0230"
+  },
+  {
+   "text": "reqs",
+   "group": "known_fail",
+   "stratum": "jargon/S/True",
+   "src_id": "w01972",
+   "id": "l0231"
+  },
+  {
+   "text": "respects",
+   "group": "known_fail",
+   "stratum": "word/S/True",
+   "src_id": "w02282",
+   "id": "l0232"
+  },
+  {
+   "text": "corrupts",
+   "group": "known_fail",
+   "stratum": "word/S/True",
+   "src_id": "w01577",
+   "id": "l0233"
+  },
+  {
+   "text": "shareds",
+   "group": "known_fail",
+   "stratum": "jargon/S/True",
+   "src_id": "w06123",
+   "id": "l0234"
+  },
+  {
+   "text": "sorts",
+   "group": "known_fail",
+   "stratum": "word/S/True",
+   "src_id": "w03192",
+   "id": "l0235"
+  },
+  {
+   "text": "quantile_spreads",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w04802",
+   "id": "l0236"
+  },
+  {
+   "text": "spreads",
+   "group": "known_fail",
+   "stratum": "word/S/True",
+   "src_id": "w01268",
+   "id": "l0237"
+  },
+  {
+   "text": "springs",
+   "group": "known_fail",
+   "stratum": "word/S/True",
+   "src_id": "w01478",
+   "id": "l0238"
+  },
+  {
+   "text": "_sparse_structs",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w03137",
+   "id": "l0239"
+  },
+  {
+   "text": "substrings",
+   "group": "known_fail",
+   "stratum": "jargon/S/True",
+   "src_id": "w03443",
+   "id": "l0240"
+  },
+  {
+   "text": "subtracts",
+   "group": "known_fail",
+   "stratum": "word/S/True",
+   "src_id": "w00942",
+   "id": "l0241"
+  },
+  {
+   "text": "suggests",
+   "group": "known_fail",
+   "stratum": "word/S/True",
+   "src_id": "w05173",
+   "id": "l0242"
+  },
+  {
+   "text": "syncs",
+   "group": "known_fail",
+   "stratum": "word/S/True",
+   "src_id": "w04843",
+   "id": "l0243"
+  },
+  {
+   "text": "tabulars",
+   "group": "known_fail",
+   "stratum": "word/S/True",
+   "src_id": "w02040",
+   "id": "l0244"
+  },
+  {
+   "text": "class_thresholds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w04663",
+   "id": "l0245"
+  },
+  {
+   "text": "emissions_thresholds",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w04596",
+   "id": "l0246"
+  },
+  {
+   "text": "thresholds",
+   "group": "known_fail",
+   "stratum": "word/S/True",
+   "src_id": "w04132",
+   "id": "l0247"
+  },
+  {
+   "text": "trains",
+   "group": "known_fail",
+   "stratum": "word/S/True",
+   "src_id": "w02669",
+   "id": "l0248"
+  },
+  {
+   "text": "travels",
+   "group": "known_fail",
+   "stratum": "word/S/True",
+   "src_id": "w00982",
+   "id": "l0249"
+  },
+  {
+   "text": "trusts",
+   "group": "known_fail",
+   "stratum": "word/S/True",
+   "src_id": "w05404",
+   "id": "l0250"
+  },
+  {
+   "text": "cbtypedefs",
+   "group": "known_fail",
+   "stratum": "jargon/S/True",
+   "src_id": "w05588",
+   "id": "l0251"
+  },
+  {
+   "text": "typedefs",
+   "group": "known_fail",
+   "stratum": "jargon/S/True",
+   "src_id": "w01224",
+   "id": "l0252"
+  },
+  {
+   "text": "succeeds",
+   "group": "known_fail",
+   "stratum": "word/S/True",
+   "src_id": "w01753",
+   "id": "l0253"
+  },
+  {
+   "text": "undefs",
+   "group": "known_fail",
+   "stratum": "jargon/S/True",
+   "src_id": "w05414",
+   "id": "l0254"
+  },
+  {
+   "text": "voids",
+   "group": "known_fail",
+   "stratum": "word/S/True",
+   "src_id": "w06450",
+   "id": "l0255"
+  },
+  {
+   "text": "assert_warns",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w06051",
+   "id": "l0256"
+  },
+  {
+   "text": "assertnotwarns",
+   "group": "known_fail",
+   "stratum": "jargon/S/True",
+   "src_id": "w05523",
+   "id": "l0257"
+  },
+  {
+   "text": "assertwarns",
+   "group": "known_fail",
+   "stratum": "jargon/S/True",
+   "src_id": "w06050",
+   "id": "l0258"
+  },
+  {
+   "text": "warns",
+   "group": "known_fail",
+   "stratum": "word/S/True",
+   "src_id": "w06709",
+   "id": "l0259"
+  },
+  {
+   "text": "talker_wavs",
+   "group": "known_fail",
+   "stratum": "ident/S/True",
+   "src_id": "w04178",
+   "id": "l0260"
+  },
+  {
+   "text": "wavs",
+   "group": "known_fail",
+   "stratum": "jargon/S/True",
+   "src_id": "w06994",
+   "id": "l0261"
+  },
+  {
+   "text": "listsymbols",
+   "group": "known_fail",
+   "stratum": "jargon/S/True",
+   "src_id": "w06872",
+   "id": "l0262"
+  },
+  {
+   "text": "accepts_position_ids",
+   "group": "known_fail",
+   "stratum": "ident/SFX/True",
+   "src_id": "w06492",
+   "id": "l0263"
+  },
+  {
+   "text": "accepts_precomputed_kwargs",
+   "group": "known_fail",
+   "stratum": "ident/OTHER/True",
+   "src_id": "w04328",
+   "id": "l0264"
+  },
+  {
+   "text": "detecting",
+   "group": "known_fail",
+   "stratum": "word/SFX/False",
+   "src_id": "w05133",
+   "id": "l0265"
+  },
+  {
+   "text": "dumping",
+   "group": "known_fail",
+   "stratum": "word/SFX/False",
+   "src_id": "w04238",
+   "id": "l0266"
+  },
+  {
+   "text": "indenting",
+   "group": "known_fail",
+   "stratum": "word/SFX/False",
+   "src_id": "w03870",
+   "id": "l0267"
+  },
+  {
+   "text": "interpoling",
+   "group": "known_fail",
+   "stratum": "word/SFX/False",
+   "src_id": "w07143",
+   "id": "l0268"
+  },
+  {
+   "text": "ldots",
+   "group": "known_fail",
+   "stratum": "jargon/ONE/True",
+   "src_id": "w04885",
+   "id": "l0269"
+  },
+  {
+   "text": "nPlease",
+   "group": "known_fail",
+   "stratum": "ident/ONE/False",
+   "src_id": "w07211",
+   "id": "l0270"
+  },
+  {
+   "text": "subTest",
+   "group": "known_fail",
+   "stratum": "ident/ONE/False",
+   "src_id": "w03450",
+   "id": "l0271"
+  },
+  {
+   "text": "subtracting",
+   "group": "known_fail",
+   "stratum": "word/SFX/False",
+   "src_id": "w05782",
+   "id": "l0272"
+  },
+  {
+   "text": "extend16_s",
+   "group": "control_S",
+   "stratum": "ident/S/True",
+   "src_id": "w01765",
+   "id": "l0273"
+  },
+  {
+   "text": "asserts",
+   "group": "control_S",
+   "stratum": "word/S/True",
+   "src_id": "w03507",
+   "id": "l0274"
+  },
+  {
+   "text": "have_nulls",
+   "group": "control_S",
+   "stratum": "ident/S/True",
+   "src_id": "w06686",
+   "id": "l0275"
+  },
+  {
+   "text": "seqs",
+   "group": "control_S",
+   "stratum": "jargon/S/True",
+   "src_id": "w00916",
+   "id": "l0276"
+  },
+  {
+   "text": "_dequant_iq2_xxs",
+   "group": "control_S",
+   "stratum": "ident/S/True",
+   "src_id": "w04502",
+   "id": "l0277"
+  },
+  {
+   "text": "_innerLexerCls",
+   "group": "control_S",
+   "stratum": "ident/S/True",
+   "src_id": "w04201",
+   "id": "l0278"
+  },
+  {
+   "text": "nsyms",
+   "group": "control_S",
+   "stratum": "jargon/S/True",
+   "src_id": "w06076",
+   "id": "l0279"
+  },
+  {
+   "text": "adjustScrolls",
+   "group": "control_S",
+   "stratum": "ident/S/True",
+   "src_id": "w00422",
+   "id": "l0280"
+  },
+  {
+   "text": "fnspecs",
+   "group": "control_S",
+   "stratum": "jargon/S/True",
+   "src_id": "w00239",
+   "id": "l0281"
+  },
+  {
+   "text": "quads",
+   "group": "control_S",
+   "stratum": "word/S/True",
+   "src_id": "w00701",
+   "id": "l0282"
+  },
+  {
+   "text": "_dequant_iq3_xxs",
+   "group": "control_S",
+   "stratum": "ident/S/True",
+   "src_id": "w00558",
+   "id": "l0283"
+  },
+  {
+   "text": "meet_thresholds",
+   "group": "control_S",
+   "stratum": "ident/S/True",
+   "src_id": "w07686",
+   "id": "l0284"
+  },
+  {
+   "text": "chunk_length_s",
+   "group": "control_S",
+   "stratum": "ident/S/True",
+   "src_id": "w04568",
+   "id": "l0285"
+  },
+  {
+   "text": "_compute_missing_sha256s",
+   "group": "control_S",
+   "stratum": "ident/S/True",
+   "src_id": "w01636",
+   "id": "l0286"
+  },
+  {
+   "text": "_spec_asyncs",
+   "group": "control_S",
+   "stratum": "ident/S/True",
+   "src_id": "w06890",
+   "id": "l0287"
+  },
+  {
+   "text": "johns",
+   "group": "control_S",
+   "stratum": "word/S/True",
+   "src_id": "w06995",
+   "id": "l0288"
+  },
+  {
+   "text": "infix_syms",
+   "group": "control_S",
+   "stratum": "ident/S/True",
+   "src_id": "w07549",
+   "id": "l0289"
+  },
+  {
+   "text": "_get_order_seqs",
+   "group": "control_S",
+   "stratum": "ident/S/True",
+   "src_id": "w03563",
+   "id": "l0290"
+  },
+  {
+   "text": "convert_i32_s",
+   "group": "control_S",
+   "stratum": "ident/S/True",
+   "src_id": "w04859",
+   "id": "l0291"
+  },
+  {
+   "text": "addmessagemethods",
+   "group": "control_S",
+   "stratum": "jargon/S/True",
+   "src_id": "w04300",
+   "id": "l0292"
+  },
+  {
+   "text": "orgs",
+   "group": "control_S",
+   "stratum": "jargon/S/True",
+   "src_id": "w00966",
+   "id": "l0293"
+  },
+  {
+   "text": "inlocs",
+   "group": "control_S",
+   "stratum": "jargon/S/True",
+   "src_id": "w02580",
+   "id": "l0294"
+  },
+  {
+   "text": "_drop_runtime_asserts",
+   "group": "control_S",
+   "stratum": "ident/S/True",
+   "src_id": "w07514",
+   "id": "l0295"
+  },
+  {
+   "text": "prediction_coefs",
+   "group": "control_S",
+   "stratum": "ident/S/True",
+   "src_id": "w05034",
+   "id": "l0296"
+  },
+  {
+   "text": "angstroms",
+   "group": "control_S",
+   "stratum": "word/S/True",
+   "src_id": "w07584",
+   "id": "l0297"
+  },
+  {
+   "text": "co_consts",
+   "group": "control_S",
+   "stratum": "ident/S/True",
+   "src_id": "w06621",
+   "id": "l0298"
+  },
+  {
+   "text": "rngs",
+   "group": "control_S",
+   "stratum": "jargon/S/True",
+   "src_id": "w01883",
+   "id": "l0299"
+  },
+  {
+   "text": "rewrite_asserts",
+   "group": "control_S",
+   "stratum": "ident/S/True",
+   "src_id": "w03808",
+   "id": "l0300"
+  },
+  {
+   "text": "unnormalized_s",
+   "group": "control_S",
+   "stratum": "ident/S/True",
+   "src_id": "w02850",
+   "id": "l0301"
+  },
+  {
+   "text": "text_backgrounds",
+   "group": "control_S",
+   "stratum": "ident/S/True",
+   "src_id": "w04321",
+   "id": "l0302"
+  },
+  {
+   "text": "prelims",
+   "group": "control_S",
+   "stratum": "word/S/True",
+   "src_id": "w03610",
+   "id": "l0303"
+  },
+  {
+   "text": "stride_length_s",
+   "group": "control_S",
+   "stratum": "ident/S/True",
+   "src_id": "w05891",
+   "id": "l0304"
+  },
+  {
+   "text": "window_positional_embedding_background_s",
+   "group": "control_S",
+   "stratum": "ident/S/True",
+   "src_id": "w01216",
+   "id": "l0305"
+  },
+  {
+   "text": "walks",
+   "group": "control_S",
+   "stratum": "word/S/True",
+   "src_id": "w05926",
+   "id": "l0306"
+  },
+  {
+   "text": "clock_s",
+   "group": "control_S",
+   "stratum": "ident/S/True",
+   "src_id": "w03998",
+   "id": "l0307"
+  },
+  {
+   "text": "_dequant_iq2_s",
+   "group": "control_S",
+   "stratum": "ident/S/True",
+   "src_id": "w04908",
+   "id": "l0308"
+  },
+  {
+   "text": "polynomials",
+   "group": "control_S",
+   "stratum": "word/S/True",
+   "src_id": "w07628",
+   "id": "l0309"
+  },
+  {
+   "text": "arg_expls",
+   "group": "control_S",
+   "stratum": "ident/S/True",
+   "src_id": "w07371",
+   "id": "l0310"
+  },
+  {
+   "text": "dt_25s",
+   "group": "control_S",
+   "stratum": "ident/S/True",
+   "src_id": "w04306",
+   "id": "l0311"
+  },
+  {
+   "text": "trunc_f64_s",
+   "group": "control_S",
+   "stratum": "ident/S/True",
+   "src_id": "w01015",
+   "id": "l0312"
+  },
+  {
+   "text": "aspects",
+   "group": "control_S",
+   "stratum": "word/S/True",
+   "src_id": "w07341",
+   "id": "l0313"
+  },
+  {
+   "text": "nulls",
+   "group": "control_S",
+   "stratum": "word/S/True",
+   "src_id": "w06827",
+   "id": "l0314"
+  },
+  {
+   "text": "angle_rads",
+   "group": "control_S",
+   "stratum": "ident/S/True",
+   "src_id": "w04560",
+   "id": "l0315"
+  },
+  {
+   "text": "prefix_syms",
+   "group": "control_S",
+   "stratum": "ident/S/True",
+   "src_id": "w00070",
+   "id": "l0316"
+  },
+  {
+   "text": "elapsed_s",
+   "group": "control_S",
+   "stratum": "ident/S/True",
+   "src_id": "w02100",
+   "id": "l0317"
+  },
+  {
+   "text": "pred_toks",
+   "group": "control_S",
+   "stratum": "ident/S/True",
+   "src_id": "w03343",
+   "id": "l0318"
+  },
+  {
+   "text": "binds",
+   "group": "control_S",
+   "stratum": "word/S/True",
+   "src_id": "w06677",
+   "id": "l0319"
+  },
+  {
+   "text": "aims",
+   "group": "control_S",
+   "stratum": "word/S/True",
+   "src_id": "w01831",
+   "id": "l0320"
+  },
+  {
+   "text": "processed_prompt_depths",
+   "group": "control_S",
+   "stratum": "ident/S/True",
+   "src_id": "w06339",
+   "id": "l0321"
+  },
+  {
+   "text": "structs",
+   "group": "control_S",
+   "stratum": "jargon/S/True",
+   "src_id": "w03059",
+   "id": "l0322"
+  },
+  {
+   "text": "bounded_uints",
+   "group": "control_S",
+   "stratum": "ident/S/True",
+   "src_id": "w06426",
+   "id": "l0323"
+  },
+  {
+   "text": "get_tokendefs",
+   "group": "control_S",
+   "stratum": "ident/S/True",
+   "src_id": "w03970",
+   "id": "l0324"
+  },
+  {
+   "text": "verify_repo_checksums",
+   "group": "control_S",
+   "stratum": "ident/S/True",
+   "src_id": "w02982",
+   "id": "l0325"
+  },
+  {
+   "text": "order_seqs",
+   "group": "control_S",
+   "stratum": "ident/S/True",
+   "src_id": "w00923",
+   "id": "l0326"
+  },
+  {
+   "text": "_extract_mel_spectrograms",
+   "group": "control_S",
+   "stratum": "ident/S/True",
+   "src_id": "w02812",
+   "id": "l0327"
+  },
+  {
+   "text": "tail_toks",
+   "group": "control_S",
+   "stratum": "ident/S/True",
+   "src_id": "w05293",
+   "id": "l0328"
+  },
+  {
+   "text": "stream_chunk_s",
+   "group": "control_S",
+   "stratum": "ident/S/True",
+   "src_id": "w01353",
+   "id": "l0329"
+  },
+  {
+   "text": "char_seqs",
+   "group": "control_S",
+   "stratum": "ident/S/True",
+   "src_id": "w02701",
+   "id": "l0330"
+  },
+  {
+   "text": "maximums",
+   "group": "control_S",
+   "stratum": "word/S/True",
+   "src_id": "w02021",
+   "id": "l0331"
+  },
+  {
+   "text": "notebooks",
+   "group": "control_S",
+   "stratum": "word/S/True",
+   "src_id": "w06134",
+   "id": "l0332"
+  },
+  {
+   "text": "isstrong",
+   "group": "control_other",
+   "stratum": "jargon/OTHER/False",
+   "src_id": "w02052",
+   "id": "l0333"
+  },
+  {
+   "text": "taylor",
+   "group": "control_other",
+   "stratum": "word/SFX/False",
+   "src_id": "w03183",
+   "id": "l0334"
+  },
+  {
+   "text": "fcos",
+   "group": "control_other",
+   "stratum": "jargon/SFX/True",
+   "src_id": "w00044",
+   "id": "l0335"
+  },
+  {
+   "text": "loosely",
+   "group": "control_other",
+   "stratum": "word/SFX/False",
+   "src_id": "w02775",
+   "id": "l0336"
+  },
+  {
+   "text": "pmbcs",
+   "group": "control_other",
+   "stratum": "jargon/SFX/True",
+   "src_id": "w04956",
+   "id": "l0337"
+  },
+  {
+   "text": "lifo",
+   "group": "control_other",
+   "stratum": "word/SFX/False",
+   "src_id": "w04340",
+   "id": "l0338"
+  },
+  {
+   "text": "glmmoedsaexperts",
+   "group": "control_other",
+   "stratum": "jargon/OTHER/True",
+   "src_id": "w02089",
+   "id": "l0339"
+  },
+  {
+   "text": "eula",
+   "group": "control_other",
+   "stratum": "jargon/SFX/False",
+   "src_id": "w01669",
+   "id": "l0340"
+  },
+  {
+   "text": "descendents",
+   "group": "control_other",
+   "stratum": "word/OTHER/True",
+   "src_id": "w06728",
+   "id": "l0341"
+  },
+  {
+   "text": "toia",
+   "group": "control_other",
+   "stratum": "jargon/SFX/False",
+   "src_id": "w05998",
+   "id": "l0342"
+  },
+  {
+   "text": "clem",
+   "group": "control_other",
+   "stratum": "word/SFX/False",
+   "src_id": "w05909",
+   "id": "l0343"
+  },
+  {
+   "text": "semaphorestatistics",
+   "group": "control_other",
+   "stratum": "jargon/OTHER/True",
+   "src_id": "w02038",
+   "id": "l0344"
+  },
+  {
+   "text": "templating",
+   "group": "control_other",
+   "stratum": "word/OTHER/False",
+   "src_id": "w01613",
+   "id": "l0345"
+  },
+  {
+   "text": "delocalize",
+   "group": "control_other",
+   "stratum": "word/SFX/False",
+   "src_id": "w00308",
+   "id": "l0346"
+  },
+  {
+   "text": "acme",
+   "group": "control_other",
+   "stratum": "word/SFX/False",
+   "src_id": "w05174",
+   "id": "l0347"
+  },
+  {
+   "text": "perceptual",
+   "group": "control_other",
+   "stratum": "word/SFX/False",
+   "src_id": "w06953",
+   "id": "l0348"
+  },
+  {
+   "text": "evaluates",
+   "group": "control_other",
+   "stratum": "word/OTHER/True",
+   "src_id": "w04229",
+   "id": "l0349"
+  },
+  {
+   "text": "niue",
+   "group": "control_other",
+   "stratum": "word/SFX/False",
+   "src_id": "w06624",
+   "id": "l0350"
+  },
+  {
+   "text": "misleading",
+   "group": "control_other",
+   "stratum": "word/OTHER/False",
+   "src_id": "w04636",
+   "id": "l0351"
+  },
+  {
+   "text": "xpath_tag_sub_embeddings",
+   "group": "control_other",
+   "stratum": "ident/OTHER/True",
+   "src_id": "w06643",
+   "id": "l0352"
+  },
+  {
+   "text": "functionalities",
+   "group": "control_other",
+   "stratum": "word/OTHER/True",
+   "src_id": "w01336",
+   "id": "l0353"
+  },
+  {
+   "text": "sover",
+   "group": "control_other",
+   "stratum": "word/SFX/False",
+   "src_id": "w03070",
+   "id": "l0354"
+  },
+  {
+   "text": "leftrightarrow",
+   "group": "control_other",
+   "stratum": "jargon/ONE/False",
+   "src_id": "w04864",
+   "id": "l0355"
+  },
+  {
+   "text": "encodes",
+   "group": "control_other",
+   "stratum": "word/OTHER/True",
+   "src_id": "w06617",
+   "id": "l0356"
+  },
+  {
+   "text": "profile",
+   "group": "control_other",
+   "stratum": "word/ONE/False",
+   "src_id": "w04534",
+   "id": "l0357"
+  },
+  {
+   "text": "_should_resume_reading",
+   "group": "control_other",
+   "stratum": "ident/OTHER/False",
+   "src_id": "w07448",
+   "id": "l0358"
+  },
+  {
+   "text": "attempting",
+   "group": "control_other",
+   "stratum": "word/SFX/False",
+   "src_id": "w01205",
+   "id": "l0359"
+  },
+  {
+   "text": "mutex",
+   "group": "control_other",
+   "stratum": "jargon/ONE/False",
+   "src_id": "w02375",
+   "id": "l0360"
+  },
+  {
+   "text": "invalid_idx_mask_pos",
+   "group": "control_other",
+   "stratum": "ident/SFX/True",
+   "src_id": "w00322",
+   "id": "l0361"
+  },
+  {
+   "text": "ceae",
+   "group": "control_other",
+   "stratum": "jargon/SFX/False",
+   "src_id": "w01635",
+   "id": "l0362"
+  },
+  {
+   "text": "subsampled",
+   "group": "control_other",
+   "stratum": "word/OTHER/False",
+   "src_id": "w04756",
+   "id": "l0363"
+  },
+  {
+   "text": "fruity",
+   "group": "control_other",
+   "stratum": "word/SFX/False",
+   "src_id": "w04775",
+   "id": "l0364"
+  },
+  {
+   "text": "bufloaded",
+   "group": "control_other",
+   "stratum": "jargon/OTHER/False",
+   "src_id": "w05111",
+   "id": "l0365"
+  },
+  {
+   "text": "messes",
+   "group": "control_other",
+   "stratum": "word/OTHER/True",
+   "src_id": "w02877",
+   "id": "l0366"
+  },
+  {
+   "text": "invoking",
+   "group": "control_other",
+   "stratum": "word/OTHER/False",
+   "src_id": "w02269",
+   "id": "l0367"
+  },
+  {
+   "text": "SimpleKey",
+   "group": "control_other",
+   "stratum": "ident/SFX/False",
+   "src_id": "w01106",
+   "id": "l0368"
+  },
+  {
+   "text": "restrictions",
+   "group": "control_other",
+   "stratum": "word/ONE/True",
+   "src_id": "w02706",
+   "id": "l0369"
+  },
+  {
+   "text": "abovethis",
+   "group": "control_other",
+   "stratum": "jargon/SFX/True",
+   "src_id": "w06480",
+   "id": "l0370"
+  },
+  {
+   "text": "suppose",
+   "group": "control_other",
+   "stratum": "word/SFX/False",
+   "src_id": "w00884",
+   "id": "l0371"
+  },
+  {
+   "text": "owns",
+   "group": "control_other",
+   "stratum": "word/ONE/True",
+   "src_id": "w05036",
+   "id": "l0372"
+  },
+  {
+   "text": "penalties",
+   "group": "control_other",
+   "stratum": "word/OTHER/True",
+   "src_id": "w03384",
+   "id": "l0373"
+  },
+  {
+   "text": "throws",
+   "group": "control_other",
+   "stratum": "word/ONE/True",
+   "src_id": "w02927",
+   "id": "l0374"
+  },
+  {
+   "text": "xprs",
+   "group": "control_other",
+   "stratum": "jargon/SFX/True",
+   "src_id": "w07354",
+   "id": "l0375"
+  },
+  {
+   "text": "udoptextkwargs",
+   "group": "control_other",
+   "stratum": "jargon/OTHER/True",
+   "src_id": "w07408",
+   "id": "l0376"
+  },
+  {
+   "text": "faulthandler",
+   "group": "control_other",
+   "stratum": "jargon/SFX/False",
+   "src_id": "w07673",
+   "id": "l0377"
+  },
+  {
+   "text": "freeing",
+   "group": "control_other",
+   "stratum": "word/SFX/False",
+   "src_id": "w03887",
+   "id": "l0378"
+  },
+  {
+   "text": "sech",
+   "group": "control_other",
+   "stratum": "word/SFX/False",
+   "src_id": "w05485",
+   "id": "l0379"
+  },
+  {
+   "text": "genuinely",
+   "group": "control_other",
+   "stratum": "word/SFX/False",
+   "src_id": "w07639",
+   "id": "l0380"
+  },
+  {
+   "text": "precludes",
+   "group": "control_other",
+   "stratum": "word/OTHER/True",
+   "src_id": "w01697",
+   "id": "l0381"
+  },
+  {
+   "text": "misuse",
+   "group": "control_other",
+   "stratum": "word/SFX/False",
+   "src_id": "w03937",
+   "id": "l0382"
+  },
+  {
+   "text": "pianoattention",
+   "group": "control_other",
+   "stratum": "jargon/OTHER/False",
+   "src_id": "w03542",
+   "id": "l0383"
+  },
+  {
+   "text": "tomfoolery",
+   "group": "control_other",
+   "stratum": "word/SFX/False",
+   "src_id": "w06373",
+   "id": "l0384"
+  },
+  {
+   "text": "linear_tag",
+   "group": "control_other",
+   "stratum": "ident/SFX/False",
+   "src_id": "w03398",
+   "id": "l0385"
+  },
+  {
+   "text": "_pad_inputs",
+   "group": "control_other",
+   "stratum": "ident/OTHER/True",
+   "src_id": "w02616",
+   "id": "l0386"
+  },
+  {
+   "text": "utext",
+   "group": "control_other",
+   "stratum": "jargon/SFX/False",
+   "src_id": "w07222",
+   "id": "l0387"
+  },
+  {
+   "text": "aligned_frames",
+   "group": "control_other",
+   "stratum": "ident/OTHER/True",
+   "src_id": "w01633",
+   "id": "l0388"
+  },
+  {
+   "text": "donutswinattention",
+   "group": "control_other",
+   "stratum": "jargon/OTHER/False",
+   "src_id": "w04028",
+   "id": "l0389"
+  },
+  {
+   "text": "mandated",
+   "group": "control_other",
+   "stratum": "word/OTHER/False",
+   "src_id": "w00785",
+   "id": "l0390"
+  },
+  {
+   "text": "seen_non_default_actions",
+   "group": "control_other",
+   "stratum": "ident/OTHER/True",
+   "src_id": "w06075",
+   "id": "l0391"
+  },
+  {
+   "text": "reservation",
+   "group": "control_other",
+   "stratum": "word/ONE/False",
+   "src_id": "w05878",
+   "id": "l0392"
+  },
+  {
+   "text": "_is_quantized_and_base_model",
+   "group": "control_other",
+   "stratum": "ident/OTHER/False",
+   "src_id": "w02027",
+   "id": "l0393"
+  },
+  {
+   "text": "_get_all_special_ids",
+   "group": "control_other",
+   "stratum": "ident/SFX/True",
+   "src_id": "w03575",
+   "id": "l0394"
+  },
+  {
+   "text": "spawning",
+   "group": "control_other",
+   "stratum": "word/OTHER/False",
+   "src_id": "w06676",
+   "id": "l0395"
+  },
+  {
+   "text": "sequentialexperts",
+   "group": "control_other",
+   "stratum": "jargon/OTHER/True",
+   "src_id": "w01582",
+   "id": "l0396"
+  },
+  {
+   "text": "externals",
+   "group": "control_other",
+   "stratum": "word/SFX/True",
+   "src_id": "w05563",
+   "id": "l0397"
+  },
+  {
+   "text": "registers",
+   "group": "control_other",
+   "stratum": "word/ONE/True",
+   "src_id": "w06122",
+   "id": "l0398"
+  },
+  {
+   "text": "peru",
+   "group": "control_other",
+   "stratum": "word/SFX/False",
+   "src_id": "w03740",
+   "id": "l0399"
+  },
+  {
+   "text": "rowing",
+   "group": "control_other",
+   "stratum": "word/SFX/False",
+   "src_id": "w02748",
+   "id": "l0400"
+  },
+  {
+   "text": "unclear",
+   "group": "control_other",
+   "stratum": "word/OTHER/False",
+   "src_id": "w00693",
+   "id": "l0401"
+  },
+  {
+   "text": "launches",
+   "group": "control_other",
+   "stratum": "word/OTHER/True",
+   "src_id": "w06670",
+   "id": "l0402"
+  },
+  {
+   "text": "emoticons",
+   "group": "control_other",
+   "stratum": "jargon/OTHER/True",
+   "src_id": "w04884",
+   "id": "l0403"
+  },
+  {
+   "text": "silence",
+   "group": "control_other",
+   "stratum": "word/OTHER/False",
+   "src_id": "w06369",
+   "id": "l0404"
+  },
+  {
+   "text": "hips",
+   "group": "control_other",
+   "stratum": "word/ONE/True",
+   "src_id": "w01259",
+   "id": "l0405"
+  },
+  {
+   "text": "rests",
+   "group": "control_other",
+   "stratum": "word/ONE/True",
+   "src_id": "w01215",
+   "id": "l0406"
+  },
+  {
+   "text": "gawk",
+   "group": "control_other",
+   "stratum": "word/SFX/False",
+   "src_id": "w02717",
+   "id": "l0407"
+  },
+  {
+   "text": "IntVar",
+   "group": "control_other",
+   "stratum": "ident/ONE/False",
+   "src_id": "w01085",
+   "id": "l0408"
+  },
+  {
+   "text": "local",
+   "group": "control_other",
+   "stratum": "word/ONE/False",
+   "src_id": "w05952",
+   "id": "l0409"
+  },
+  {
+   "text": "get_statement_startend2",
+   "group": "control_other",
+   "stratum": "ident/OTHER/False",
+   "src_id": "w03666",
+   "id": "l0410"
+  },
+  {
+   "text": "channel_binding_tls_unique",
+   "group": "control_other",
+   "stratum": "ident/OTHER/False",
+   "src_id": "w04003",
+   "id": "l0411"
+  },
+  {
+   "text": "projections",
+   "group": "control_other",
+   "stratum": "word/OTHER/True",
+   "src_id": "w06340",
+   "id": "l0412"
+  },
+  {
+   "text": "atom_type_num",
+   "group": "control_other",
+   "stratum": "ident/SFX/False",
+   "src_id": "w01667",
+   "id": "l0413"
+  },
+  {
+   "text": "minor",
+   "group": "control_other",
+   "stratum": "word/ONE/False",
+   "src_id": "w00568",
+   "id": "l0414"
+  },
+  {
+   "text": "_encode_gaps",
+   "group": "control_other",
+   "stratum": "ident/SFX/True",
+   "src_id": "w07405",
+   "id": "l0415"
+  },
+  {
+   "text": "cozy",
+   "group": "control_other",
+   "stratum": "word/SFX/False",
+   "src_id": "w07511",
+   "id": "l0416"
+  },
+  {
+   "text": "sway",
+   "group": "control_other",
+   "stratum": "word/SFX/False",
+   "src_id": "w03911",
+   "id": "l0417"
+  },
+  {
+   "text": "encoder_past_key_values",
+   "group": "control_other",
+   "stratum": "ident/OTHER/True",
+   "src_id": "w07493",
+   "id": "l0418"
+  },
+  {
+   "text": "bassoon",
+   "group": "control_other",
+   "stratum": "word/SFX/False",
+   "src_id": "w03097",
+   "id": "l0419"
+  },
+  {
+   "text": "squeezes",
+   "group": "control_other",
+   "stratum": "word/SFX/True",
+   "src_id": "w05811",
+   "id": "l0420"
+  },
+  {
+   "text": "derelict",
+   "group": "control_other",
+   "stratum": "word/SFX/False",
+   "src_id": "w06453",
+   "id": "l0421"
+  },
+  {
+   "text": "img_tkn_chr_mapping",
+   "group": "control_other",
+   "stratum": "ident/OTHER/False",
+   "src_id": "w02449",
+   "id": "l0422"
+  },
+  {
+   "text": "forks",
+   "group": "anchor_pass",
+   "stratum": "anchor",
+   "src_id": "w00011",
+   "id": "l0423"
+  },
+  {
+   "text": "starts",
+   "group": "anchor_pass",
+   "stratum": "anchor",
+   "src_id": "w00012",
+   "id": "l0424"
+  },
+  {
+   "text": "handles",
+   "group": "anchor_pass",
+   "stratum": "anchor",
+   "src_id": "w00013",
+   "id": "l0425"
+  },
+  {
+   "text": "updates",
+   "group": "anchor_pass",
+   "stratum": "anchor",
+   "src_id": "w00014",
+   "id": "l0426"
+  }
+ ]
+}

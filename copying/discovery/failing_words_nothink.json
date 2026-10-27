@@ -1,0 +1,2682 @@
+[
+{
+"text": "audio_eos_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "audio_eos_embed_",
+"category": "chars_substituted",
+"patched_output": "audio_eos_embeds",
+"patched_ok": true
+},
+{
+"text": "padded_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "padded_embed_s",
+"category": "separator_changed",
+"patched_output": "padded_embeds",
+"patched_ok": true
+},
+{
+"text": "col_aligns",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "col_align",
+"category": "dropped_final_s",
+"patched_output": "col_aligns",
+"patched_ok": true
+},
+{
+"text": "spatial_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "spatial_embed",
+"category": "dropped_final_s",
+"patched_output": "spatial_embeds",
+"patched_ok": true
+},
+{
+"text": "llm_inputs_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "llm_inputs_embed",
+"category": "dropped_final_s",
+"patched_output": "llm_inputs_embeds",
+"patched_ok": true
+},
+{
+"text": "transformed_text_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "transformed_text_embed_s",
+"category": "separator_changed",
+"patched_output": "transformed_text_embeds",
+"patched_ok": true
+},
+{
+"text": "cert_reqs",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "cert_req_s",
+"category": "separator_changed",
+"patched_output": "cert_reqs",
+"patched_ok": true
+},
+{
+"text": "_supports_universal_builds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "_supports_universal_build_",
+"category": "chars_substituted",
+"patched_output": "_supports_universal_builds",
+"patched_ok": true
+},
+{
+"text": "video_plus_text_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "video_plus_text_embed_s",
+"category": "separator_changed",
+"patched_output": "video_plus_text_embeds",
+"patched_ok": true
+},
+{
+"text": "right_diffs",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "right_diff_s",
+"category": "separator_changed",
+"patched_output": "right_diffs",
+"patched_ok": true
+},
+{
+"text": "auxiliary_num_convs",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "auxiliary_num_conv_",
+"category": "chars_substituted",
+"patched_output": "auxiliary_num_convs",
+"patched_ok": true
+},
+{
+"text": "segment_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "segment_embed_s",
+"category": "separator_changed",
+"patched_output": "segment_embeds",
+"patched_ok": true
+},
+{
+"text": "t2u_input_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "t2u_input_embed_s",
+"category": "separator_changed",
+"patched_output": "t2u_input_embeds",
+"patched_ok": true
+},
+{
+"text": "impacts",
+"kind": "word",
+"cls": "S",
+"stratum": "word/S/True",
+"original_output": "impact",
+"category": "dropped_final_s",
+"patched_output": "impacts",
+"patched_ok": true
+},
+{
+"text": "heights",
+"kind": "word",
+"cls": "S",
+"stratum": "word/S/True",
+"original_output": "height",
+"category": "dropped_final_s",
+"patched_output": "heights",
+"patched_ok": true
+},
+{
+"text": "dolls",
+"kind": "word",
+"cls": "S",
+"stratum": "word/S/True",
+"original_output": "doll",
+"category": "dropped_final_s",
+"patched_output": "dolls",
+"patched_ok": true
+},
+{
+"text": "img_pos_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "img_pos_embed",
+"category": "dropped_final_s",
+"patched_output": "img_pos_embeds",
+"patched_ok": true
+},
+{
+"text": "protects",
+"kind": "word",
+"cls": "S",
+"stratum": "word/S/True",
+"original_output": "protect",
+"category": "dropped_final_s",
+"patched_output": "protects",
+"patched_ok": true
+},
+{
+"text": "mean_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "mean_embed",
+"category": "dropped_final_s",
+"patched_output": "mean_embeds",
+"patched_ok": true
+},
+{
+"text": "cache_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "cache_embed",
+"category": "dropped_final_s",
+"patched_output": "cache_embeds",
+"patched_ok": true
+},
+{
+"text": "constructs",
+"kind": "word",
+"cls": "S",
+"stratum": "word/S/True",
+"original_output": "construct",
+"category": "dropped_final_s",
+"patched_output": "constructs",
+"patched_ok": true
+},
+{
+"text": "best_class_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "best_class_embed_s",
+"category": "separator_changed",
+"patched_output": "best_class_embeds",
+"patched_ok": true
+},
+{
+"text": "get_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "get_embed_",
+"category": "chars_substituted",
+"patched_output": "get_embeds",
+"patched_ok": true
+},
+{
+"text": "_supports_arm64_builds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "_supports_arm64_build_",
+"category": "chars_substituted",
+"patched_output": "_supports_arm64_builds",
+"patched_ok": true
+},
+{
+"text": "downsample_convs",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "downsample_conv",
+"category": "dropped_final_s",
+"patched_output": "downsample_convs",
+"patched_ok": true
+},
+{
+"text": "manifests",
+"kind": "word",
+"cls": "S",
+"stratum": "word/S/True",
+"original_output": "manifest",
+"category": "dropped_final_s",
+"patched_output": "manifests",
+"patched_ok": true
+},
+{
+"text": "time_freqs",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "time_freq_s",
+"category": "separator_changed",
+"patched_output": "time_freqs",
+"patched_ok": true
+},
+{
+"text": "deepstack_video_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "deepstack_video_embed_s",
+"category": "separator_changed",
+"patched_output": "deepstack_video_embeds",
+"patched_ok": true
+},
+{
+"text": "conditioning_encoder_inputs_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "conditioning_encoder_inputs_embedS",
+"category": "case_changed",
+"patched_output": "conditioning_encoder_inputs_embeds",
+"patched_ok": true
+},
+{
+"text": "projected_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "projected_embed_s",
+"category": "separator_changed",
+"patched_output": "projected_embeds",
+"patched_ok": true
+},
+{
+"text": "num_convs",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "num_conv_",
+"category": "chars_substituted",
+"patched_output": "num_convs",
+"patched_ok": true
+},
+{
+"text": "diffs",
+"kind": "jargon",
+"cls": "S",
+"stratum": "jargon/S/True",
+"original_output": "diff",
+"category": "dropped_final_s",
+"patched_output": "diffs",
+"patched_ok": true
+},
+{
+"text": "query_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "query_embed",
+"category": "dropped_final_s",
+"patched_output": "query_embeds",
+"patched_ok": true
+},
+{
+"text": "assertWarns",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "assertWarnS",
+"category": "case_changed",
+"patched_output": "assertWarns",
+"patched_ok": true
+},
+{
+"text": "smooth_freqs",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "smooth_freq_s",
+"category": "separator_changed",
+"patched_output": "smooth_freqs",
+"patched_ok": true
+},
+{
+"text": "patch_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "patch_embed_",
+"category": "chars_substituted",
+"patched_output": "patch_embeds",
+"patched_ok": true
+},
+{
+"text": "subtracts",
+"kind": "word",
+"cls": "S",
+"stratum": "word/S/True",
+"original_output": "subtract",
+"category": "dropped_final_s",
+"patched_output": "subtracts",
+"patched_ok": true
+},
+{
+"text": "image_unpadded_heights",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "image_unpadded_height_s",
+"category": "separator_changed",
+"patched_output": "image_unpadded_heights",
+"patched_ok": true
+},
+{
+"text": "vision_pos_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "vision_pos_embed",
+"category": "dropped_final_s",
+"patched_output": "vision_pos_embeds",
+"patched_ok": true
+},
+{
+"text": "travels",
+"kind": "word",
+"cls": "S",
+"stratum": "word/S/True",
+"original_output": "travel",
+"category": "dropped_final_s",
+"patched_output": "travels",
+"patched_ok": true
+},
+{
+"text": "embeds",
+"kind": "word",
+"cls": "S",
+"stratum": "word/S/True",
+"original_output": "embed",
+"category": "dropped_final_s",
+"patched_output": "embeds",
+"patched_ok": true
+},
+{
+"text": "next_inputs_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "next_inputs_embed_",
+"category": "chars_substituted",
+"patched_output": "next_inputs_embeds",
+"patched_ok": true
+},
+{
+"text": "text_audio_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "text_audio_embed_s",
+"category": "separator_changed",
+"patched_output": "text_audio_embeds",
+"patched_ok": true
+},
+{
+"text": "impls",
+"kind": "jargon",
+"cls": "S",
+"stratum": "jargon/S/True",
+"original_output": "impl",
+"category": "dropped_final_s",
+"patched_output": "impls",
+"patched_ok": true
+},
+{
+"text": "prompt_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "prompt_embed_s",
+"category": "separator_changed",
+"patched_output": "prompt_embeds",
+"patched_ok": true
+},
+{
+"text": "_rope_freqs",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "_rope_freq_s",
+"category": "separator_changed",
+"patched_output": "_rope_freqs",
+"patched_ok": true
+},
+{
+"text": "typedefs",
+"kind": "jargon",
+"cls": "S",
+"stratum": "jargon/S/True",
+"original_output": "typedef",
+"category": "dropped_final_s",
+"patched_output": "typedefs",
+"patched_ok": true
+},
+{
+"text": "abstracts",
+"kind": "word",
+"cls": "S",
+"stratum": "word/S/True",
+"original_output": "abstract",
+"category": "dropped_final_s",
+"patched_output": "abstracts",
+"patched_ok": true
+},
+{
+"text": "spreads",
+"kind": "word",
+"cls": "S",
+"stratum": "word/S/True",
+"original_output": "spread",
+"category": "dropped_final_s",
+"patched_output": "spreads",
+"patched_ok": true
+},
+{
+"text": "codec_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "codec_embed_",
+"category": "chars_substituted",
+"patched_output": "codec_embeds",
+"patched_ok": true
+},
+{
+"text": "adjusts",
+"kind": "word",
+"cls": "S",
+"stratum": "word/S/True",
+"original_output": "adjust",
+"category": "dropped_final_s",
+"patched_output": "adjusts",
+"patched_ok": true
+},
+{
+"text": "deepstack_image_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "deepstack_image_embed_s",
+"category": "separator_changed",
+"patched_output": "deepstack_image_embeds",
+"patched_ok": true
+},
+{
+"text": "dialogs",
+"kind": "jargon",
+"cls": "S",
+"stratum": "jargon/S/True",
+"original_output": "dialog",
+"category": "dropped_final_s",
+"patched_output": "dialogs",
+"patched_ok": true
+},
+{
+"text": "fft_freqs",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "fft_freq",
+"category": "dropped_final_s",
+"patched_output": "fft_freqs",
+"patched_ok": true
+},
+{
+"text": "padded_inputs_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "padded_inputs_embed_",
+"category": "chars_substituted",
+"patched_output": "padded_inputs_embeds",
+"patched_ok": true
+},
+{
+"text": "pos_freqs",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "pos_freq_s",
+"category": "separator_changed",
+"patched_output": "pos_freqs",
+"patched_ok": true
+},
+{
+"text": "springs",
+"kind": "word",
+"cls": "S",
+"stratum": "word/S/True",
+"original_output": "spring",
+"category": "dropped_final_s",
+"patched_output": "springs",
+"patched_ok": true
+},
+{
+"text": "flatten_patch_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "flatten_patch_embed_",
+"category": "chars_substituted",
+"patched_output": "flatten_patch_embeds",
+"patched_ok": true
+},
+{
+"text": "assigns",
+"kind": "word",
+"cls": "S",
+"stratum": "word/S/True",
+"original_output": "assign",
+"category": "dropped_final_s",
+"patched_output": "assigns",
+"patched_ok": true
+},
+{
+"text": "filter_freqs",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "filter_freq_s",
+"category": "separator_changed",
+"patched_output": "filter_freqs",
+"patched_ok": true
+},
+{
+"text": "corrupts",
+"kind": "word",
+"cls": "S",
+"stratum": "word/S/True",
+"original_output": "corrupt",
+"category": "dropped_final_s",
+"patched_output": "corrupts",
+"patched_ok": true
+},
+{
+"text": "cross_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "cross_embed",
+"category": "dropped_final_s",
+"patched_output": "cross_embeds",
+"patched_ok": true
+},
+{
+"text": "decoder_inputs_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "decoder_inputs_embed_",
+"category": "chars_substituted",
+"patched_output": "decoder_inputs_embeds",
+"patched_ok": true
+},
+{
+"text": "succeeds",
+"kind": "word",
+"cls": "S",
+"stratum": "word/S/True",
+"original_output": "succeed",
+"category": "dropped_final_s",
+"patched_output": "succeeds",
+"patched_ok": true
+},
+{
+"text": "seq_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "seq_embed",
+"category": "dropped_final_s",
+"patched_output": "seq_embeds",
+"patched_ok": true
+},
+{
+"text": "vision_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "vision_embed",
+"category": "dropped_final_s",
+"patched_output": "vision_embeds",
+"patched_ok": true
+},
+{
+"text": "chunk_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "chunk_embed",
+"category": "dropped_final_s",
+"patched_output": "chunk_embeds",
+"patched_ok": true
+},
+{
+"text": "use_inputs_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "use_inputs_embed_",
+"category": "chars_substituted",
+"patched_output": "use_inputs_embeds",
+"patched_ok": true
+},
+{
+"text": "talker_inputs_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "talker_inputs_embed",
+"category": "dropped_final_s",
+"patched_output": "talker_inputs_embeds",
+"patched_ok": true
+},
+{
+"text": "audio_inputs_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "audio_inputs_embed",
+"category": "dropped_final_s",
+"patched_output": "audio_inputs_embeds",
+"patched_ok": true
+},
+{
+"text": "get_algorithm_impls",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "get_algorithm_impl",
+"category": "dropped_final_s",
+"patched_output": "get_algorithm_impls",
+"patched_ok": true
+},
+{
+"text": "frameworks",
+"kind": "word",
+"cls": "S",
+"stratum": "word/S/True",
+"original_output": "framework",
+"category": "dropped_final_s",
+"patched_output": "frameworks",
+"patched_ok": true
+},
+{
+"text": "reqs",
+"kind": "jargon",
+"cls": "S",
+"stratum": "jargon/S/True",
+"original_output": "req",
+"category": "dropped_final_s",
+"patched_output": "reqs",
+"patched_ok": true
+},
+{
+"text": "strengthens",
+"kind": "word",
+"cls": "S",
+"stratum": "word/S/True",
+"original_output": "strengthenS",
+"category": "case_changed",
+"patched_output": "strengthens",
+"patched_ok": true
+},
+{
+"text": "thinker_token_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "thinker_token_embed_s",
+"category": "separator_changed",
+"patched_output": "thinker_token_embeds",
+"patched_ok": true
+},
+{
+"text": "broadcasts",
+"kind": "word",
+"cls": "S",
+"stratum": "word/S/True",
+"original_output": "broadcast",
+"category": "dropped_final_s",
+"patched_output": "broadcasts",
+"patched_ok": true
+},
+{
+"text": "tabulars",
+"kind": "word",
+"cls": "S",
+"stratum": "word/S/True",
+"original_output": "tabular",
+"category": "dropped_final_s",
+"patched_output": "tabulars",
+"patched_ok": true
+},
+{
+"text": "create_position_ids_from_inputs_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "create_position_ids_from_inputs_embed_s",
+"category": "separator_changed",
+"patched_output": "create_position_ids_from_inputs_embeds",
+"patched_ok": true
+},
+{
+"text": "conditioning_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "conditioning_embed",
+"category": "dropped_final_s",
+"patched_output": "conditioning_embeds",
+"patched_ok": true
+},
+{
+"text": "faults",
+"kind": "word",
+"cls": "S",
+"stratum": "word/S/True",
+"original_output": "fault",
+"category": "dropped_final_s",
+"patched_output": "faults",
+"patched_ok": true
+},
+{
+"text": "custom_payloads",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "custom_payload_",
+"category": "chars_substituted",
+"patched_output": "custom_payloads",
+"patched_ok": true
+},
+{
+"text": "encoder_inputs_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "encoder_inputs_embed_",
+"category": "chars_substituted",
+"patched_output": "encoder_inputs_embeds",
+"patched_ok": true
+},
+{
+"text": "lateral_convs",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "lateral_conv",
+"category": "dropped_final_s",
+"patched_output": "lateral_convs",
+"patched_ok": true
+},
+{
+"text": "get_text_audio_video_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "get_text_audio_video_embed_s",
+"category": "separator_changed",
+"patched_output": "get_text_audio_video_embeds",
+"patched_ok": true
+},
+{
+"text": "detects",
+"kind": "word",
+"cls": "S",
+"stratum": "word/S/True",
+"original_output": "detect s",
+"category": "separator_changed",
+"patched_output": "detects",
+"patched_ok": true
+},
+{
+"text": "get_hookimpls",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "get_hookimpl",
+"category": "dropped_final_s",
+"patched_output": "get_hookimpls",
+"patched_ok": true
+},
+{
+"text": "redraws",
+"kind": "word",
+"cls": "S",
+"stratum": "word/S/True",
+"original_output": "redraw",
+"category": "dropped_final_s",
+"patched_output": "redraws",
+"patched_ok": true
+},
+{
+"text": "respects",
+"kind": "word",
+"cls": "S",
+"stratum": "word/S/True",
+"original_output": "respect",
+"category": "dropped_final_s",
+"patched_output": "respects",
+"patched_ok": true
+},
+{
+"text": "foregrounds",
+"kind": "word",
+"cls": "S",
+"stratum": "word/S/True",
+"original_output": "foreground",
+"category": "dropped_final_s",
+"patched_output": "foregrounds",
+"patched_ok": true
+},
+{
+"text": "text_audio_video_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "text_audio_video_embed_s",
+"category": "separator_changed",
+"patched_output": "text_audio_video_embeds",
+"patched_ok": true
+},
+{
+"text": "compute_freqs",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "compute_freq_s",
+"category": "separator_changed",
+"patched_output": "compute_freqs",
+"patched_ok": true
+},
+{
+"text": "regexs",
+"kind": "jargon",
+"cls": "S",
+"stratum": "jargon/S/True",
+"original_output": "regex",
+"category": "dropped_final_s",
+"patched_output": "regexs",
+"patched_ok": true
+},
+{
+"text": "dummy_input_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "dummy_input_embed_s",
+"category": "separator_changed",
+"patched_output": "dummy_input_embeds",
+"patched_ok": true
+},
+{
+"text": "time_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "time_embed",
+"category": "dropped_final_s",
+"patched_output": "time_embeds",
+"patched_ok": true
+},
+{
+"text": "overflows",
+"kind": "word",
+"cls": "S",
+"stratum": "word/S/True",
+"original_output": "overflow",
+"category": "dropped_final_s",
+"patched_output": "overflows",
+"patched_ok": true
+},
+{
+"text": "CFArrayCallBacks",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "CFArrayCallBackS",
+"category": "case_changed",
+"patched_output": "CFArrayCallBacks",
+"patched_ok": true
+},
+{
+"text": "current_vision_pos_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "current_vision_pos_embed_s",
+"category": "separator_changed",
+"patched_output": "current_vision_pos_embeds",
+"patched_ok": true
+},
+{
+"text": "num_chunk_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "num_chunk_embed_",
+"category": "chars_substituted",
+"patched_output": "num_chunk_embeds",
+"patched_ok": true
+},
+{
+"text": "get_audio_video_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "get_audio_video_embed_s",
+"category": "separator_changed",
+"patched_output": "get_audio_video_embeds",
+"patched_ok": true
+},
+{
+"text": "text_encoder_inputs_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "text_encoder_inputs_embedS",
+"category": "case_changed",
+"patched_output": "text_encoder_inputs_embeds",
+"patched_ok": true
+},
+{
+"text": "hook_impls",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "hook_impl",
+"category": "dropped_final_s",
+"patched_output": "hook_impls",
+"patched_ok": true
+},
+{
+"text": "_convert_egg_info_reqs_to_simple_reqs",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "_convert_egg_info_req_to_simple_req_",
+"category": "suffix_altered",
+"patched_output": "_convert_egg_info_reqs_to_simple_reqs",
+"patched_ok": true
+},
+{
+"text": "encoder_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "encoder_embed_s",
+"category": "separator_changed",
+"patched_output": "encoder_embeds",
+"patched_ok": true
+},
+{
+"text": "injects",
+"kind": "word",
+"cls": "S",
+"stratum": "word/S/True",
+"original_output": "inject",
+"category": "dropped_final_s",
+"patched_output": "injects",
+"patched_ok": true
+},
+{
+"text": "trains",
+"kind": "word",
+"cls": "S",
+"stratum": "word/S/True",
+"original_output": "train",
+"category": "dropped_final_s",
+"patched_output": "trains",
+"patched_ok": true
+},
+{
+"text": "_get_noise_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "_get_noise_embed_",
+"category": "chars_substituted",
+"patched_output": "_get_noise_embeds",
+"patched_ok": true
+},
+{
+"text": "visual_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "visual_embed",
+"category": "dropped_final_s",
+"patched_output": "visual_embeds",
+"patched_ok": true
+},
+{
+"text": "img_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "img_embed",
+"category": "dropped_final_s",
+"patched_output": "img_embeds",
+"patched_ok": true
+},
+{
+"text": "text_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "text_embed",
+"category": "dropped_final_s",
+"patched_output": "text_embeds",
+"patched_ok": true
+},
+{
+"text": "token_type_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "token_type_embed_s",
+"category": "separator_changed",
+"patched_output": "token_type_embeds",
+"patched_ok": true
+},
+{
+"text": "habana_frameworks",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "habana_framework",
+"category": "dropped_final_s",
+"patched_output": "habana_frameworks",
+"patched_ok": true
+},
+{
+"text": "_get_assertion_exprs",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "_get_assertion_expr",
+"category": "dropped_final_s",
+"patched_output": "_get_assertion_exprs",
+"patched_ok": true
+},
+{
+"text": "get_position_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "get_position_embed_",
+"category": "chars_substituted",
+"patched_output": "get_position_embeds",
+"patched_ok": true
+},
+{
+"text": "exprs",
+"kind": "jargon",
+"cls": "S",
+"stratum": "jargon/S/True",
+"original_output": "expr",
+"category": "dropped_final_s",
+"patched_output": "exprs",
+"patched_ok": true
+},
+{
+"text": "audio_plus_text_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "audio_plus_text_embed_s",
+"category": "separator_changed",
+"patched_output": "audio_plus_text_embeds",
+"patched_ok": true
+},
+{
+"text": "depths",
+"kind": "word",
+"cls": "S",
+"stratum": "word/S/True",
+"original_output": "depth",
+"category": "dropped_final_s",
+"patched_output": "depths",
+"patched_ok": true
+},
+{
+"text": "mounts",
+"kind": "word",
+"cls": "S",
+"stratum": "word/S/True",
+"original_output": "mount",
+"category": "dropped_final_s",
+"patched_output": "mounts",
+"patched_ok": true
+},
+{
+"text": "_sparse_structs",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "_sparse_struct_",
+"category": "chars_substituted",
+"patched_output": "_sparse_structs",
+"patched_ok": true
+},
+{
+"text": "temporal_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "temporal_embed_s",
+"category": "separator_changed",
+"patched_output": "temporal_embeds",
+"patched_ok": true
+},
+{
+"text": "sorts",
+"kind": "word",
+"cls": "S",
+"stratum": "word/S/True",
+"original_output": "sort",
+"category": "dropped_final_s",
+"patched_output": "sorts",
+"patched_ok": true
+},
+{
+"text": "action_time_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "action_time_embed",
+"category": "dropped_final_s",
+"patched_output": "action_time_embeds",
+"patched_ok": true
+},
+{
+"text": "window_freqs",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "window_freq",
+"category": "dropped_final_s",
+"patched_output": "window_freqs",
+"patched_ok": true
+},
+{
+"text": "reflects",
+"kind": "word",
+"cls": "S",
+"stratum": "word/S/True",
+"original_output": "reflect",
+"category": "dropped_final_s",
+"patched_output": "reflects",
+"patched_ok": true
+},
+{
+"text": "group_reqs",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "group_req_s",
+"category": "separator_changed",
+"patched_output": "group_reqs",
+"patched_ok": true
+},
+{
+"text": "prompt_depths",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "prompt_depth_",
+"category": "chars_substituted",
+"patched_output": "prompt_depths",
+"patched_ok": true
+},
+{
+"text": "hookimpls",
+"kind": "jargon",
+"cls": "S",
+"stratum": "jargon/S/True",
+"original_output": "hookimpl",
+"category": "dropped_final_s",
+"patched_output": "hookimpls",
+"patched_ok": true
+},
+{
+"text": "get_text_video_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "get_text_video_embed_s",
+"category": "separator_changed",
+"patched_output": "get_text_video_embeds",
+"patched_ok": true
+},
+{
+"text": "speech_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "speech_embed",
+"category": "dropped_final_s",
+"patched_output": "speech_embeds",
+"patched_ok": true
+},
+{
+"text": "drafts",
+"kind": "word",
+"cls": "S",
+"stratum": "word/S/True",
+"original_output": "draft",
+"category": "dropped_final_s",
+"patched_output": "drafts",
+"patched_ok": true
+},
+{
+"text": "substrings",
+"kind": "jargon",
+"cls": "S",
+"stratum": "jargon/S/True",
+"original_output": "substring",
+"category": "dropped_final_s",
+"patched_output": "substrings",
+"patched_ok": true
+},
+{
+"text": "rebuilds",
+"kind": "word",
+"cls": "S",
+"stratum": "word/S/True",
+"original_output": "rebuild",
+"category": "dropped_final_s",
+"patched_output": "rebuilds",
+"patched_ok": true
+},
+{
+"text": "disconnects",
+"kind": "word",
+"cls": "S",
+"stratum": "word/S/True",
+"original_output": "disconnect",
+"category": "dropped_final_s",
+"patched_output": "disconnects",
+"patched_ok": true
+},
+{
+"text": "input_heights",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "input_height_",
+"category": "chars_substituted",
+"patched_output": "input_heights",
+"patched_ok": true
+},
+{
+"text": "new_freqs",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "new_freq_s",
+"category": "separator_changed",
+"patched_output": "new_freqs",
+"patched_ok": true
+},
+{
+"text": "talker_user_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "talker_user_embed_s",
+"category": "separator_changed",
+"patched_output": "talker_user_embeds",
+"patched_ok": true
+},
+{
+"text": "convs",
+"kind": "jargon",
+"cls": "S",
+"stratum": "jargon/S/True",
+"original_output": "conv",
+"category": "dropped_final_s",
+"patched_output": "convs",
+"patched_ok": true
+},
+{
+"text": "merged_audio_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "merged_audio_embed_s",
+"category": "separator_changed",
+"patched_output": "merged_audio_embeds",
+"patched_ok": true
+},
+{
+"text": "mel_freqs",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "mel_freq",
+"category": "dropped_final_s",
+"patched_output": "mel_freqs",
+"patched_ok": true
+},
+{
+"text": "cudagraphs",
+"kind": "jargon",
+"cls": "S",
+"stratum": "jargon/S/True",
+"original_output": "cudagraph",
+"category": "dropped_final_s",
+"patched_output": "cudagraphs",
+"patched_ok": true
+},
+{
+"text": "fpn_convs",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "fpn_conv_",
+"category": "chars_substituted",
+"patched_output": "fpn_convs",
+"patched_ok": true
+},
+{
+"text": "question_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "question_embed",
+"category": "dropped_final_s",
+"patched_output": "question_embeds",
+"patched_ok": true
+},
+{
+"text": "indenting",
+"kind": "word",
+"cls": "SFX",
+"stratum": "word/SFX/False",
+"original_output": "indent",
+"category": "truncated_early_stop",
+"patched_output": "indenting",
+"patched_ok": true
+},
+{
+"text": "action_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "action_embed",
+"category": "dropped_final_s",
+"patched_output": "action_embeds",
+"patched_ok": true
+},
+{
+"text": "unknown_payloads",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "unknown_payload_",
+"category": "chars_substituted",
+"patched_output": "unknown_payloads",
+"patched_ok": true
+},
+{
+"text": "diffusion_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "diffusion_embed_s",
+"category": "separator_changed",
+"patched_output": "diffusion_embeds",
+"patched_ok": true
+},
+{
+"text": "interrupts",
+"kind": "word",
+"cls": "S",
+"stratum": "word/S/True",
+"original_output": "interruptions",
+"category": "chars_inserted",
+"patched_output": "interrupts",
+"patched_ok": true
+},
+{
+"text": "noise_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "noise_embed",
+"category": "dropped_final_s",
+"patched_output": "noise_embeds",
+"patched_ok": true
+},
+{
+"text": "new_heights",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "new_height",
+"category": "dropped_final_s",
+"patched_output": "new_heights",
+"patched_ok": true
+},
+{
+"text": "input_audio_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "input_audio_embed_s",
+"category": "separator_changed",
+"patched_output": "input_audio_embeds",
+"patched_ok": true
+},
+{
+"text": "input_image_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "input_image_embed_s",
+"category": "separator_changed",
+"patched_output": "input_image_embeds",
+"patched_ok": true
+},
+{
+"text": "compile_uses_cudagraphs",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "compile_uses_cudagraph",
+"category": "dropped_final_s",
+"patched_output": "compile_uses_cudagraphs",
+"patched_ok": true
+},
+{
+"text": "forecasts",
+"kind": "word",
+"cls": "S",
+"stratum": "word/S/True",
+"original_output": "forecast",
+"category": "dropped_final_s",
+"patched_output": "forecasts",
+"patched_ok": true
+},
+{
+"text": "fifo_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "fifo_embed",
+"category": "dropped_final_s",
+"patched_output": "fifo_embeds",
+"patched_ok": true
+},
+{
+"text": "thresholds",
+"kind": "word",
+"cls": "S",
+"stratum": "word/S/True",
+"original_output": "threshold",
+"category": "dropped_final_s",
+"patched_output": "thresholds",
+"patched_ok": true
+},
+{
+"text": "talker_wavs",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "talker_wav",
+"category": "dropped_final_s",
+"patched_output": "talker_wavs",
+"patched_ok": true
+},
+{
+"text": "sequencemethods",
+"kind": "jargon",
+"cls": "S",
+"stratum": "jargon/S/True",
+"original_output": "sequencemethod",
+"category": "dropped_final_s",
+"patched_output": "sequencemethods",
+"patched_ok": true
+},
+{
+"text": "dumping",
+"kind": "word",
+"cls": "SFX",
+"stratum": "word/SFX/False",
+"original_output": "dumpings",
+"category": "text_appended",
+"patched_output": "dumping",
+"patched_ok": true
+},
+{
+"text": "accepts_precomputed_kwargs",
+"kind": "ident",
+"cls": "OTHER",
+"stratum": "ident/OTHER/True",
+"original_output": "accept_precomputed_kwargs",
+"category": "chars_dropped_inside",
+"patched_output": "accepts_precomputed_kwargs",
+"patched_ok": true
+},
+{
+"text": "get_audio_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "get_audio_embed_s",
+"category": "separator_changed",
+"patched_output": "get_audio_embeds",
+"patched_ok": true
+},
+{
+"text": "coord_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "coord_embed_",
+"category": "chars_substituted",
+"patched_output": "coord_embeds",
+"patched_ok": true
+},
+{
+"text": "matting_convs",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "matting_conv",
+"category": "dropped_final_s",
+"patched_output": "matting_convs",
+"patched_ok": true
+},
+{
+"text": "repeated_vision_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "repeated_vision_embed_s",
+"category": "separator_changed",
+"patched_output": "repeated_vision_embeds",
+"patched_ok": true
+},
+{
+"text": "audio_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "audio_embed",
+"category": "dropped_final_s",
+"patched_output": "audio_embeds",
+"patched_ok": true
+},
+{
+"text": "max_heights",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "max_height",
+"category": "dropped_final_s",
+"patched_output": "max_heights",
+"patched_ok": true
+},
+{
+"text": "predicts",
+"kind": "word",
+"cls": "S",
+"stratum": "word/S/True",
+"original_output": "predict",
+"category": "dropped_final_s",
+"patched_output": "predicts",
+"patched_ok": true
+},
+{
+"text": "text_video_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "text_video_embed",
+"category": "dropped_final_s",
+"patched_output": "text_video_embeds",
+"patched_ok": true
+},
+{
+"text": "emissions_thresholds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "emissions_threshold_",
+"category": "chars_substituted",
+"patched_output": "emissions_thresholds",
+"patched_ok": true
+},
+{
+"text": "deepstack_visual_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "deepstack_visual_embed_s",
+"category": "separator_changed",
+"patched_output": "deepstack_visual_embeds",
+"patched_ok": true
+},
+{
+"text": "video_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "video_embed",
+"category": "dropped_final_s",
+"patched_output": "video_embeds",
+"patched_ok": true
+},
+{
+"text": "class_thresholds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "class_threshold_",
+"category": "chars_substituted",
+"patched_output": "class_thresholds",
+"patched_ok": true
+},
+{
+"text": "flat_inputs_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "flat_inputs_embed_",
+"category": "chars_substituted",
+"patched_output": "flat_inputs_embeds",
+"patched_ok": true
+},
+{
+"text": "atom_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "atom_embed_",
+"category": "chars_substituted",
+"patched_output": "atom_embeds",
+"patched_ok": true
+},
+{
+"text": "target_heights",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "target_height_s",
+"category": "separator_changed",
+"patched_output": "target_heights",
+"patched_ok": true
+},
+{
+"text": "quantile_spreads",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "quantile_spread_",
+"category": "chars_substituted",
+"patched_output": "quantile_spreads",
+"patched_ok": true
+},
+{
+"text": "asyncs",
+"kind": "jargon",
+"cls": "S",
+"stratum": "jargon/S/True",
+"original_output": "async",
+"category": "dropped_final_s",
+"patched_output": "asyncs",
+"patched_ok": true
+},
+{
+"text": "syncs",
+"kind": "word",
+"cls": "S",
+"stratum": "word/S/True",
+"original_output": "sync",
+"category": "dropped_final_s",
+"patched_output": "syncs",
+"patched_ok": true
+},
+{
+"text": "pos_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "pos_embed",
+"category": "dropped_final_s",
+"patched_output": "pos_embeds",
+"patched_ok": true
+},
+{
+"text": "learns",
+"kind": "word",
+"cls": "S",
+"stratum": "word/S/True",
+"original_output": "learn",
+"category": "dropped_final_s",
+"patched_output": "learns",
+"patched_ok": true
+},
+{
+"text": "builds",
+"kind": "word",
+"cls": "S",
+"stratum": "word/S/True",
+"original_output": "build",
+"category": "dropped_final_s",
+"patched_output": "builds",
+"patched_ok": true
+},
+{
+"text": "freqs",
+"kind": "jargon",
+"cls": "S",
+"stratum": "jargon/S/True",
+"original_output": "freq",
+"category": "dropped_final_s",
+"patched_output": "freqs",
+"patched_ok": true
+},
+{
+"text": "audio_video_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "audio_video_embed",
+"category": "dropped_final_s",
+"patched_output": "audio_video_embeds",
+"patched_ok": true
+},
+{
+"text": "return_video_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "return_video_embed_",
+"category": "chars_substituted",
+"patched_output": "return_video_embeds",
+"patched_ok": true
+},
+{
+"text": "image_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "image_embed",
+"category": "dropped_final_s",
+"patched_output": "image_embeds",
+"patched_ok": true
+},
+{
+"text": "all_freqs",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "all_freq_s",
+"category": "separator_changed",
+"patched_output": "all_freqs",
+"patched_ok": true
+},
+{
+"text": "query_image_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "query_image_embed_s",
+"category": "separator_changed",
+"patched_output": "query_image_embeds",
+"patched_ok": true
+},
+{
+"text": "bandwidths",
+"kind": "jargon",
+"cls": "S",
+"stratum": "jargon/S/True",
+"original_output": "bandwidth",
+"category": "dropped_final_s",
+"patched_output": "bandwidths",
+"patched_ok": true
+},
+{
+"text": "stack_freqs",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "stack_freq_s",
+"category": "separator_changed",
+"patched_output": "stack_freqs",
+"patched_ok": true
+},
+{
+"text": "rejects",
+"kind": "word",
+"cls": "S",
+"stratum": "word/S/True",
+"original_output": "reject",
+"category": "dropped_final_s",
+"patched_output": "rejects",
+"patched_ok": true
+},
+{
+"text": "detecting",
+"kind": "word",
+"cls": "SFX",
+"stratum": "word/SFX/False",
+"original_output": "detect",
+"category": "truncated_early_stop",
+"patched_output": "detecting",
+"patched_ok": true
+},
+{
+"text": "get_text_audio_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "get_text_audio_embed_s",
+"category": "separator_changed",
+"patched_output": "get_text_audio_embeds",
+"patched_ok": true
+},
+{
+"text": "suggests",
+"kind": "word",
+"cls": "S",
+"stratum": "word/S/True",
+"original_output": "suggest",
+"category": "dropped_final_s",
+"patched_output": "suggests",
+"patched_ok": true
+},
+{
+"text": "get_text_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "get_text_embed_s",
+"category": "separator_changed",
+"patched_output": "get_text_embeds",
+"patched_ok": true
+},
+{
+"text": "image_group_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "image_group_embed_",
+"category": "chars_substituted",
+"patched_output": "image_group_embeds",
+"patched_ok": true
+},
+{
+"text": "_read_egg_info_reqs",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "_read_egg_info_req_",
+"category": "chars_substituted",
+"patched_output": "_read_egg_info_reqs",
+"patched_ok": true
+},
+{
+"text": "_n_mallocs",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "_n_malloc",
+"category": "dropped_final_s",
+"patched_output": "_n_mallocs",
+"patched_ok": true
+},
+{
+"text": "merged_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "merged_embed_s",
+"category": "separator_changed",
+"patched_output": "merged_embeds",
+"patched_ok": true
+},
+{
+"text": "trusts",
+"kind": "word",
+"cls": "S",
+"stratum": "word/S/True",
+"original_output": "trust",
+"category": "dropped_final_s",
+"patched_output": "trusts",
+"patched_ok": true
+},
+{
+"text": "codec_num_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "codec_num_embed_",
+"category": "chars_substituted",
+"patched_output": "codec_num_embeds",
+"patched_ok": true
+},
+{
+"text": "get_video_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "get_video_embed_",
+"category": "chars_substituted",
+"patched_output": "get_video_embeds",
+"patched_ok": true
+},
+{
+"text": "assertnotwarns",
+"kind": "jargon",
+"cls": "S",
+"stratum": "jargon/S/True",
+"original_output": "assertnotwarnS",
+"category": "case_changed",
+"patched_output": "assertnotwarns",
+"patched_ok": true
+},
+{
+"text": "retrieved_doc_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "retrieved_doc_embed_s",
+"category": "separator_changed",
+"patched_output": "retrieved_doc_embeds",
+"patched_ok": true
+},
+{
+"text": "cbtypedefs",
+"kind": "jargon",
+"cls": "S",
+"stratum": "jargon/S/True",
+"original_output": "cbtypedef",
+"category": "dropped_final_s",
+"patched_output": "cbtypedefs",
+"patched_ok": true
+},
+{
+"text": "initials",
+"kind": "word",
+"cls": "S",
+"stratum": "word/S/True",
+"original_output": "initial",
+"category": "dropped_final_s",
+"patched_output": "initials",
+"patched_ok": true
+},
+{
+"text": "silence_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "silence_embed",
+"category": "dropped_final_s",
+"patched_output": "silence_embeds",
+"patched_ok": true
+},
+{
+"text": "reconstructs",
+"kind": "word",
+"cls": "S",
+"stratum": "word/S/True",
+"original_output": "reconstruct",
+"category": "dropped_final_s",
+"patched_output": "reconstructs",
+"patched_ok": true
+},
+{
+"text": "render_heights",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "render_height",
+"category": "dropped_final_s",
+"patched_output": "render_heights",
+"patched_ok": true
+},
+{
+"text": "protein_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "protein_embed_s",
+"category": "separator_changed",
+"patched_output": "protein_embeds",
+"patched_ok": true
+},
+{
+"text": "_feed_hidden_states_as_input_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "_feed_hidden_states_as_input_embed_s",
+"category": "separator_changed",
+"patched_output": "_feed_hidden_states_as_input_embeds",
+"patched_ok": true
+},
+{
+"text": "subtracting",
+"kind": "word",
+"cls": "SFX",
+"stratum": "word/SFX/False",
+"original_output": "subtract",
+"category": "truncated_early_stop",
+"patched_output": "subtracting",
+"patched_ok": true
+},
+{
+"text": "proceeds",
+"kind": "word",
+"cls": "S",
+"stratum": "word/S/True",
+"original_output": "proceed",
+"category": "dropped_final_s",
+"patched_output": "proceeds",
+"patched_ok": true
+},
+{
+"text": "normalized_temporal_diffs",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "normalized_temporal_diff_s",
+"category": "separator_changed",
+"patched_output": "normalized_temporal_diffs",
+"patched_ok": true
+},
+{
+"text": "left_diffs",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "left_diff_s",
+"category": "separator_changed",
+"patched_output": "left_diffs",
+"patched_ok": true
+},
+{
+"text": "value_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "value_embed_s",
+"category": "separator_changed",
+"patched_output": "value_embeds",
+"patched_ok": true
+},
+{
+"text": "dummy_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "dummy_embed_s",
+"category": "separator_changed",
+"patched_output": "dummy_embeds",
+"patched_ok": true
+},
+{
+"text": "unnormalized_heights",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "unnormalized_height_",
+"category": "chars_substituted",
+"patched_output": "unnormalized_heights",
+"patched_ok": true
+},
+{
+"text": "inputs_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "inputs_embed_",
+"category": "chars_substituted",
+"patched_output": "inputs_embeds",
+"patched_ok": true
+},
+{
+"text": "assertwarns",
+"kind": "jargon",
+"cls": "S",
+"stratum": "jargon/S/True",
+"original_output": "assertwarn",
+"category": "dropped_final_s",
+"patched_output": "assertwarns",
+"patched_ok": true
+},
+{
+"text": "assert_warns",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "assert_warn_s",
+"category": "separator_changed",
+"patched_output": "assert_warns",
+"patched_ok": true
+},
+{
+"text": "class_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "class_embed",
+"category": "dropped_final_s",
+"patched_output": "class_embeds",
+"patched_ok": true
+},
+{
+"text": "get_audio_plus_text_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "get_audio_plus_text_embed_s",
+"category": "separator_changed",
+"patched_output": "get_audio_plus_text_embeds",
+"patched_ok": true
+},
+{
+"text": "full_user_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "full_user_embed_",
+"category": "chars_substituted",
+"patched_output": "full_user_embeds",
+"patched_ok": true
+},
+{
+"text": "shareds",
+"kind": "jargon",
+"cls": "S",
+"stratum": "jargon/S/True",
+"original_output": "shared",
+"category": "dropped_final_s",
+"patched_output": "shareds",
+"patched_ok": true
+},
+{
+"text": "n_freqs",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "n_freq",
+"category": "dropped_final_s",
+"patched_output": "n_freqs",
+"patched_ok": true
+},
+{
+"text": "attributemethods",
+"kind": "jargon",
+"cls": "S",
+"stratum": "jargon/S/True",
+"original_output": "attributemethodmethods",
+"category": "chars_inserted",
+"patched_output": "attributemethods",
+"patched_ok": true
+},
+{
+"text": "instructs",
+"kind": "word",
+"cls": "S",
+"stratum": "word/S/True",
+"original_output": "instruct",
+"category": "dropped_final_s",
+"patched_output": "instructs",
+"patched_ok": true
+},
+{
+"text": "kCFTypeArrayCallBacks",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "kCFTypeArrayCallBackS",
+"category": "case_changed",
+"patched_output": "kCFTypeArrayCallBacks",
+"patched_ok": true
+},
+{
+"text": "dsls",
+"kind": "jargon",
+"cls": "S",
+"stratum": "jargon/S/True",
+"original_output": "dsl",
+"category": "dropped_final_s",
+"patched_output": "dsls",
+"patched_ok": true
+},
+{
+"text": "return_audio_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "return_audio_embed_s",
+"category": "separator_changed",
+"patched_output": "return_audio_embeds",
+"patched_ok": true
+},
+{
+"text": "model_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "model_embed_s",
+"category": "separator_changed",
+"patched_output": "model_embeds",
+"patched_ok": true
+},
+{
+"text": "sinusoid_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "sinusoid_embed_s",
+"category": "separator_changed",
+"patched_output": "sinusoid_embeds",
+"patched_ok": true
+},
+{
+"text": "cached_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "cached_embed_",
+"category": "chars_substituted",
+"patched_output": "cached_embeds",
+"patched_ok": true
+},
+{
+"text": "accepts_position_ids",
+"kind": "ident",
+"cls": "SFX",
+"stratum": "ident/SFX/True",
+"original_output": "accept_position_ids",
+"category": "chars_dropped_inside",
+"patched_output": "accepts_position_ids",
+"patched_ok": true
+},
+{
+"text": "instance_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "instance_embed_s",
+"category": "separator_changed",
+"patched_output": "instance_embeds",
+"patched_ok": true
+},
+{
+"text": "output_convs",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "output_conv",
+"category": "dropped_final_s",
+"patched_output": "output_convs",
+"patched_ok": true
+},
+{
+"text": "warns",
+"kind": "word",
+"cls": "S",
+"stratum": "word/S/True",
+"original_output": "warn",
+"category": "dropped_final_s",
+"patched_output": "warns",
+"patched_ok": true
+},
+{
+"text": "reprs",
+"kind": "jargon",
+"cls": "S",
+"stratum": "jargon/S/True",
+"original_output": "repr",
+"category": "dropped_final_s",
+"patched_output": "reprs",
+"patched_ok": true
+},
+{
+"text": "cumheights",
+"kind": "jargon",
+"cls": "S",
+"stratum": "jargon/S/True",
+"original_output": "cumheight",
+"category": "dropped_final_s",
+"patched_output": "cumheights",
+"patched_ok": true
+},
+{
+"text": "talker_assistant_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "talker_assistant_embed_s",
+"category": "separator_changed",
+"patched_output": "talker_assistant_embeds",
+"patched_ok": true
+},
+{
+"text": "_parent_hrefs",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "_parent_href",
+"category": "dropped_final_s",
+"patched_output": "_parent_hrefs",
+"patched_ok": true
+},
+{
+"text": "chunk_input_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "chunk_input_embed_s",
+"category": "separator_changed",
+"patched_output": "chunk_input_embeds",
+"patched_ok": true
+},
+{
+"text": "default_payloads",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "default_payload_",
+"category": "chars_substituted",
+"patched_output": "default_payloads",
+"patched_ok": true
+},
+{
+"text": "image_class_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "image_class_embed_",
+"category": "chars_substituted",
+"patched_output": "image_class_embeds",
+"patched_ok": true
+},
+{
+"text": "inspects",
+"kind": "word",
+"cls": "S",
+"stratum": "word/S/True",
+"original_output": "inspect",
+"category": "dropped_final_s",
+"patched_output": "inspects",
+"patched_ok": true
+},
+{
+"text": "listsymbols",
+"kind": "jargon",
+"cls": "S",
+"stratum": "jargon/S/True",
+"original_output": "listsymbol",
+"category": "dropped_final_s",
+"patched_output": "listsymbols",
+"patched_ok": true
+},
+{
+"text": "instrs",
+"kind": "jargon",
+"cls": "S",
+"stratum": "jargon/S/True",
+"original_output": "instr",
+"category": "dropped_final_s",
+"patched_output": "instrs",
+"patched_ok": true
+},
+{
+"text": "state_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "state_embed",
+"category": "dropped_final_s",
+"patched_output": "state_embeds",
+"patched_ok": true
+},
+{
+"text": "corrects",
+"kind": "word",
+"cls": "S",
+"stratum": "word/S/True",
+"original_output": "correct",
+"category": "dropped_final_s",
+"patched_output": "corrects",
+"patched_ok": true
+},
+{
+"text": "wavs",
+"kind": "jargon",
+"cls": "S",
+"stratum": "jargon/S/True",
+"original_output": "wav",
+"category": "dropped_final_s",
+"patched_output": "wavs",
+"patched_ok": true
+},
+{
+"text": "position_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "position_embed_",
+"category": "chars_substituted",
+"patched_output": "position_embeds",
+"patched_ok": true
+},
+{
+"text": "collects",
+"kind": "word",
+"cls": "S",
+"stratum": "word/S/True",
+"original_output": "collect",
+"category": "dropped_final_s",
+"patched_output": "collects",
+"patched_ok": true
+},
+{
+"text": "pulls",
+"kind": "word",
+"cls": "S",
+"stratum": "word/S/True",
+"original_output": "pull",
+"category": "dropped_final_s",
+"patched_output": "pulls",
+"patched_ok": true
+},
+{
+"text": "_read_dist_info_reqs",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "_read_dist_info_req_",
+"category": "chars_substituted",
+"patched_output": "_read_dist_info_reqs",
+"patched_ok": true
+},
+{
+"text": "interpoling",
+"kind": "word",
+"cls": "SFX",
+"stratum": "word/SFX/False",
+"original_output": "interpolating",
+"category": "chars_inserted",
+"patched_output": "interpoling",
+"patched_ok": true
+},
+{
+"text": "num_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "num_embed_s",
+"category": "separator_changed",
+"patched_output": "num_embeds",
+"patched_ok": true
+},
+{
+"text": "_assertNotWarns",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "_assertNotWarnS",
+"category": "case_changed",
+"patched_output": "_assertNotWarns",
+"patched_ok": true
+},
+{
+"text": "correction_coefs",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "correction_coef",
+"category": "dropped_final_s",
+"patched_output": "correction_coefs",
+"patched_ok": true
+},
+{
+"text": "CharWidths",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "CharWidth",
+"category": "dropped_final_s",
+"patched_output": "CharWidths",
+"patched_ok": true
+},
+{
+"text": "nPlease",
+"kind": "ident",
+"cls": "ONE",
+"stratum": "ident/ONE/False",
+"original_output": "Please",
+"category": "chars_dropped_inside",
+"patched_output": "Please",
+"patched_ok": false
+},
+{
+"text": "return_base_image_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "return_base_image_embed_s",
+"category": "separator_changed",
+"patched_output": "return_base_image_embeds",
+"patched_ok": true
+},
+{
+"text": "input_cumheights",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "input_cumheight",
+"category": "dropped_final_s",
+"patched_output": "input_cumheights",
+"patched_ok": true
+},
+{
+"text": "reshaped_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "reshaped_embed_s",
+"category": "separator_changed",
+"patched_output": "reshaped_embeds",
+"patched_ok": true
+},
+{
+"text": "dimension_exprs",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "dimension_expr",
+"category": "dropped_final_s",
+"patched_output": "dimension_exprs",
+"patched_ok": true
+},
+{
+"text": "manuals",
+"kind": "word",
+"cls": "S",
+"stratum": "word/S/True",
+"original_output": "manual",
+"category": "dropped_final_s",
+"patched_output": "manuals",
+"patched_ok": true
+},
+{
+"text": "target_bandwidths",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "target_bandwidth",
+"category": "dropped_final_s",
+"patched_output": "target_bandwidths",
+"patched_ok": true
+},
+{
+"text": "mallocs",
+"kind": "jargon",
+"cls": "S",
+"stratum": "jargon/S/True",
+"original_output": "malloc",
+"category": "dropped_final_s",
+"patched_output": "mallocs",
+"patched_ok": true
+},
+{
+"text": "fulls",
+"kind": "word",
+"cls": "S",
+"stratum": "word/S/True",
+"original_output": "full",
+"category": "dropped_final_s",
+"patched_output": "fulls",
+"patched_ok": true
+},
+{
+"text": "knows",
+"kind": "word",
+"cls": "S",
+"stratum": "word/S/True",
+"original_output": "know",
+"category": "dropped_final_s",
+"patched_output": "knows",
+"patched_ok": true
+},
+{
+"text": "get_video_plus_text_embeds",
+"kind": "ident",
+"cls": "S",
+"stratum": "ident/S/True",
+"original_output": "get_video_plus_text_embed_s",
+"category": "separator_changed",
+"patched_output": "get_video_plus_text_embeds",
+"patched_ok": true
+}
+]

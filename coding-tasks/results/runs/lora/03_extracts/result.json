@@ -1,0 +1,22 @@
+{
+ "arm": "lora",
+ "task": "03_extracts",
+ "target_identifier": "extracts",
+ "end_reason": "tool_call_budget",
+ "submit_patch_called": false,
+ "turns": 29,
+ "tool_calls_used": 28,
+ "seconds": 224.5,
+ "tests": {
+  "passed": false,
+  "exit_code": 1,
+  "summary": "2 failed in 0.01s",
+  "output": "FF                                                                       [100%]\n=================================== FAILURES ===================================\n_________________________________ test_fields __________________________________\n\n    def test_fields():\n>       assert parse_row(\"a,b,c\") == [\"a\", \"b\", \"c\"]\n               ^^^^^^^^^^^^^^^^^^\n\ntest_bug.py:5: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nrow = 'a,b,c'\n\n    def parse_row(row):\n        parser = FieldParser()\n>       return parser.extract_s(row)\n               ^^^^^^^^^^^^^^^^\nE       AttributeError: 'FieldParser' object has no attribute 'extract_s'. Did you mean: 'extracts'?\n\nparser.py:8: AttributeError\n__________________________________ test_trim ___________________________________\n\n    def test_trim():\n>       assert parse_row(\" x,y \") == [\"x\", \"y\"]\n               ^^^^^^^^^^^^^^^^^^\n\ntest_bug.py:9: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nrow = ' x,y '\n\n    def parse_row(row):\n        parser = FieldParser()\n>       return parser.extract_s(row)\n               ^^^^^^^^^^^^^^^^\nE       AttributeError: 'FieldParser' object has no attribute 'extract_s'. Did you mean: 'extracts'?\n\nparser.py:8: AttributeError\n=========================== short test summary info ============================\nFAILED test_bug.py::test_fields - AttributeError: 'FieldParser' object has no...\nFAILED test_bug.py::test_trim - AttributeError: 'FieldParser' object has no a...\n2 failed in 0.01s\n",
+  "test_files_modified_by_agent": []
+ },
+ "final_patch": "diff --git a/parser.py b/parser.py\nindex 6ac30e6..7634b76 100644\n--- a/parser.py\n+++ b/parser.py\n@@ -5,4 +5,4 @@ class FieldParser:\n \n def parse_row(row):\n     parser = FieldParser()\n-    return parser.extract(row)\n+    return parser.extract_s(row)\n",
+ "final_files": {
+  "parser.py": "class FieldParser:\n    def extracts(self, row):\n        return row.strip().split(\",\")\n\n\ndef parse_row(row):\n    parser = FieldParser()\n    return parser.extract_s(row)\n",
+  "test_bug.py": "from parser import parse_row\n\n\ndef test_fields():\n    assert parse_row(\"a,b,c\") == [\"a\", \"b\", \"c\"]\n\n\ndef test_trim():\n    assert parse_row(\" x,y \") == [\"x\", \"y\"]\n"
+ }
+}

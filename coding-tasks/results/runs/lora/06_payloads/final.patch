@@ -1,0 +1,14 @@
+diff --git a/batch.py b/batch.py
+index 9247e36..fc12817 100644
+--- a/batch.py
++++ b/batch.py
+@@ -1,7 +1,6 @@
+ def validate(item):
+     return item["valid"] is True
+ 
+-
+ def process_batch(batch):
+     payloads = batch["payloads"]
+-    return [validate(item) for item in payload]
++    return [validate(item) for item in payloads]
+\ No newline at end of file

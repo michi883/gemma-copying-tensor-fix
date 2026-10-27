@@ -1,0 +1,10 @@
+diff --git a/parser.py b/parser.py
+index 6ac30e6..7634b76 100644
+--- a/parser.py
++++ b/parser.py
+@@ -5,4 +5,4 @@ class FieldParser:
+ 
+ def parse_row(row):
+     parser = FieldParser()
+-    return parser.extract(row)
++    return parser.extract_s(row)

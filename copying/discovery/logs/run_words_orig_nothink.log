@@ -1,0 +1,32 @@
+results_words_orig_nothink.jsonl: 7703 planned, 0 already done
+250 run, 19 failures, 52s, ~1538s left
+500 run, 26 failures, 104s, ~1499s left
+750 run, 39 failures, 157s, ~1454s left
+1000 run, 50 failures, 208s, ~1395s left
+1250 run, 58 failures, 259s, ~1339s left
+1500 run, 69 failures, 311s, ~1287s left
+1750 run, 73 failures, 362s, ~1230s left
+2000 run, 84 failures, 413s, ~1176s left
+2250 run, 95 failures, 464s, ~1126s left
+2500 run, 107 failures, 515s, ~1072s left
+2750 run, 117 failures, 567s, ~1021s left
+3000 run, 125 failures, 619s, ~970s left
+3250 run, 132 failures, 671s, ~919s left
+3500 run, 141 failures, 722s, ~868s left
+3750 run, 145 failures, 773s, ~815s left
+4000 run, 156 failures, 825s, ~763s left
+4250 run, 167 failures, 876s, ~712s left
+4500 run, 173 failures, 927s, ~660s left
+4750 run, 182 failures, 980s, ~609s left
+5000 run, 194 failures, 1031s, ~557s left
+5250 run, 203 failures, 1082s, ~505s left
+5500 run, 209 failures, 1133s, ~454s left
+5750 run, 218 failures, 1184s, ~402s left
+6000 run, 224 failures, 1235s, ~350s left
+6250 run, 235 failures, 1286s, ~299s left
+6500 run, 243 failures, 1336s, ~247s left
+6750 run, 245 failures, 1388s, ~196s left
+7000 run, 258 failures, 1438s, ~144s left
+7250 run, 270 failures, 1488s, ~93s left
+7500 run, 272 failures, 1539s, ~42s left
+done: 7703 run, 278 failures, 1898s

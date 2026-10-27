@@ -1,0 +1,39 @@
+{
+ "sample": {
+  "n": 2000,
+  "orig_fail": 274,
+  "patched_fail": 1
+ },
+ "groups": {
+  "plural/NOT_S": {
+   "n": 500,
+   "orig_fail": 1,
+   "patched_fail": 0,
+   "fixed": 1,
+   "regressed": 0,
+   "both": 0
+  },
+  "plural/S": {
+   "n": 1500,
+   "orig_fail": 273,
+   "patched_fail": 1,
+   "fixed": 272,
+   "regressed": 0,
+   "both": 1
+  }
+ },
+ "categories": {
+  "orig": {
+   "dropped_final_s": 260,
+   "case_changed": 1,
+   "suffix_altered": 2,
+   "chars_substituted": 3,
+   "chars_inserted": 6,
+   "separator_changed": 1,
+   "text_appended": 1
+  },
+  "patched": {
+   "dropped_final_s": 1
+  }
+ }
+}

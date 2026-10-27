@@ -1,0 +1,22 @@
+{
+ "arm": "lora",
+ "task": "06_payloads",
+ "target_identifier": "payloads",
+ "end_reason": "text_only_reply",
+ "submit_patch_called": true,
+ "turns": 16,
+ "tool_calls_used": 14,
+ "seconds": 80.9,
+ "tests": {
+  "passed": true,
+  "exit_code": 0,
+  "summary": "2 passed in 0.00s",
+  "output": "..                                                                       [100%]\n2 passed in 0.00s\n",
+  "test_files_modified_by_agent": []
+ },
+ "final_patch": "diff --git a/batch.py b/batch.py\nindex 9247e36..fc12817 100644\n--- a/batch.py\n+++ b/batch.py\n@@ -1,7 +1,6 @@\n def validate(item):\n     return item[\"valid\"] is True\n \n-\n def process_batch(batch):\n     payloads = batch[\"payloads\"]\n-    return [validate(item) for item in payload]\n+    return [validate(item) for item in payloads]\n\\ No newline at end of file\n",
+ "final_files": {
+  "batch.py": "def validate(item):\n    return item[\"valid\"] is True\n\ndef process_batch(batch):\n    payloads = batch[\"payloads\"]\n    return [validate(item) for item in payloads]",
+  "test_bug.py": "from batch import process_batch\n\n\ndef test_batch():\n    assert process_batch({\"payloads\": [{\"valid\": True}, {\"valid\": False}]}) == [True, False]\n\n\ndef test_empty_batch():\n    assert process_batch({\"payloads\": []}) == []\n"
+ }
+}

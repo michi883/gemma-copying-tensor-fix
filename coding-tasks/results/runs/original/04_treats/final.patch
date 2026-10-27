@@ -1,0 +1,13 @@
+diff --git a/rules.py b/rules.py
+index 3b85014..3f83088 100644
+--- a/rules.py
++++ b/rules.py
+@@ -2,6 +2,5 @@ class Rule:
+     def __init__(self, treats=False):
+         self.treats = treats
+ 
+-
+ def should_apply(rule):
+-    return rule.treat
++    return rule.treats
+\ No newline at end of file
