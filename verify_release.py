@@ -65,7 +65,7 @@ def check_hashes():
     print('\n== hashes')
     sums = read_sums(ROOT / 'SHA256SUMS')
     bad = [n for n, h in sums.items() if not (ROOT / n).is_file() or sha(ROOT / n) != h]
-    extra = sorted(str(p.relative_to(ROOT)) for p in ROOT.rglob('*') if p.is_file() and p.name != 'SHA256SUMS' and str(p.relative_to(ROOT)) not in sums and '__pycache__' not in p.parts)
+    extra = sorted(str(p.relative_to(ROOT)) for p in ROOT.rglob('*') if p.is_file() and p.name != 'SHA256SUMS' and str(p.relative_to(ROOT)) not in sums and '__pycache__' not in p.parts and '.git' not in p.parts)
     check(not bad, f'SHA256SUMS: {len(sums)} files match', f'mismatch/missing: {bad[:5]}' if bad else '')
     check(not extra, 'no files outside SHA256SUMS', str(extra[:5]) if extra else '')
     a = read_sums(ROOT / 'adapter' / 'SHA256SUMS')
